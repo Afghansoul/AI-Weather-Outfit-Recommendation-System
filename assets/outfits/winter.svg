@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#172033"/><stop offset="1" stop-color="#2f4665"/></linearGradient></defs>
+<rect width="800" height="620" rx="36" fill="url(#bg)"/>
+<circle cx="670" cy="110" r="54" fill="#dce8f7" opacity=".9"/>
+<text x="50" y="75" fill="white" font-size="28" font-family="Arial" font-weight="700">WINTER OUTFIT</text>
+<path d="M245 220 L335 175 L400 230 L465 175 L555 220 L510 405 L290 405 Z" fill="#24384f"/>
+<path d="M335 175 L400 230 L465 175 L430 140 L370 140 Z" fill="#e7eef6"/>
+<path d="M290 405 L390 405 L375 555 L265 555 Z" fill="#1b2430"/>
+<path d="M390 405 L510 405 L535 555 L425 555 Z" fill="#1b2430"/>
+<path d="M255 550 L375 550 L365 585 L235 585 Z" fill="#111820"/><path d="M425 550 L540 550 L565 585 L430 585 Z" fill="#111820"/>
+<circle cx="400" cy="270" r="9" fill="#d8a34a"/><circle cx="400" cy="315" r="9" fill="#d8a34a"/>
+</svg>

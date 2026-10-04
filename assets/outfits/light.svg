@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#2c3d4d"/><stop offset="1" stop-color="#7690a0"/></linearGradient></defs>
+<rect width="800" height="620" rx="36" fill="url(#bg)"/>
+<text x="50" y="75" fill="white" font-size="28" font-family="Arial" font-weight="700">LIGHT LAYER</text>
+<path d="M260 220 L340 175 L460 175 L540 220 L500 390 L300 390 Z" fill="#d9e0e2"/>
+<path d="M300 390 L395 390 L375 545 L265 545 Z" fill="#5d6872"/><path d="M395 390 L500 390 L530 545 L420 545 Z" fill="#5d6872"/>
+<path d="M250 540 L375 540 L365 575 L225 575 Z" fill="#27313a"/><path d="M420 540 L535 540 L560 575 L430 575 Z" fill="#27313a"/>
+<path d="M340 175 L400 230 L460 175" fill="none" stroke="#9db1b9" stroke-width="8"/>
+</svg>

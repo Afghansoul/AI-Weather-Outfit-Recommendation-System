@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f5d98a"/><stop offset="1" stop-color="#e88968"/></linearGradient></defs>
+<rect width="800" height="620" rx="36" fill="url(#bg)"/>
+<circle cx="665" cy="105" r="58" fill="#fff4b0"/>
+<text x="50" y="75" fill="#3c2c2a" font-size="28" font-family="Arial" font-weight="700">SUMMER OUTFIT</text>
+<path d="M270 220 L345 175 L455 175 L530 220 L490 370 L310 370 Z" fill="#f4f1e8"/>
+<path d="M310 370 L395 370 L375 540 L275 540 Z" fill="#d7a76d"/>
+<path d="M395 370 L490 370 L525 540 L420 540 Z" fill="#d7a76d"/>
+<path d="M265 535 L380 535 L365 570 L240 570 Z" fill="#f7f3ea"/><path d="M420 535 L530 535 L555 570 L430 570 Z" fill="#f7f3ea"/>
+<path d="M345 175 L400 235 L455 175" fill="none" stroke="#d6d0c3" stroke-width="7"/>
+</svg>

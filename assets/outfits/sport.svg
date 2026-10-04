@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#182d2b"/><stop offset="1" stop-color="#2c655a"/></linearGradient></defs>
+<rect width="800" height="620" rx="36" fill="url(#bg)"/>
+<text x="50" y="75" fill="white" font-size="28" font-family="Arial" font-weight="700">SPORT OUTFIT</text>
+<circle cx="650" cy="125" r="70" fill="#73d2a7" opacity=".25"/>
+<path d="M270 215 L345 175 L455 175 L530 215 L485 370 L315 370 Z" fill="#e7f1ef"/>
+<path d="M315 370 L400 370 L370 545 L255 545 Z" fill="#202b31"/><path d="M400 370 L485 370 L545 545 L425 545 Z" fill="#202b31"/>
+<path d="M245 535 L370 535 L360 570 L225 570 Z" fill="#e7f1ef"/><path d="M425 535 L545 535 L570 570 L435 570 Z" fill="#e7f1ef"/>
+<path d="M345 175 L400 225 L455 175" fill="none" stroke="#38a98b" stroke-width="8"/>
+</svg>

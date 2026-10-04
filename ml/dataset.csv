@@ -1,0 +1,1501 @@
+temperature,humidity,wind_speed,rain,season,weather_condition,occasion,style,outfit_category
+23.3,23,33.4,0,Spring,Cloudy,Formal,Casual,Light Summer Outfit
+36.4,31,26.6,0,Winter,Clear,Casual,Sporty,Hot Weather Outfit
+21.3,91,8.9,0,Autumn,Cloudy,Business,Traditional,Spring Autumn Outfit
+35.2,40,31.4,1,Summer,Rainy,Formal,Sporty,Rainy Light Outfit
+39.8,63,4.6,0,Autumn,Clear,Sport,Formal,Hot Weather Outfit
+32.0,78,24.1,0,Autumn,Clear,Traditional,Formal,Hot Weather Outfit
+22.2,66,26.0,0,Winter,Clear,Formal,Formal,Light Summer Outfit
+34.5,32,17.1,1,Autumn,Rainy,Formal,Formal,Rainy Light Outfit
+8.5,54,31.6,1,Winter,Stormy,Formal,Traditional,Rainy Cold Outfit
+27.9,40,20.8,1,Summer,Stormy,Formal,Formal,Rainy Light Outfit
+33.8,27,10.3,1,Winter,Rainy,Business,Formal,Rainy Light Outfit
+-6.6,92,39.4,0,Summer,Cloudy,Business,Business,Heavy Winter Outfit
+23.4,38,11.9,1,Spring,Stormy,Traditional,Formal,Rainy Light Outfit
+28.8,74,40.4,1,Autumn,Rainy,Formal,Sporty,Rainy Light Outfit
+16.5,31,34.0,0,Winter,Cloudy,Formal,Business,Formal Mild Outfit
+10.0,79,23.8,0,Winter,Clear,Traditional,Formal,Light Winter Outfit
+7.7,57,19.6,0,Autumn,Clear,Sport,Traditional,Winter Outfit
+16.4,33,39.2,1,Summer,Stormy,Traditional,Sporty,Rainy Light Outfit
+-2.1,40,24.3,1,Winter,Stormy,Sport,Business,Heavy Winter Outfit
+-9.0,66,39.5,0,Summer,Cloudy,Casual,Sporty,Heavy Winter Outfit
+39.2,30,32.9,1,Winter,Stormy,Formal,Sporty,Rainy Light Outfit
+24.3,90,7.4,0,Autumn,Cloudy,Traditional,Sporty,Sport Summer Outfit
+10.7,67,19.7,1,Autumn,Clear,Formal,Sporty,Rainy Cold Outfit
+-8.9,90,10.4,0,Spring,Clear,Casual,Casual,Heavy Winter Outfit
+37.1,62,3.2,1,Spring,Rainy,Business,Sporty,Rainy Light Outfit
+18.0,93,25.9,0,Spring,Snowy,Business,Sporty,Heavy Winter Outfit
+-5.1,75,15.9,0,Autumn,Snowy,Casual,Casual,Heavy Winter Outfit
+-6.8,63,36.0,0,Winter,Cloudy,Formal,Sporty,Heavy Winter Outfit
+-2.7,43,12.5,1,Spring,Clear,Business,Traditional,Heavy Winter Outfit
+23.9,89,37.6,0,Winter,Cloudy,Formal,Business,Light Summer Outfit
+1.1,71,40.6,0,Spring,Snowy,Casual,Business,Heavy Winter Outfit
+3.8,78,12.8,0,Autumn,Cloudy,Formal,Formal,Formal Winter Outfit
+-7.0,89,2.7,0,Summer,Clear,Casual,Traditional,Heavy Winter Outfit
+37.8,87,7.1,1,Winter,Cloudy,Casual,Traditional,Rainy Light Outfit
+34.8,71,5.4,1,Spring,Stormy,Traditional,Casual,Rainy Light Outfit
+22.2,73,29.6,1,Summer,Rainy,Formal,Formal,Rainy Light Outfit
+2.4,70,5.9,0,Summer,Snowy,Sport,Casual,Heavy Winter Outfit
+-9.5,92,44.8,1,Winter,Stormy,Formal,Traditional,Heavy Winter Outfit
+3.8,64,39.6,1,Spring,Rainy,Sport,Sporty,Winter Outfit
+12.8,89,31.7,1,Winter,Stormy,Sport,Casual,Rainy Cold Outfit
+38.8,37,11.9,1,Winter,Stormy,Formal,Formal,Rainy Light Outfit
+4.7,46,32.3,1,Spring,Rainy,Traditional,Business,Winter Outfit
+3.1,26,4.2,1,Autumn,Rainy,Casual,Casual,Winter Outfit
+7.3,36,28.7,0,Summer,Cloudy,Business,Traditional,Winter Outfit
+19.2,34,3.4,1,Spring,Stormy,Casual,Formal,Rainy Light Outfit
+20.3,38,19.3,1,Winter,Rainy,Sport,Casual,Rainy Light Outfit
+36.7,46,30.7,1,Winter,Rainy,Traditional,Business,Rainy Light Outfit
+40.6,39,41.7,1,Spring,Cloudy,Formal,Business,Rainy Light Outfit
+28.3,62,35.2,0,Autumn,Cloudy,Sport,Sporty,Sport Summer Outfit
+-4.4,24,38.6,0,Spring,Cloudy,Business,Formal,Heavy Winter Outfit
+31.4,49,10.0,0,Spring,Snowy,Sport,Formal,Heavy Winter Outfit
+34.9,55,15.8,1,Autumn,Stormy,Sport,Casual,Rainy Light Outfit
+-4.0,53,8.0,0,Summer,Clear,Casual,Traditional,Heavy Winter Outfit
+27.9,60,19.6,0,Winter,Snowy,Traditional,Sporty,Heavy Winter Outfit
+3.2,75,0.1,1,Spring,Rainy,Business,Casual,Winter Outfit
+39.3,62,28.0,1,Winter,Rainy,Traditional,Formal,Rainy Light Outfit
+24.7,61,18.1,1,Summer,Stormy,Formal,Sporty,Rainy Light Outfit
+11.9,68,30.5,1,Spring,Stormy,Traditional,Formal,Rainy Cold Outfit
+11.1,20,13.7,0,Spring,Snowy,Traditional,Traditional,Heavy Winter Outfit
+24.0,79,19.9,1,Spring,Stormy,Business,Sporty,Rainy Light Outfit
+24.3,56,23.2,0,Summer,Clear,Formal,Formal,Light Summer Outfit
+0.4,23,2.1,1,Autumn,Stormy,Casual,Business,Winter Outfit
+11.6,93,8.7,0,Autumn,Snowy,Business,Sporty,Heavy Winter Outfit
+-2.3,20,40.2,0,Winter,Snowy,Formal,Sporty,Heavy Winter Outfit
+31.8,86,20.9,0,Spring,Clear,Business,Sporty,Hot Weather Outfit
+24.7,91,26.8,1,Autumn,Stormy,Traditional,Business,Rainy Light Outfit
+33.2,90,20.1,0,Spring,Snowy,Business,Formal,Heavy Winter Outfit
+29.1,55,34.5,1,Autumn,Cloudy,Sport,Business,Rainy Light Outfit
+4.9,54,15.1,0,Winter,Cloudy,Formal,Sporty,Formal Winter Outfit
+-2.1,47,2.9,1,Autumn,Rainy,Traditional,Business,Heavy Winter Outfit
+11.6,46,37.5,1,Autumn,Stormy,Casual,Traditional,Rainy Cold Outfit
+9.8,20,42.4,0,Summer,Snowy,Business,Traditional,Heavy Winter Outfit
+28.9,89,36.0,0,Spring,Snowy,Formal,Formal,Heavy Winter Outfit
+12.7,23,17.5,0,Autumn,Cloudy,Business,Sporty,Sport Winter Outfit
+17.8,70,26.6,0,Winter,Clear,Business,Sporty,Spring Autumn Outfit
+-0.6,53,17.1,0,Spring,Snowy,Sport,Formal,Heavy Winter Outfit
+29.6,68,12.5,1,Autumn,Rainy,Casual,Business,Rainy Light Outfit
+-9.0,89,2.3,0,Summer,Cloudy,Casual,Casual,Heavy Winter Outfit
+39.4,45,37.8,0,Spring,Cloudy,Formal,Business,Hot Weather Outfit
+19.3,47,20.9,1,Summer,Rainy,Formal,Traditional,Rainy Light Outfit
+21.6,34,35.0,1,Spring,Rainy,Casual,Traditional,Rainy Light Outfit
+-8.7,59,25.9,0,Autumn,Snowy,Formal,Casual,Heavy Winter Outfit
+20.8,51,4.6,1,Summer,Stormy,Casual,Traditional,Rainy Light Outfit
+30.7,64,24.0,1,Summer,Clear,Traditional,Formal,Rainy Light Outfit
+11.8,82,4.7,0,Summer,Snowy,Formal,Business,Heavy Winter Outfit
+-0.8,86,43.4,1,Summer,Stormy,Traditional,Business,Heavy Winter Outfit
+14.2,95,12.1,0,Spring,Clear,Sport,Business,Sport Winter Outfit
+14.2,68,15.1,1,Autumn,Rainy,Formal,Business,Rainy Cold Outfit
+1.0,53,15.3,1,Summer,Stormy,Casual,Traditional,Winter Outfit
+39.3,30,10.9,0,Autumn,Snowy,Traditional,Sporty,Heavy Winter Outfit
+25.9,82,20.2,0,Winter,Clear,Sport,Sporty,Sport Summer Outfit
+2.7,94,16.6,0,Summer,Snowy,Traditional,Formal,Heavy Winter Outfit
+8.3,78,12.2,0,Summer,Cloudy,Casual,Sporty,Sport Winter Outfit
+28.6,43,8.6,1,Autumn,Rainy,Traditional,Traditional,Rainy Light Outfit
+21.0,32,37.5,0,Summer,Cloudy,Sport,Sporty,Spring Autumn Outfit
+26.8,36,12.3,1,Winter,Stormy,Sport,Sporty,Rainy Light Outfit
+23.2,82,4.6,1,Winter,Stormy,Sport,Business,Rainy Light Outfit
+14.9,63,8.3,1,Winter,Rainy,Business,Casual,Rainy Cold Outfit
+32.8,71,22.1,0,Winter,Cloudy,Formal,Traditional,Hot Weather Outfit
+-5.6,51,5.3,1,Autumn,Stormy,Traditional,Traditional,Heavy Winter Outfit
+1.7,86,17.1,1,Autumn,Rainy,Traditional,Business,Winter Outfit
+5.9,27,27.4,0,Winter,Cloudy,Formal,Formal,Formal Winter Outfit
+-1.8,42,24.8,0,Spring,Clear,Business,Business,Heavy Winter Outfit
+14.4,24,10.4,0,Summer,Snowy,Casual,Sporty,Heavy Winter Outfit
+38.0,95,29.8,0,Spring,Snowy,Casual,Traditional,Heavy Winter Outfit
+1.7,39,40.9,0,Spring,Clear,Casual,Sporty,Winter Outfit
+20.9,92,41.5,0,Autumn,Clear,Business,Formal,Spring Autumn Outfit
+39.0,84,24.3,0,Autumn,Clear,Traditional,Casual,Hot Weather Outfit
+28.2,52,1.2,1,Spring,Stormy,Traditional,Casual,Rainy Light Outfit
+42.0,54,25.9,0,Spring,Snowy,Traditional,Business,Heavy Winter Outfit
+37.6,43,44.9,0,Autumn,Snowy,Casual,Business,Heavy Winter Outfit
+8.1,62,14.4,0,Winter,Cloudy,Sport,Business,Sport Winter Outfit
+5.0,71,36.6,0,Winter,Snowy,Casual,Formal,Heavy Winter Outfit
+3.1,34,43.7,1,Autumn,Stormy,Casual,Traditional,Winter Outfit
+14.0,26,8.4,1,Summer,Stormy,Business,Business,Rainy Cold Outfit
+29.5,46,12.0,1,Spring,Rainy,Business,Business,Rainy Light Outfit
+-3.7,50,31.9,1,Summer,Stormy,Casual,Traditional,Heavy Winter Outfit
+11.2,48,44.7,0,Winter,Snowy,Casual,Sporty,Heavy Winter Outfit
+15.9,57,22.9,0,Summer,Snowy,Business,Business,Heavy Winter Outfit
+2.7,90,6.5,1,Spring,Stormy,Traditional,Sporty,Winter Outfit
+34.9,55,34.8,1,Autumn,Rainy,Traditional,Formal,Rainy Light Outfit
+32.7,56,32.7,0,Autumn,Cloudy,Business,Traditional,Hot Weather Outfit
+7.3,89,17.0,0,Summer,Cloudy,Formal,Traditional,Formal Winter Outfit
+34.5,72,2.0,0,Autumn,Snowy,Business,Sporty,Heavy Winter Outfit
+15.8,24,5.7,0,Summer,Clear,Business,Casual,Spring Autumn Outfit
+13.8,38,18.4,0,Spring,Clear,Business,Formal,Light Winter Outfit
+26.0,30,38.3,1,Autumn,Rainy,Business,Traditional,Rainy Light Outfit
+-8.1,28,10.6,0,Summer,Cloudy,Casual,Business,Heavy Winter Outfit
+29.5,32,20.0,0,Summer,Clear,Casual,Formal,Light Summer Outfit
+5.3,67,19.4,1,Spring,Stormy,Business,Traditional,Winter Outfit
+25.5,43,7.6,1,Winter,Stormy,Business,Traditional,Rainy Light Outfit
+25.5,83,41.1,0,Spring,Cloudy,Business,Formal,Light Summer Outfit
+24.7,79,40.6,0,Spring,Clear,Business,Formal,Light Summer Outfit
+5.6,74,31.1,1,Autumn,Rainy,Formal,Business,Formal Winter Outfit
+34.4,33,10.7,1,Summer,Stormy,Sport,Formal,Rainy Light Outfit
+-8.9,70,12.4,1,Winter,Stormy,Business,Formal,Heavy Winter Outfit
+30.3,49,27.3,0,Summer,Cloudy,Formal,Traditional,Hot Weather Outfit
+29.3,37,28.3,1,Winter,Rainy,Business,Casual,Rainy Light Outfit
+20.1,36,4.1,1,Summer,Rainy,Business,Sporty,Rainy Light Outfit
+0.4,89,39.4,1,Summer,Stormy,Traditional,Formal,Winter Outfit
+33.2,52,41.1,1,Autumn,Rainy,Sport,Casual,Rainy Light Outfit
+14.4,29,6.3,0,Spring,Snowy,Traditional,Formal,Heavy Winter Outfit
+-5.3,70,0.6,0,Winter,Snowy,Sport,Formal,Heavy Winter Outfit
+20.4,67,4.9,0,Spring,Snowy,Casual,Traditional,Heavy Winter Outfit
+36.0,91,14.8,0,Spring,Clear,Business,Formal,Hot Weather Outfit
+-3.9,25,42.6,0,Summer,Snowy,Casual,Casual,Heavy Winter Outfit
+2.2,88,6.1,1,Autumn,Rainy,Traditional,Business,Winter Outfit
+20.5,39,39.8,0,Winter,Snowy,Traditional,Business,Heavy Winter Outfit
+38.8,55,1.5,0,Summer,Cloudy,Business,Business,Hot Weather Outfit
+34.5,32,44.1,1,Summer,Stormy,Sport,Casual,Rainy Light Outfit
+10.7,44,43.6,0,Autumn,Clear,Formal,Traditional,Light Winter Outfit
+-7.4,62,11.0,1,Spring,Stormy,Formal,Casual,Heavy Winter Outfit
+33.2,90,9.3,0,Spring,Cloudy,Sport,Sporty,Hot Weather Outfit
+21.0,55,38.6,0,Spring,Cloudy,Traditional,Formal,Spring Autumn Outfit
+-4.3,23,5.9,1,Summer,Cloudy,Traditional,Formal,Heavy Winter Outfit
+3.8,36,33.4,0,Winter,Clear,Business,Business,Winter Outfit
+16.7,33,20.3,1,Spring,Stormy,Casual,Traditional,Rainy Light Outfit
+5.7,23,2.7,0,Autumn,Snowy,Business,Casual,Heavy Winter Outfit
+15.5,76,3.3,1,Winter,Rainy,Traditional,Sporty,Rainy Light Outfit
+-6.6,55,28.1,0,Summer,Snowy,Traditional,Traditional,Heavy Winter Outfit
+5.3,84,27.2,0,Winter,Clear,Traditional,Sporty,Winter Outfit
+36.2,72,15.3,0,Autumn,Snowy,Business,Casual,Heavy Winter Outfit
+6.3,60,29.9,1,Summer,Cloudy,Business,Casual,Winter Outfit
+-5.6,75,4.3,0,Summer,Cloudy,Traditional,Casual,Heavy Winter Outfit
+19.2,62,30.2,1,Autumn,Rainy,Business,Casual,Rainy Light Outfit
+40.4,59,15.8,0,Spring,Cloudy,Business,Sporty,Hot Weather Outfit
+8.2,91,16.5,1,Summer,Stormy,Formal,Business,Rainy Cold Outfit
+33.9,91,1.2,0,Summer,Clear,Formal,Formal,Hot Weather Outfit
+6.1,63,15.8,1,Spring,Cloudy,Traditional,Business,Winter Outfit
+28.5,23,4.1,0,Spring,Snowy,Business,Business,Heavy Winter Outfit
+7.7,67,14.0,1,Summer,Stormy,Traditional,Casual,Winter Outfit
+35.9,39,7.1,0,Winter,Clear,Sport,Business,Hot Weather Outfit
+15.3,76,18.6,1,Spring,Stormy,Casual,Formal,Rainy Light Outfit
+12.4,56,30.5,1,Autumn,Stormy,Sport,Casual,Rainy Cold Outfit
+1.5,27,0.3,0,Summer,Cloudy,Formal,Formal,Formal Winter Outfit
+-3.8,83,33.6,0,Spring,Cloudy,Business,Traditional,Heavy Winter Outfit
+16.0,65,3.2,0,Winter,Snowy,Casual,Business,Heavy Winter Outfit
+37.9,60,25.9,0,Autumn,Snowy,Sport,Casual,Heavy Winter Outfit
+11.1,61,7.7,1,Autumn,Rainy,Casual,Business,Rainy Cold Outfit
+33.9,51,19.6,1,Autumn,Stormy,Casual,Business,Rainy Light Outfit
+35.3,63,10.0,0,Spring,Clear,Traditional,Casual,Hot Weather Outfit
+0.1,64,15.8,0,Spring,Cloudy,Casual,Sporty,Winter Outfit
+-1.0,39,34.2,0,Winter,Cloudy,Business,Business,Heavy Winter Outfit
+29.5,77,30.7,1,Summer,Rainy,Formal,Business,Rainy Light Outfit
+-6.4,76,28.4,1,Summer,Stormy,Casual,Formal,Heavy Winter Outfit
+16.4,59,20.8,1,Winter,Clear,Sport,Formal,Rainy Light Outfit
+34.9,31,27.7,0,Autumn,Snowy,Traditional,Traditional,Heavy Winter Outfit
+39.6,25,20.2,1,Spring,Rainy,Traditional,Business,Rainy Light Outfit
+16.1,27,20.3,1,Summer,Clear,Traditional,Sporty,Rainy Light Outfit
+26.8,76,23.6,1,Spring,Rainy,Sport,Formal,Rainy Light Outfit
+10.1,63,30.6,1,Winter,Rainy,Casual,Formal,Rainy Cold Outfit
+-5.1,69,12.8,1,Spring,Rainy,Casual,Traditional,Heavy Winter Outfit
+24.5,64,14.0,0,Autumn,Cloudy,Traditional,Casual,Light Summer Outfit
+9.6,62,36.6,0,Winter,Snowy,Traditional,Formal,Heavy Winter Outfit
+-9.1,59,8.1,1,Spring,Rainy,Business,Sporty,Heavy Winter Outfit
+1.8,37,7.0,0,Summer,Clear,Traditional,Traditional,Winter Outfit
+36.0,24,29.8,1,Spring,Stormy,Business,Sporty,Rainy Light Outfit
+-1.6,41,32.5,0,Winter,Snowy,Sport,Sporty,Heavy Winter Outfit
+40.4,56,33.9,0,Autumn,Cloudy,Traditional,Sporty,Hot Weather Outfit
+32.0,80,40.7,1,Spring,Rainy,Traditional,Business,Rainy Light Outfit
+14.0,56,35.0,0,Autumn,Cloudy,Formal,Traditional,Light Winter Outfit
+3.0,81,39.3,1,Winter,Stormy,Casual,Formal,Winter Outfit
+-5.6,40,12.3,0,Spring,Snowy,Casual,Sporty,Heavy Winter Outfit
+32.5,64,41.9,0,Autumn,Clear,Business,Traditional,Hot Weather Outfit
+10.1,30,16.9,1,Winter,Rainy,Casual,Formal,Rainy Cold Outfit
+31.2,37,1.7,0,Autumn,Cloudy,Business,Business,Hot Weather Outfit
+37.1,22,11.5,1,Spring,Stormy,Traditional,Traditional,Rainy Light Outfit
+12.0,56,10.7,0,Winter,Clear,Formal,Business,Light Winter Outfit
+22.4,28,5.0,1,Autumn,Stormy,Traditional,Casual,Rainy Light Outfit
+22.9,93,10.9,1,Spring,Rainy,Business,Casual,Rainy Light Outfit
+22.0,50,25.7,1,Spring,Clear,Traditional,Formal,Rainy Light Outfit
+17.4,84,35.4,0,Winter,Snowy,Business,Casual,Heavy Winter Outfit
+23.1,67,11.4,1,Winter,Rainy,Casual,Formal,Rainy Light Outfit
+2.5,33,34.7,0,Summer,Cloudy,Casual,Formal,Winter Outfit
+32.3,42,37.4,0,Autumn,Snowy,Formal,Sporty,Heavy Winter Outfit
+-6.7,78,1.7,0,Spring,Clear,Formal,Casual,Heavy Winter Outfit
+6.1,70,44.5,1,Autumn,Rainy,Casual,Sporty,Winter Outfit
+4.9,26,39.0,1,Summer,Rainy,Casual,Formal,Winter Outfit
+12.7,71,33.4,1,Autumn,Rainy,Formal,Business,Rainy Cold Outfit
+26.0,67,41.6,0,Summer,Clear,Business,Casual,Light Summer Outfit
+41.7,43,24.5,0,Summer,Clear,Casual,Formal,Hot Weather Outfit
+5.9,74,7.5,1,Autumn,Rainy,Business,Casual,Winter Outfit
+27.8,65,27.7,1,Autumn,Rainy,Casual,Casual,Rainy Light Outfit
+24.9,71,16.3,0,Spring,Clear,Formal,Traditional,Light Summer Outfit
+12.8,36,3.0,1,Summer,Rainy,Business,Traditional,Rainy Cold Outfit
+-8.3,39,30.6,1,Summer,Rainy,Business,Casual,Heavy Winter Outfit
+19.8,87,16.5,1,Summer,Rainy,Formal,Casual,Rainy Light Outfit
+-8.7,43,22.5,1,Autumn,Stormy,Casual,Formal,Heavy Winter Outfit
+30.3,77,9.7,0,Summer,Snowy,Formal,Casual,Heavy Winter Outfit
+-2.9,29,20.3,0,Autumn,Clear,Sport,Formal,Heavy Winter Outfit
+18.6,57,40.1,0,Spring,Cloudy,Sport,Traditional,Spring Autumn Outfit
+41.2,37,10.7,0,Autumn,Clear,Sport,Traditional,Hot Weather Outfit
+14.3,90,5.8,0,Winter,Clear,Sport,Business,Sport Winter Outfit
+27.4,87,18.5,1,Autumn,Stormy,Casual,Sporty,Rainy Light Outfit
+40.6,29,20.2,0,Summer,Cloudy,Traditional,Traditional,Hot Weather Outfit
+40.2,75,22.6,0,Winter,Clear,Traditional,Sporty,Hot Weather Outfit
+-1.6,48,15.6,0,Summer,Clear,Sport,Sporty,Heavy Winter Outfit
+18.6,36,28.1,1,Winter,Stormy,Formal,Traditional,Rainy Light Outfit
+39.0,39,7.7,1,Summer,Stormy,Casual,Casual,Rainy Light Outfit
+-5.8,93,11.9,1,Spring,Stormy,Business,Traditional,Heavy Winter Outfit
+23.2,83,40.0,1,Summer,Rainy,Business,Sporty,Rainy Light Outfit
+31.8,71,13.4,0,Winter,Clear,Formal,Business,Hot Weather Outfit
+14.2,63,27.3,1,Summer,Rainy,Sport,Business,Rainy Cold Outfit
+-3.2,67,23.2,1,Winter,Rainy,Formal,Business,Heavy Winter Outfit
+-3.6,77,11.2,0,Winter,Clear,Sport,Business,Heavy Winter Outfit
+11.7,40,36.6,0,Summer,Cloudy,Formal,Business,Light Winter Outfit
+14.3,59,22.4,0,Winter,Snowy,Traditional,Business,Heavy Winter Outfit
+40.3,47,26.3,0,Winter,Clear,Sport,Business,Hot Weather Outfit
+33.8,80,12.9,0,Winter,Clear,Business,Sporty,Hot Weather Outfit
+27.8,71,16.5,0,Autumn,Clear,Traditional,Traditional,Light Summer Outfit
+18.8,29,17.4,1,Autumn,Stormy,Sport,Traditional,Rainy Light Outfit
+25.4,35,5.8,0,Winter,Snowy,Sport,Formal,Heavy Winter Outfit
+19.0,66,34.0,1,Spring,Stormy,Traditional,Business,Rainy Light Outfit
+16.0,25,1.8,0,Summer,Snowy,Traditional,Business,Heavy Winter Outfit
+-2.3,85,6.3,0,Summer,Cloudy,Business,Traditional,Heavy Winter Outfit
+5.6,63,22.8,1,Autumn,Stormy,Sport,Business,Winter Outfit
+32.4,67,14.9,0,Winter,Snowy,Traditional,Formal,Heavy Winter Outfit
+31.4,23,26.9,1,Summer,Stormy,Traditional,Sporty,Rainy Light Outfit
+27.5,94,21.6,0,Autumn,Cloudy,Formal,Casual,Light Summer Outfit
+26.4,44,0.9,0,Summer,Snowy,Formal,Business,Heavy Winter Outfit
+25.9,72,22.6,0,Autumn,Clear,Formal,Traditional,Light Summer Outfit
+6.9,81,23.6,0,Summer,Cloudy,Business,Traditional,Winter Outfit
+8.4,53,27.5,0,Spring,Cloudy,Sport,Traditional,Sport Winter Outfit
+39.0,58,34.7,0,Spring,Snowy,Sport,Business,Heavy Winter Outfit
+8.1,55,13.0,0,Autumn,Snowy,Sport,Sporty,Heavy Winter Outfit
+5.1,56,43.0,1,Winter,Rainy,Business,Formal,Winter Outfit
+28.9,47,9.1,1,Summer,Stormy,Sport,Sporty,Rainy Light Outfit
+-4.3,95,10.8,1,Winter,Stormy,Formal,Sporty,Heavy Winter Outfit
+-7.3,72,14.9,0,Autumn,Clear,Formal,Casual,Heavy Winter Outfit
+40.9,40,18.3,0,Autumn,Snowy,Formal,Formal,Heavy Winter Outfit
+6.7,27,40.9,1,Winter,Stormy,Formal,Traditional,Formal Winter Outfit
+28.4,24,41.1,0,Spring,Snowy,Formal,Casual,Heavy Winter Outfit
+41.9,70,35.5,1,Spring,Rainy,Casual,Casual,Rainy Light Outfit
+5.5,33,41.8,1,Summer,Rainy,Business,Traditional,Winter Outfit
+17.3,37,38.3,1,Autumn,Rainy,Formal,Casual,Rainy Light Outfit
+7.2,78,29.2,0,Spring,Clear,Sport,Formal,Winter Outfit
+29.4,42,27.5,0,Autumn,Snowy,Traditional,Formal,Heavy Winter Outfit
+-5.5,32,8.3,0,Spring,Snowy,Sport,Sporty,Heavy Winter Outfit
+-9.6,69,10.6,1,Summer,Rainy,Sport,Traditional,Heavy Winter Outfit
+27.6,21,11.8,0,Summer,Cloudy,Casual,Casual,Light Summer Outfit
+-1.7,84,41.5,0,Summer,Clear,Sport,Formal,Heavy Winter Outfit
+1.4,37,21.5,1,Autumn,Stormy,Sport,Business,Winter Outfit
+26.5,80,34.1,0,Spring,Cloudy,Traditional,Casual,Light Summer Outfit
+17.5,66,3.5,0,Winter,Clear,Traditional,Traditional,Spring Autumn Outfit
+17.9,41,14.8,0,Autumn,Clear,Formal,Traditional,Formal Mild Outfit
+36.7,77,36.4,0,Autumn,Cloudy,Traditional,Business,Hot Weather Outfit
+-7.0,79,30.3,0,Summer,Clear,Business,Formal,Heavy Winter Outfit
+28.8,94,3.3,1,Autumn,Rainy,Casual,Traditional,Rainy Light Outfit
+41.7,28,44.4,0,Autumn,Clear,Sport,Business,Hot Weather Outfit
+-3.0,73,16.9,0,Autumn,Snowy,Business,Business,Heavy Winter Outfit
+-5.8,89,6.0,0,Summer,Clear,Formal,Traditional,Heavy Winter Outfit
+-3.4,48,37.6,1,Winter,Rainy,Business,Traditional,Heavy Winter Outfit
+12.1,68,37.1,0,Spring,Snowy,Sport,Sporty,Heavy Winter Outfit
+4.3,34,1.4,1,Autumn,Stormy,Casual,Sporty,Winter Outfit
+0.7,32,26.7,1,Autumn,Stormy,Casual,Sporty,Winter Outfit
+28.5,71,19.8,0,Spring,Clear,Formal,Traditional,Light Summer Outfit
+2.2,93,14.4,0,Summer,Cloudy,Sport,Sporty,Winter Outfit
+17.1,72,13.5,1,Winter,Stormy,Traditional,Sporty,Rainy Light Outfit
+22.6,74,25.0,1,Winter,Rainy,Business,Traditional,Rainy Light Outfit
+6.6,73,18.4,0,Summer,Snowy,Formal,Traditional,Heavy Winter Outfit
+14.6,48,13.5,0,Spring,Snowy,Casual,Traditional,Heavy Winter Outfit
+11.5,73,25.1,0,Spring,Snowy,Formal,Formal,Heavy Winter Outfit
+0.6,30,41.5,1,Summer,Clear,Traditional,Sporty,Winter Outfit
+9.6,25,39.3,1,Spring,Stormy,Traditional,Sporty,Rainy Cold Outfit
+14.9,62,13.6,0,Winter,Cloudy,Formal,Casual,Light Winter Outfit
+29.2,51,31.3,0,Spring,Snowy,Formal,Traditional,Heavy Winter Outfit
+6.7,56,17.1,1,Summer,Rainy,Sport,Formal,Winter Outfit
+16.7,83,21.0,1,Autumn,Rainy,Formal,Formal,Rainy Light Outfit
+6.3,25,25.3,0,Spring,Cloudy,Casual,Formal,Winter Outfit
+20.4,73,13.3,1,Spring,Rainy,Formal,Business,Rainy Light Outfit
+19.6,51,22.5,1,Summer,Rainy,Business,Business,Rainy Light Outfit
+14.0,65,7.6,0,Autumn,Cloudy,Traditional,Casual,Light Winter Outfit
+33.6,29,42.5,0,Winter,Clear,Business,Sporty,Hot Weather Outfit
+2.0,39,0.4,1,Autumn,Rainy,Casual,Traditional,Winter Outfit
+23.2,81,29.7,0,Winter,Clear,Traditional,Traditional,Light Summer Outfit
+-9.1,55,24.1,0,Summer,Clear,Traditional,Business,Heavy Winter Outfit
+37.3,33,41.3,0,Spring,Cloudy,Formal,Traditional,Hot Weather Outfit
+32.4,54,35.8,1,Winter,Rainy,Business,Business,Rainy Light Outfit
+19.4,48,13.5,0,Winter,Clear,Casual,Business,Spring Autumn Outfit
+18.7,27,28.7,0,Spring,Clear,Business,Business,Spring Autumn Outfit
+7.2,32,40.3,0,Winter,Cloudy,Formal,Traditional,Formal Winter Outfit
+-7.6,29,30.8,1,Summer,Stormy,Traditional,Casual,Heavy Winter Outfit
+-0.7,60,0.7,1,Spring,Stormy,Formal,Business,Heavy Winter Outfit
+38.3,58,7.3,1,Spring,Stormy,Business,Traditional,Rainy Light Outfit
+7.2,37,35.6,1,Winter,Stormy,Sport,Casual,Winter Outfit
+-4.9,49,37.7,1,Summer,Stormy,Traditional,Traditional,Heavy Winter Outfit
+10.6,61,1.3,0,Summer,Snowy,Business,Sporty,Heavy Winter Outfit
+8.5,68,19.4,0,Autumn,Clear,Traditional,Formal,Light Winter Outfit
+27.1,30,12.1,0,Autumn,Cloudy,Business,Formal,Light Summer Outfit
+-5.2,59,20.0,0,Summer,Clear,Formal,Casual,Heavy Winter Outfit
+13.3,91,23.1,0,Winter,Clear,Casual,Formal,Light Winter Outfit
+21.0,61,38.9,1,Winter,Rainy,Business,Business,Rainy Light Outfit
+30.5,91,40.7,1,Spring,Stormy,Traditional,Sporty,Rainy Light Outfit
+25.6,41,6.2,1,Summer,Rainy,Business,Sporty,Rainy Light Outfit
+-6.7,75,12.4,0,Summer,Snowy,Casual,Formal,Heavy Winter Outfit
+3.1,51,32.4,1,Autumn,Stormy,Traditional,Sporty,Winter Outfit
+13.8,37,13.7,1,Autumn,Rainy,Traditional,Business,Rainy Cold Outfit
+31.8,62,19.8,1,Autumn,Stormy,Formal,Formal,Rainy Light Outfit
+6.7,45,21.6,0,Spring,Snowy,Sport,Formal,Heavy Winter Outfit
+28.2,82,43.5,1,Spring,Rainy,Business,Formal,Rainy Light Outfit
+32.5,70,16.4,1,Spring,Stormy,Traditional,Sporty,Rainy Light Outfit
+25.4,90,1.2,0,Autumn,Cloudy,Business,Formal,Light Summer Outfit
+-6.4,72,30.3,1,Spring,Rainy,Formal,Formal,Heavy Winter Outfit
+24.3,74,35.5,0,Winter,Snowy,Traditional,Business,Heavy Winter Outfit
+20.3,88,22.8,1,Autumn,Stormy,Casual,Formal,Rainy Light Outfit
+26.5,88,26.7,0,Winter,Clear,Formal,Formal,Light Summer Outfit
+21.9,92,44.3,1,Autumn,Rainy,Business,Casual,Rainy Light Outfit
+-9.5,53,10.0,0,Spring,Snowy,Sport,Business,Heavy Winter Outfit
+14.1,95,31.1,1,Spring,Rainy,Casual,Business,Rainy Cold Outfit
+-4.6,73,41.4,0,Winter,Clear,Formal,Formal,Heavy Winter Outfit
+13.7,46,23.5,0,Summer,Snowy,Casual,Business,Heavy Winter Outfit
+27.5,77,14.4,0,Summer,Clear,Casual,Casual,Light Summer Outfit
+23.7,41,41.8,1,Spring,Stormy,Formal,Traditional,Rainy Light Outfit
+-1.7,91,19.2,0,Autumn,Cloudy,Business,Sporty,Heavy Winter Outfit
+24.2,70,1.3,0,Spring,Snowy,Traditional,Business,Heavy Winter Outfit
+10.2,47,9.3,1,Winter,Stormy,Casual,Traditional,Rainy Cold Outfit
+-0.3,61,8.9,1,Winter,Rainy,Business,Traditional,Heavy Winter Outfit
+40.2,60,26.9,1,Autumn,Stormy,Casual,Formal,Rainy Light Outfit
+8.3,78,27.8,1,Summer,Stormy,Traditional,Casual,Rainy Cold Outfit
+24.9,60,5.3,0,Summer,Clear,Formal,Formal,Light Summer Outfit
+16.6,73,26.8,0,Autumn,Snowy,Formal,Business,Heavy Winter Outfit
+23.0,42,25.0,1,Autumn,Rainy,Formal,Sporty,Rainy Light Outfit
+6.4,77,27.9,0,Summer,Clear,Business,Sporty,Winter Outfit
+10.0,91,22.7,0,Autumn,Snowy,Business,Business,Heavy Winter Outfit
+26.9,76,22.0,1,Winter,Stormy,Casual,Sporty,Rainy Light Outfit
+5.2,55,10.1,0,Summer,Cloudy,Business,Traditional,Winter Outfit
+29.8,90,23.0,1,Winter,Rainy,Traditional,Formal,Rainy Light Outfit
+18.2,25,34.2,1,Autumn,Stormy,Formal,Business,Rainy Light Outfit
+-4.7,51,13.4,0,Winter,Snowy,Sport,Formal,Heavy Winter Outfit
+34.8,31,19.8,0,Winter,Cloudy,Formal,Traditional,Hot Weather Outfit
+34.8,74,7.5,0,Spring,Cloudy,Formal,Casual,Hot Weather Outfit
+17.7,88,7.6,1,Summer,Rainy,Traditional,Formal,Rainy Light Outfit
+39.5,85,44.3,0,Winter,Cloudy,Business,Casual,Hot Weather Outfit
+35.1,36,31.6,0,Spring,Cloudy,Formal,Formal,Hot Weather Outfit
+29.6,70,22.0,0,Summer,Snowy,Business,Business,Heavy Winter Outfit
+-6.1,31,18.1,1,Summer,Rainy,Business,Business,Heavy Winter Outfit
+7.0,20,39.1,0,Winter,Snowy,Sport,Casual,Heavy Winter Outfit
+31.4,70,9.8,0,Autumn,Cloudy,Business,Formal,Hot Weather Outfit
+4.7,90,26.0,1,Autumn,Rainy,Casual,Casual,Winter Outfit
+-4.8,78,0.7,0,Spring,Snowy,Business,Casual,Heavy Winter Outfit
+41.6,74,9.1,1,Spring,Rainy,Formal,Formal,Rainy Light Outfit
+-5.1,66,11.3,0,Summer,Cloudy,Casual,Business,Heavy Winter Outfit
+27.8,49,19.3,0,Winter,Clear,Casual,Sporty,Sport Summer Outfit
+-3.1,48,23.4,0,Autumn,Clear,Casual,Formal,Heavy Winter Outfit
+41.4,74,31.2,1,Autumn,Clear,Formal,Business,Rainy Light Outfit
+31.9,33,14.1,0,Summer,Cloudy,Business,Sporty,Hot Weather Outfit
+25.2,28,23.9,1,Winter,Stormy,Formal,Business,Rainy Light Outfit
+8.3,47,28.3,0,Spring,Snowy,Traditional,Business,Heavy Winter Outfit
+34.7,31,40.3,0,Spring,Clear,Traditional,Business,Hot Weather Outfit
+12.3,37,11.2,0,Winter,Cloudy,Traditional,Traditional,Light Winter Outfit
+21.6,23,38.2,0,Summer,Cloudy,Traditional,Traditional,Spring Autumn Outfit
+28.9,57,29.1,0,Spring,Snowy,Business,Casual,Heavy Winter Outfit
+2.5,29,23.8,1,Winter,Rainy,Sport,Sporty,Winter Outfit
+10.1,92,18.9,0,Spring,Snowy,Casual,Casual,Heavy Winter Outfit
+20.5,21,11.8,0,Winter,Clear,Business,Traditional,Spring Autumn Outfit
+27.1,73,19.1,0,Autumn,Clear,Traditional,Traditional,Light Summer Outfit
+4.4,59,3.6,0,Spring,Cloudy,Traditional,Formal,Winter Outfit
+23.0,28,14.0,1,Autumn,Cloudy,Casual,Sporty,Rainy Light Outfit
+12.6,78,27.6,1,Winter,Rainy,Formal,Casual,Rainy Cold Outfit
+-9.3,37,31.6,0,Spring,Snowy,Sport,Traditional,Heavy Winter Outfit
+16.9,53,7.5,1,Spring,Rainy,Casual,Casual,Rainy Light Outfit
+7.4,74,12.2,1,Winter,Rainy,Traditional,Casual,Winter Outfit
+15.8,85,16.2,1,Autumn,Stormy,Formal,Formal,Rainy Light Outfit
+-1.8,33,40.2,1,Winter,Cloudy,Traditional,Casual,Heavy Winter Outfit
+34.9,51,2.1,0,Summer,Snowy,Formal,Sporty,Heavy Winter Outfit
+38.4,24,24.9,0,Autumn,Cloudy,Sport,Sporty,Hot Weather Outfit
+27.5,54,37.2,0,Summer,Clear,Traditional,Casual,Light Summer Outfit
+31.8,25,42.9,0,Winter,Snowy,Sport,Formal,Heavy Winter Outfit
+7.0,90,20.6,0,Summer,Cloudy,Sport,Traditional,Winter Outfit
+28.5,51,20.9,0,Autumn,Cloudy,Traditional,Sporty,Sport Summer Outfit
+38.5,23,10.5,0,Summer,Clear,Sport,Casual,Hot Weather Outfit
+9.6,59,4.7,0,Spring,Snowy,Business,Casual,Heavy Winter Outfit
+40.6,38,32.0,0,Winter,Clear,Formal,Traditional,Hot Weather Outfit
+36.6,78,43.9,1,Winter,Stormy,Casual,Traditional,Rainy Light Outfit
+-3.1,70,3.4,0,Winter,Snowy,Formal,Sporty,Heavy Winter Outfit
+5.2,60,41.7,1,Autumn,Rainy,Sport,Business,Winter Outfit
+4.1,29,42.5,1,Spring,Stormy,Casual,Sporty,Winter Outfit
+-4.5,77,21.0,0,Autumn,Clear,Traditional,Formal,Heavy Winter Outfit
+0.8,59,20.9,0,Winter,Clear,Formal,Formal,Formal Winter Outfit
+26.2,25,9.7,0,Summer,Cloudy,Casual,Sporty,Sport Summer Outfit
+10.6,26,30.5,0,Summer,Cloudy,Casual,Business,Light Winter Outfit
+18.9,90,11.2,1,Autumn,Clear,Formal,Casual,Rainy Light Outfit
+33.2,48,5.9,1,Autumn,Rainy,Casual,Traditional,Rainy Light Outfit
+20.5,29,1.0,1,Winter,Cloudy,Business,Sporty,Rainy Light Outfit
+34.1,62,5.5,0,Autumn,Clear,Formal,Traditional,Hot Weather Outfit
+27.7,83,1.3,0,Autumn,Cloudy,Sport,Sporty,Sport Summer Outfit
+4.3,77,39.8,1,Winter,Stormy,Traditional,Traditional,Winter Outfit
+2.8,57,22.5,0,Autumn,Clear,Casual,Formal,Winter Outfit
+11.8,87,11.2,0,Winter,Snowy,Sport,Business,Heavy Winter Outfit
+18.3,82,15.5,0,Summer,Snowy,Sport,Sporty,Heavy Winter Outfit
+-8.6,48,1.3,0,Summer,Clear,Business,Traditional,Heavy Winter Outfit
+20.4,49,43.8,0,Winter,Cloudy,Formal,Formal,Formal Mild Outfit
+31.1,27,34.4,1,Spring,Stormy,Business,Formal,Rainy Light Outfit
+38.6,42,7.9,1,Summer,Rainy,Traditional,Casual,Rainy Light Outfit
+26.6,65,42.6,1,Spring,Stormy,Formal,Business,Rainy Light Outfit
+18.2,42,22.1,0,Winter,Clear,Formal,Traditional,Formal Mild Outfit
+17.4,20,14.9,0,Spring,Cloudy,Sport,Sporty,Spring Autumn Outfit
+33.9,61,2.7,1,Spring,Stormy,Formal,Casual,Rainy Light Outfit
+34.0,66,43.2,0,Summer,Snowy,Traditional,Casual,Heavy Winter Outfit
+7.5,61,6.1,0,Spring,Snowy,Business,Formal,Heavy Winter Outfit
+-0.9,91,31.2,0,Summer,Cloudy,Traditional,Sporty,Heavy Winter Outfit
+28.2,57,5.7,1,Winter,Stormy,Business,Traditional,Rainy Light Outfit
+-8.3,60,41.4,1,Spring,Stormy,Casual,Business,Heavy Winter Outfit
+-2.7,29,10.7,0,Summer,Cloudy,Casual,Formal,Heavy Winter Outfit
+3.8,51,31.2,1,Summer,Rainy,Casual,Casual,Winter Outfit
+-7.5,76,33.0,0,Spring,Snowy,Business,Business,Heavy Winter Outfit
+8.3,68,4.6,1,Autumn,Stormy,Formal,Sporty,Rainy Cold Outfit
+13.5,24,13.3,1,Summer,Rainy,Casual,Casual,Rainy Cold Outfit
+7.8,68,7.2,1,Winter,Stormy,Casual,Formal,Winter Outfit
+20.9,81,31.7,0,Autumn,Cloudy,Traditional,Business,Spring Autumn Outfit
+-4.7,46,43.8,1,Autumn,Stormy,Traditional,Formal,Heavy Winter Outfit
+24.4,58,10.7,0,Winter,Snowy,Traditional,Traditional,Heavy Winter Outfit
+33.7,39,2.5,0,Winter,Snowy,Casual,Formal,Heavy Winter Outfit
+32.8,81,9.0,0,Winter,Cloudy,Formal,Formal,Hot Weather Outfit
+14.6,34,13.9,0,Autumn,Snowy,Business,Formal,Heavy Winter Outfit
+-5.3,89,17.4,0,Summer,Snowy,Sport,Sporty,Heavy Winter Outfit
+13.2,53,19.8,1,Summer,Cloudy,Sport,Traditional,Rainy Cold Outfit
+29.1,32,3.9,1,Summer,Stormy,Business,Traditional,Rainy Light Outfit
+1.8,27,37.8,1,Autumn,Stormy,Business,Traditional,Winter Outfit
+35.8,80,13.4,0,Autumn,Clear,Traditional,Traditional,Hot Weather Outfit
+31.6,38,5.4,0,Autumn,Cloudy,Formal,Sporty,Hot Weather Outfit
+-3.4,74,3.5,0,Autumn,Cloudy,Formal,Traditional,Heavy Winter Outfit
+37.4,28,3.9,1,Autumn,Stormy,Sport,Formal,Rainy Light Outfit
+17.0,21,35.4,0,Autumn,Clear,Business,Sporty,Spring Autumn Outfit
+20.6,32,41.6,1,Winter,Rainy,Traditional,Formal,Rainy Light Outfit
+35.7,53,17.2,1,Autumn,Stormy,Traditional,Business,Rainy Light Outfit
+-8.1,55,18.1,0,Autumn,Clear,Business,Formal,Heavy Winter Outfit
+-7.4,80,41.4,0,Summer,Clear,Sport,Formal,Heavy Winter Outfit
+33.8,32,43.8,0,Spring,Cloudy,Sport,Business,Hot Weather Outfit
+6.7,73,27.2,0,Winter,Cloudy,Business,Sporty,Winter Outfit
+11.2,82,34.2,1,Summer,Clear,Traditional,Sporty,Rainy Cold Outfit
+26.9,71,6.1,0,Winter,Cloudy,Formal,Sporty,Sport Summer Outfit
+3.0,78,2.3,0,Summer,Cloudy,Sport,Formal,Winter Outfit
+16.3,35,30.7,1,Spring,Rainy,Business,Traditional,Rainy Light Outfit
+13.2,80,26.4,1,Summer,Rainy,Formal,Formal,Rainy Cold Outfit
+28.9,31,12.8,0,Autumn,Clear,Formal,Traditional,Light Summer Outfit
+1.1,48,29.1,1,Spring,Rainy,Business,Traditional,Winter Outfit
+-9.0,21,21.3,0,Spring,Cloudy,Traditional,Casual,Heavy Winter Outfit
+21.6,59,32.1,0,Summer,Snowy,Business,Formal,Heavy Winter Outfit
+13.9,47,21.0,1,Autumn,Stormy,Casual,Casual,Rainy Cold Outfit
+16.6,67,25.3,1,Summer,Rainy,Casual,Business,Rainy Light Outfit
+-6.7,55,28.8,1,Summer,Rainy,Sport,Sporty,Heavy Winter Outfit
+-2.2,50,40.5,1,Autumn,Rainy,Formal,Casual,Heavy Winter Outfit
+24.1,57,11.7,0,Autumn,Snowy,Business,Casual,Heavy Winter Outfit
+20.3,93,36.7,0,Summer,Cloudy,Traditional,Business,Spring Autumn Outfit
+24.9,84,13.5,1,Spring,Stormy,Formal,Formal,Rainy Light Outfit
+-4.9,36,33.3,1,Spring,Rainy,Casual,Sporty,Heavy Winter Outfit
+8.5,59,18.9,1,Summer,Rainy,Sport,Traditional,Rainy Cold Outfit
+5.3,35,21.2,0,Winter,Snowy,Formal,Traditional,Heavy Winter Outfit
+-3.8,68,23.8,0,Autumn,Clear,Formal,Sporty,Heavy Winter Outfit
+7.8,92,40.2,0,Autumn,Cloudy,Sport,Sporty,Winter Outfit
+15.4,42,14.1,0,Winter,Clear,Business,Formal,Spring Autumn Outfit
+30.2,93,34.4,0,Autumn,Clear,Formal,Traditional,Hot Weather Outfit
+12.3,74,43.4,0,Autumn,Clear,Casual,Traditional,Light Winter Outfit
+9.4,21,40.1,0,Spring,Clear,Casual,Sporty,Sport Winter Outfit
+35.6,59,5.8,1,Autumn,Stormy,Traditional,Formal,Rainy Light Outfit
+-1.3,25,13.4,0,Summer,Snowy,Traditional,Traditional,Heavy Winter Outfit
+17.3,75,40.0,1,Spring,Rainy,Business,Formal,Rainy Light Outfit
+29.0,41,42.7,0,Autumn,Clear,Formal,Sporty,Sport Summer Outfit
+-3.2,22,26.5,0,Spring,Clear,Sport,Casual,Heavy Winter Outfit
+23.3,88,28.0,0,Winter,Clear,Casual,Casual,Light Summer Outfit
+11.7,68,5.6,0,Summer,Snowy,Formal,Sporty,Heavy Winter Outfit
+26.1,21,13.6,1,Winter,Stormy,Sport,Traditional,Rainy Light Outfit
+21.5,37,18.8,1,Winter,Stormy,Traditional,Casual,Rainy Light Outfit
+4.7,33,22.4,1,Spring,Rainy,Traditional,Sporty,Winter Outfit
+8.6,72,13.3,1,Winter,Stormy,Business,Sporty,Rainy Cold Outfit
+25.8,81,14.9,0,Winter,Clear,Casual,Casual,Light Summer Outfit
+24.8,39,42.7,0,Winter,Clear,Sport,Sporty,Sport Summer Outfit
+40.8,53,20.9,0,Winter,Cloudy,Casual,Formal,Hot Weather Outfit
+25.2,74,33.2,0,Winter,Clear,Casual,Sporty,Sport Summer Outfit
+-1.1,65,40.3,0,Summer,Clear,Sport,Formal,Heavy Winter Outfit
+10.8,78,12.2,0,Autumn,Snowy,Business,Sporty,Heavy Winter Outfit
+-4.1,27,44.2,0,Spring,Clear,Business,Traditional,Heavy Winter Outfit
+19.6,76,8.2,1,Autumn,Rainy,Traditional,Casual,Rainy Light Outfit
+34.9,36,21.7,1,Autumn,Clear,Business,Business,Rainy Light Outfit
+3.6,60,0.6,1,Spring,Rainy,Traditional,Traditional,Winter Outfit
+25.8,32,19.5,0,Spring,Snowy,Sport,Business,Heavy Winter Outfit
+-2.3,91,40.1,0,Winter,Clear,Formal,Traditional,Heavy Winter Outfit
+34.3,41,3.4,1,Autumn,Rainy,Formal,Formal,Rainy Light Outfit
+40.4,26,22.8,0,Autumn,Snowy,Formal,Casual,Heavy Winter Outfit
+13.9,93,20.2,0,Autumn,Snowy,Sport,Casual,Heavy Winter Outfit
+41.0,22,4.6,1,Autumn,Clear,Traditional,Traditional,Rainy Light Outfit
+-5.3,58,40.1,0,Spring,Snowy,Sport,Formal,Heavy Winter Outfit
+32.9,48,38.0,1,Summer,Stormy,Traditional,Traditional,Rainy Light Outfit
+14.6,66,32.2,0,Winter,Clear,Formal,Casual,Light Winter Outfit
+33.2,57,24.6,0,Summer,Clear,Casual,Sporty,Hot Weather Outfit
+32.7,72,4.8,0,Spring,Cloudy,Casual,Business,Hot Weather Outfit
+32.9,44,32.3,0,Winter,Snowy,Casual,Traditional,Heavy Winter Outfit
+-3.6,77,20.6,0,Spring,Snowy,Casual,Traditional,Heavy Winter Outfit
+28.3,90,42.1,1,Autumn,Stormy,Formal,Traditional,Rainy Light Outfit
+-1.0,36,4.7,1,Summer,Stormy,Business,Business,Heavy Winter Outfit
+40.9,51,12.3,1,Summer,Rainy,Business,Sporty,Rainy Light Outfit
+-2.8,85,13.5,1,Summer,Stormy,Formal,Sporty,Heavy Winter Outfit
+0.9,57,30.9,0,Spring,Cloudy,Traditional,Traditional,Winter Outfit
+6.8,34,34.2,1,Autumn,Stormy,Traditional,Business,Winter Outfit
+25.1,88,12.9,1,Autumn,Clear,Traditional,Casual,Rainy Light Outfit
+-2.4,27,9.0,1,Spring,Rainy,Sport,Sporty,Heavy Winter Outfit
+33.6,57,9.2,1,Winter,Rainy,Business,Casual,Rainy Light Outfit
+22.0,91,38.9,0,Autumn,Cloudy,Traditional,Formal,Spring Autumn Outfit
+-7.6,68,17.4,1,Summer,Stormy,Casual,Casual,Heavy Winter Outfit
+28.7,45,27.9,0,Autumn,Cloudy,Sport,Traditional,Sport Summer Outfit
+21.4,44,13.2,0,Spring,Clear,Formal,Sporty,Formal Mild Outfit
+-3.8,25,19.3,0,Summer,Cloudy,Formal,Traditional,Heavy Winter Outfit
+-9.7,79,31.9,0,Spring,Clear,Formal,Formal,Heavy Winter Outfit
+30.2,58,22.1,0,Summer,Clear,Sport,Traditional,Hot Weather Outfit
+-0.4,28,35.4,0,Spring,Snowy,Traditional,Traditional,Heavy Winter Outfit
+11.0,64,10.0,1,Spring,Rainy,Sport,Formal,Rainy Cold Outfit
+5.3,87,21.4,0,Winter,Clear,Sport,Business,Winter Outfit
+23.4,51,43.2,0,Summer,Snowy,Casual,Business,Heavy Winter Outfit
+3.3,56,1.1,1,Summer,Stormy,Traditional,Business,Winter Outfit
+15.3,57,40.4,1,Spring,Rainy,Traditional,Casual,Rainy Light Outfit
+39.3,41,43.7,0,Winter,Clear,Formal,Sporty,Hot Weather Outfit
+12.1,33,9.3,0,Autumn,Clear,Formal,Casual,Light Winter Outfit
+7.2,31,3.3,1,Spring,Rainy,Traditional,Casual,Winter Outfit
+19.9,49,41.0,0,Autumn,Snowy,Business,Business,Heavy Winter Outfit
+12.5,22,17.5,1,Winter,Stormy,Casual,Traditional,Rainy Cold Outfit
+-6.7,94,2.0,1,Winter,Rainy,Traditional,Casual,Heavy Winter Outfit
+5.1,58,27.3,0,Summer,Snowy,Business,Business,Heavy Winter Outfit
+32.8,23,21.3,0,Spring,Cloudy,Business,Traditional,Hot Weather Outfit
+23.0,58,30.5,0,Summer,Clear,Traditional,Traditional,Light Summer Outfit
+-7.8,93,26.8,1,Winter,Rainy,Formal,Formal,Heavy Winter Outfit
+1.0,85,6.4,0,Spring,Cloudy,Traditional,Formal,Winter Outfit
+-0.6,92,38.4,1,Autumn,Stormy,Casual,Formal,Heavy Winter Outfit
+24.9,52,4.4,1,Autumn,Rainy,Sport,Sporty,Rainy Light Outfit
+24.9,50,4.5,0,Winter,Cloudy,Sport,Business,Sport Summer Outfit
+22.0,59,31.2,1,Spring,Stormy,Traditional,Formal,Rainy Light Outfit
+32.0,74,7.6,0,Summer,Cloudy,Formal,Business,Hot Weather Outfit
+8.7,62,39.5,0,Autumn,Snowy,Sport,Formal,Heavy Winter Outfit
+15.3,33,7.9,1,Winter,Rainy,Formal,Traditional,Rainy Light Outfit
+0.2,29,32.7,1,Winter,Stormy,Casual,Traditional,Winter Outfit
+20.1,95,9.6,1,Winter,Stormy,Sport,Traditional,Rainy Light Outfit
+36.5,89,21.2,1,Spring,Rainy,Business,Sporty,Rainy Light Outfit
+36.4,95,33.0,0,Summer,Cloudy,Business,Traditional,Hot Weather Outfit
+10.6,84,0.5,1,Spring,Stormy,Formal,Traditional,Rainy Cold Outfit
+-2.7,40,8.1,0,Spring,Snowy,Sport,Casual,Heavy Winter Outfit
+1.4,82,10.4,1,Summer,Rainy,Formal,Casual,Formal Winter Outfit
+24.8,86,40.8,0,Summer,Snowy,Business,Business,Heavy Winter Outfit
+35.8,25,44.1,0,Summer,Clear,Traditional,Formal,Hot Weather Outfit
+3.7,89,25.7,0,Autumn,Snowy,Sport,Traditional,Heavy Winter Outfit
+24.0,29,23.2,0,Autumn,Cloudy,Traditional,Business,Light Summer Outfit
+35.1,82,35.7,1,Winter,Stormy,Formal,Business,Rainy Light Outfit
+-1.4,29,23.2,0,Summer,Cloudy,Formal,Sporty,Heavy Winter Outfit
+21.3,35,29.7,1,Autumn,Rainy,Casual,Business,Rainy Light Outfit
+25.1,81,9.5,0,Spring,Snowy,Casual,Sporty,Heavy Winter Outfit
+-7.8,93,26.7,1,Spring,Stormy,Casual,Traditional,Heavy Winter Outfit
+-2.4,41,11.6,1,Spring,Stormy,Business,Traditional,Heavy Winter Outfit
+40.4,22,39.5,0,Summer,Clear,Formal,Business,Hot Weather Outfit
+14.5,81,7.7,1,Autumn,Stormy,Formal,Traditional,Rainy Cold Outfit
+32.7,43,28.0,0,Summer,Cloudy,Sport,Business,Hot Weather Outfit
+-6.4,68,17.3,0,Winter,Clear,Formal,Traditional,Heavy Winter Outfit
+16.2,73,37.2,0,Winter,Cloudy,Business,Traditional,Spring Autumn Outfit
+35.6,88,22.6,0,Winter,Clear,Business,Sporty,Hot Weather Outfit
+18.0,20,40.4,1,Autumn,Stormy,Business,Formal,Rainy Light Outfit
+35.5,87,19.3,0,Autumn,Snowy,Sport,Traditional,Heavy Winter Outfit
+31.8,93,4.4,1,Spring,Rainy,Business,Sporty,Rainy Light Outfit
+37.3,30,12.7,1,Autumn,Rainy,Formal,Casual,Rainy Light Outfit
+26.9,20,26.0,1,Winter,Stormy,Casual,Business,Rainy Light Outfit
+24.0,60,18.4,0,Winter,Cloudy,Business,Traditional,Light Summer Outfit
+34.5,74,25.4,0,Summer,Snowy,Formal,Business,Heavy Winter Outfit
+18.7,91,21.7,1,Summer,Stormy,Traditional,Business,Rainy Light Outfit
+3.2,59,26.0,0,Autumn,Cloudy,Casual,Sporty,Winter Outfit
+26.4,40,4.5,1,Autumn,Rainy,Traditional,Traditional,Rainy Light Outfit
+26.2,26,7.2,0,Winter,Clear,Formal,Business,Light Summer Outfit
+12.6,28,11.8,0,Summer,Clear,Traditional,Casual,Light Winter Outfit
+38.4,71,27.6,1,Summer,Stormy,Casual,Sporty,Rainy Light Outfit
+23.3,76,0.5,0,Summer,Cloudy,Casual,Traditional,Light Summer Outfit
+26.3,41,30.3,1,Summer,Cloudy,Casual,Sporty,Rainy Light Outfit
+4.3,71,15.9,0,Autumn,Snowy,Traditional,Sporty,Heavy Winter Outfit
+16.9,28,41.4,1,Summer,Stormy,Traditional,Formal,Rainy Light Outfit
+8.1,55,10.2,0,Spring,Snowy,Business,Traditional,Heavy Winter Outfit
+-9.8,42,18.3,1,Winter,Stormy,Casual,Traditional,Heavy Winter Outfit
+5.3,34,36.1,1,Summer,Stormy,Traditional,Formal,Winter Outfit
+26.1,68,25.3,1,Spring,Rainy,Business,Business,Rainy Light Outfit
+36.6,23,21.7,0,Summer,Clear,Business,Sporty,Hot Weather Outfit
+2.0,60,18.6,1,Summer,Stormy,Traditional,Casual,Winter Outfit
+26.4,53,11.2,0,Winter,Snowy,Sport,Casual,Heavy Winter Outfit
+18.8,42,21.4,0,Summer,Cloudy,Traditional,Formal,Spring Autumn Outfit
+28.8,44,22.5,0,Spring,Cloudy,Formal,Formal,Light Summer Outfit
+0.5,51,37.6,0,Summer,Cloudy,Casual,Casual,Winter Outfit
+25.1,83,27.6,0,Winter,Snowy,Sport,Traditional,Heavy Winter Outfit
+6.4,93,39.1,0,Autumn,Cloudy,Traditional,Formal,Winter Outfit
+29.0,36,2.4,0,Autumn,Snowy,Traditional,Casual,Heavy Winter Outfit
+16.1,70,38.7,0,Spring,Snowy,Casual,Traditional,Heavy Winter Outfit
+13.9,21,0.5,0,Spring,Snowy,Traditional,Casual,Heavy Winter Outfit
+6.9,53,8.4,0,Summer,Cloudy,Sport,Business,Winter Outfit
+7.8,43,22.4,0,Spring,Snowy,Sport,Formal,Heavy Winter Outfit
+34.4,55,20.3,1,Spring,Stormy,Formal,Casual,Rainy Light Outfit
+27.5,50,25.0,0,Autumn,Cloudy,Formal,Sporty,Sport Summer Outfit
+-9.5,73,22.5,0,Summer,Snowy,Sport,Formal,Heavy Winter Outfit
+19.2,92,2.1,0,Winter,Cloudy,Casual,Sporty,Spring Autumn Outfit
+14.8,32,20.2,1,Summer,Rainy,Sport,Formal,Rainy Cold Outfit
+19.1,52,15.5,0,Autumn,Clear,Sport,Traditional,Spring Autumn Outfit
+19.9,88,7.9,1,Summer,Rainy,Sport,Traditional,Rainy Light Outfit
+15.3,77,40.0,1,Autumn,Stormy,Sport,Business,Rainy Light Outfit
+22.8,38,39.1,0,Summer,Snowy,Traditional,Traditional,Heavy Winter Outfit
+11.0,29,3.6,0,Summer,Cloudy,Sport,Formal,Sport Winter Outfit
+26.9,70,12.2,1,Autumn,Rainy,Traditional,Traditional,Rainy Light Outfit
+40.2,72,7.5,0,Winter,Cloudy,Formal,Formal,Hot Weather Outfit
+26.4,30,9.5,0,Autumn,Clear,Casual,Casual,Light Summer Outfit
+14.6,26,1.2,1,Autumn,Stormy,Casual,Casual,Rainy Cold Outfit
+3.6,39,3.8,1,Autumn,Rainy,Formal,Sporty,Formal Winter Outfit
+28.4,76,28.2,1,Spring,Stormy,Formal,Casual,Rainy Light Outfit
+-8.2,65,38.7,0,Summer,Snowy,Business,Traditional,Heavy Winter Outfit
+38.6,90,20.0,1,Spring,Stormy,Traditional,Business,Rainy Light Outfit
+22.8,92,19.6,1,Summer,Rainy,Business,Traditional,Rainy Light Outfit
+1.8,31,19.9,0,Summer,Snowy,Sport,Sporty,Heavy Winter Outfit
+5.8,20,23.5,1,Spring,Rainy,Sport,Business,Winter Outfit
+17.8,82,42.6,1,Autumn,Rainy,Casual,Business,Rainy Light Outfit
+31.5,49,35.9,0,Summer,Cloudy,Business,Traditional,Hot Weather Outfit
+3.0,69,37.3,1,Spring,Rainy,Casual,Business,Winter Outfit
+22.5,86,34.4,1,Summer,Rainy,Traditional,Formal,Rainy Light Outfit
+11.5,28,8.2,0,Summer,Clear,Business,Traditional,Light Winter Outfit
+26.4,82,8.5,1,Winter,Cloudy,Casual,Traditional,Rainy Light Outfit
+40.6,56,12.1,0,Autumn,Clear,Formal,Casual,Hot Weather Outfit
+15.7,63,18.9,1,Autumn,Rainy,Business,Casual,Rainy Light Outfit
+7.2,38,2.5,0,Autumn,Clear,Traditional,Business,Winter Outfit
+36.6,52,36.8,0,Winter,Clear,Formal,Business,Hot Weather Outfit
+13.0,24,9.0,1,Winter,Stormy,Formal,Business,Rainy Cold Outfit
+10.2,59,42.1,0,Spring,Clear,Traditional,Traditional,Light Winter Outfit
+15.0,58,8.9,0,Winter,Cloudy,Casual,Sporty,Sport Winter Outfit
+6.9,41,35.7,0,Winter,Snowy,Formal,Casual,Heavy Winter Outfit
+40.4,94,35.3,1,Autumn,Stormy,Formal,Formal,Rainy Light Outfit
+30.1,51,7.1,1,Winter,Stormy,Sport,Casual,Rainy Light Outfit
+-6.9,39,31.6,0,Winter,Cloudy,Business,Sporty,Heavy Winter Outfit
+19.0,64,36.2,0,Autumn,Cloudy,Casual,Business,Spring Autumn Outfit
+-3.0,25,21.8,1,Autumn,Stormy,Sport,Traditional,Heavy Winter Outfit
+26.2,44,25.5,1,Summer,Rainy,Business,Formal,Rainy Light Outfit
+35.1,90,7.2,0,Spring,Snowy,Sport,Formal,Heavy Winter Outfit
+18.2,78,0.0,0,Autumn,Cloudy,Casual,Traditional,Spring Autumn Outfit
+30.4,50,14.4,1,Winter,Stormy,Business,Sporty,Rainy Light Outfit
+17.3,83,34.5,1,Spring,Stormy,Sport,Formal,Rainy Light Outfit
+11.3,61,5.0,0,Winter,Clear,Formal,Sporty,Sport Winter Outfit
+0.5,82,8.6,1,Winter,Stormy,Business,Business,Winter Outfit
+17.3,95,11.5,1,Summer,Cloudy,Traditional,Casual,Rainy Light Outfit
+37.9,82,41.8,0,Winter,Snowy,Casual,Formal,Heavy Winter Outfit
+19.0,73,37.0,1,Winter,Stormy,Sport,Traditional,Rainy Light Outfit
+-7.9,29,37.6,1,Winter,Cloudy,Traditional,Casual,Heavy Winter Outfit
+2.0,69,8.5,1,Spring,Stormy,Formal,Traditional,Formal Winter Outfit
+29.0,73,33.6,0,Summer,Snowy,Business,Casual,Heavy Winter Outfit
+-1.3,43,24.7,0,Summer,Cloudy,Traditional,Traditional,Heavy Winter Outfit
+8.3,60,24.8,1,Summer,Rainy,Business,Business,Rainy Cold Outfit
+33.0,61,27.4,0,Spring,Snowy,Traditional,Formal,Heavy Winter Outfit
+8.7,77,20.1,0,Autumn,Clear,Casual,Formal,Light Winter Outfit
+16.9,58,0.3,0,Spring,Cloudy,Sport,Casual,Spring Autumn Outfit
+39.1,55,41.4,0,Spring,Clear,Casual,Business,Hot Weather Outfit
+-2.8,66,40.0,1,Spring,Cloudy,Sport,Formal,Heavy Winter Outfit
+10.8,47,33.0,0,Summer,Snowy,Formal,Business,Heavy Winter Outfit
+32.9,93,36.9,1,Winter,Stormy,Sport,Casual,Rainy Light Outfit
+28.0,93,17.2,1,Winter,Rainy,Sport,Business,Rainy Light Outfit
+11.7,35,39.1,1,Spring,Stormy,Casual,Business,Rainy Cold Outfit
+-7.2,87,1.9,1,Spring,Rainy,Traditional,Sporty,Heavy Winter Outfit
+-2.0,70,43.7,0,Winter,Cloudy,Business,Formal,Heavy Winter Outfit
+-2.3,63,3.7,1,Winter,Stormy,Business,Formal,Heavy Winter Outfit
+-5.6,84,19.6,0,Spring,Cloudy,Business,Traditional,Heavy Winter Outfit
+10.6,93,8.8,0,Spring,Cloudy,Casual,Formal,Light Winter Outfit
+6.8,93,4.0,0,Autumn,Snowy,Sport,Formal,Heavy Winter Outfit
+-0.1,64,26.7,1,Winter,Rainy,Formal,Formal,Heavy Winter Outfit
+22.0,76,28.0,0,Autumn,Clear,Formal,Sporty,Formal Mild Outfit
+-1.9,30,5.1,0,Winter,Cloudy,Traditional,Sporty,Heavy Winter Outfit
+32.6,21,15.4,1,Winter,Rainy,Business,Business,Rainy Light Outfit
+-8.8,46,33.3,0,Spring,Cloudy,Traditional,Traditional,Heavy Winter Outfit
+18.5,38,31.3,0,Winter,Snowy,Traditional,Traditional,Heavy Winter Outfit
+-7.7,41,2.7,1,Spring,Stormy,Sport,Casual,Heavy Winter Outfit
+14.2,21,3.0,1,Summer,Rainy,Casual,Casual,Rainy Cold Outfit
+5.2,69,10.4,1,Autumn,Stormy,Casual,Formal,Winter Outfit
+15.2,88,4.0,1,Spring,Stormy,Business,Traditional,Rainy Light Outfit
+38.2,22,1.8,1,Summer,Rainy,Business,Business,Rainy Light Outfit
+28.7,22,15.6,1,Summer,Rainy,Sport,Sporty,Rainy Light Outfit
+41.8,84,12.4,1,Winter,Rainy,Business,Casual,Rainy Light Outfit
+39.1,55,10.2,0,Summer,Snowy,Formal,Casual,Heavy Winter Outfit
+28.0,86,43.2,0,Spring,Snowy,Formal,Traditional,Heavy Winter Outfit
+-2.1,59,40.9,0,Summer,Snowy,Traditional,Sporty,Heavy Winter Outfit
+0.8,37,26.1,0,Spring,Cloudy,Sport,Traditional,Winter Outfit
+12.4,38,29.5,1,Spring,Rainy,Casual,Traditional,Rainy Cold Outfit
+17.7,35,8.3,0,Spring,Clear,Sport,Business,Spring Autumn Outfit
+5.8,55,6.8,1,Spring,Clear,Formal,Sporty,Formal Winter Outfit
+41.3,54,27.3,1,Spring,Stormy,Formal,Sporty,Rainy Light Outfit
+25.7,65,3.6,0,Autumn,Cloudy,Traditional,Traditional,Light Summer Outfit
+23.8,43,38.3,0,Autumn,Snowy,Formal,Sporty,Heavy Winter Outfit
+0.0,24,18.4,1,Winter,Rainy,Business,Sporty,Heavy Winter Outfit
+28.6,45,34.1,0,Winter,Cloudy,Business,Traditional,Light Summer Outfit
+6.9,78,39.9,0,Autumn,Snowy,Casual,Traditional,Heavy Winter Outfit
+28.2,68,32.4,1,Autumn,Stormy,Traditional,Traditional,Rainy Light Outfit
+17.9,24,23.4,0,Autumn,Snowy,Casual,Sporty,Heavy Winter Outfit
+17.0,70,44.3,1,Winter,Stormy,Business,Traditional,Rainy Light Outfit
+29.8,26,8.5,0,Autumn,Snowy,Sport,Formal,Heavy Winter Outfit
+14.0,74,13.2,1,Winter,Stormy,Formal,Business,Rainy Cold Outfit
+33.2,77,4.1,0,Winter,Cloudy,Traditional,Traditional,Hot Weather Outfit
+11.5,77,1.1,1,Autumn,Stormy,Formal,Business,Rainy Cold Outfit
+-5.3,61,31.1,0,Spring,Clear,Casual,Casual,Heavy Winter Outfit
+23.0,30,23.6,1,Autumn,Stormy,Traditional,Sporty,Rainy Light Outfit
+9.7,68,2.0,1,Spring,Rainy,Traditional,Sporty,Rainy Cold Outfit
+-1.6,38,8.0,0,Winter,Snowy,Sport,Formal,Heavy Winter Outfit
+28.0,77,13.0,1,Spring,Clear,Formal,Sporty,Rainy Light Outfit
+29.8,21,20.6,1,Autumn,Stormy,Casual,Traditional,Rainy Light Outfit
+35.9,50,9.8,0,Autumn,Snowy,Business,Business,Heavy Winter Outfit
+-5.9,20,11.0,1,Summer,Stormy,Traditional,Sporty,Heavy Winter Outfit
+-7.5,38,2.5,0,Summer,Clear,Formal,Casual,Heavy Winter Outfit
+33.6,58,14.9,0,Winter,Clear,Casual,Business,Hot Weather Outfit
+-1.6,56,27.5,0,Spring,Snowy,Traditional,Formal,Heavy Winter Outfit
+38.4,31,34.6,1,Summer,Rainy,Business,Casual,Rainy Light Outfit
+29.4,90,2.9,0,Autumn,Cloudy,Casual,Formal,Light Summer Outfit
+11.5,46,31.3,0,Winter,Clear,Traditional,Traditional,Light Winter Outfit
+15.2,56,19.2,1,Summer,Rainy,Traditional,Traditional,Rainy Light Outfit
+41.7,65,41.7,1,Autumn,Stormy,Business,Business,Rainy Light Outfit
+32.0,49,31.9,0,Spring,Clear,Casual,Casual,Hot Weather Outfit
+31.4,46,36.0,0,Autumn,Snowy,Casual,Formal,Heavy Winter Outfit
+8.2,47,0.5,1,Spring,Rainy,Sport,Casual,Rainy Cold Outfit
+6.0,84,24.7,0,Winter,Clear,Sport,Formal,Winter Outfit
+19.6,23,37.4,1,Spring,Rainy,Sport,Business,Rainy Light Outfit
+37.6,24,29.1,0,Autumn,Cloudy,Business,Traditional,Hot Weather Outfit
+14.0,72,41.8,1,Winter,Stormy,Sport,Traditional,Rainy Cold Outfit
+27.7,60,25.0,0,Winter,Cloudy,Traditional,Formal,Light Summer Outfit
+36.2,65,3.0,1,Spring,Rainy,Casual,Formal,Rainy Light Outfit
+41.1,88,37.9,0,Autumn,Cloudy,Traditional,Casual,Hot Weather Outfit
+29.1,60,31.9,0,Summer,Snowy,Casual,Business,Heavy Winter Outfit
+35.6,67,20.3,0,Summer,Cloudy,Traditional,Formal,Hot Weather Outfit
+9.5,24,35.0,0,Winter,Snowy,Traditional,Casual,Heavy Winter Outfit
+31.5,84,6.9,0,Summer,Snowy,Traditional,Formal,Heavy Winter Outfit
+30.3,38,34.6,1,Winter,Stormy,Formal,Sporty,Rainy Light Outfit
+27.7,78,17.4,0,Winter,Clear,Sport,Casual,Sport Summer Outfit
+20.9,31,15.0,1,Winter,Clear,Traditional,Formal,Rainy Light Outfit
+29.4,46,14.4,1,Spring,Rainy,Sport,Traditional,Rainy Light Outfit
+6.6,76,30.2,1,Summer,Cloudy,Formal,Formal,Formal Winter Outfit
+39.8,91,23.1,1,Spring,Stormy,Sport,Traditional,Rainy Light Outfit
+6.6,38,42.4,1,Summer,Stormy,Formal,Sporty,Formal Winter Outfit
+-6.3,63,24.3,0,Winter,Cloudy,Casual,Business,Heavy Winter Outfit
+-7.4,69,2.4,0,Autumn,Snowy,Formal,Traditional,Heavy Winter Outfit
+36.3,77,27.7,1,Summer,Rainy,Formal,Traditional,Rainy Light Outfit
+-5.9,79,25.6,0,Winter,Snowy,Casual,Business,Heavy Winter Outfit
+6.1,79,21.2,0,Spring,Cloudy,Traditional,Formal,Winter Outfit
+10.4,62,35.5,0,Summer,Snowy,Business,Casual,Heavy Winter Outfit
+-6.6,34,15.8,0,Autumn,Cloudy,Sport,Formal,Heavy Winter Outfit
+-3.4,33,18.3,1,Winter,Rainy,Traditional,Casual,Heavy Winter Outfit
+31.2,88,20.7,0,Autumn,Cloudy,Traditional,Sporty,Hot Weather Outfit
+40.6,69,3.0,1,Spring,Stormy,Business,Business,Rainy Light Outfit
+19.5,63,24.5,0,Spring,Cloudy,Casual,Traditional,Spring Autumn Outfit
+-4.1,79,14.6,0,Winter,Snowy,Formal,Formal,Heavy Winter Outfit
+39.7,28,26.9,1,Autumn,Rainy,Business,Casual,Rainy Light Outfit
+-5.3,37,39.9,0,Winter,Cloudy,Formal,Business,Heavy Winter Outfit
+10.3,93,20.1,1,Spring,Rainy,Sport,Traditional,Rainy Cold Outfit
+31.3,58,41.3,1,Autumn,Rainy,Casual,Traditional,Rainy Light Outfit
+-9.6,85,18.2,1,Spring,Rainy,Casual,Formal,Heavy Winter Outfit
+36.9,26,0.0,0,Summer,Clear,Sport,Casual,Hot Weather Outfit
+26.5,70,28.1,0,Autumn,Snowy,Business,Business,Heavy Winter Outfit
+18.3,42,21.4,1,Spring,Stormy,Business,Formal,Rainy Light Outfit
+33.7,39,13.0,0,Spring,Cloudy,Casual,Casual,Hot Weather Outfit
+-2.5,82,29.6,0,Spring,Clear,Formal,Business,Heavy Winter Outfit
+36.5,74,28.0,1,Autumn,Stormy,Business,Traditional,Rainy Light Outfit
+32.6,69,16.0,0,Spring,Snowy,Traditional,Casual,Heavy Winter Outfit
+20.1,50,32.0,0,Summer,Snowy,Traditional,Traditional,Heavy Winter Outfit
+9.1,24,25.6,0,Summer,Clear,Traditional,Business,Light Winter Outfit
+-5.8,87,44.3,0,Summer,Snowy,Traditional,Casual,Heavy Winter Outfit
+17.2,31,11.0,1,Winter,Stormy,Traditional,Formal,Rainy Light Outfit
+21.9,63,24.1,0,Winter,Snowy,Business,Traditional,Heavy Winter Outfit
+37.1,93,33.0,1,Autumn,Rainy,Sport,Formal,Rainy Light Outfit
+-1.3,58,32.7,0,Summer,Clear,Business,Traditional,Heavy Winter Outfit
+-7.3,57,36.4,1,Winter,Rainy,Business,Casual,Heavy Winter Outfit
+-3.4,29,38.3,1,Summer,Rainy,Formal,Traditional,Heavy Winter Outfit
+4.6,52,0.6,1,Winter,Stormy,Formal,Traditional,Formal Winter Outfit
+28.4,77,16.6,1,Spring,Rainy,Formal,Business,Rainy Light Outfit
+-0.6,87,38.8,0,Summer,Clear,Formal,Traditional,Heavy Winter Outfit
+-2.0,83,33.9,0,Autumn,Snowy,Formal,Business,Heavy Winter Outfit
+27.8,41,9.5,1,Summer,Clear,Sport,Casual,Rainy Light Outfit
+14.1,80,13.6,0,Spring,Snowy,Business,Business,Heavy Winter Outfit
+3.7,87,39.2,1,Winter,Rainy,Business,Business,Winter Outfit
+25.3,87,30.7,0,Winter,Clear,Traditional,Formal,Light Summer Outfit
+12.5,54,15.1,0,Summer,Clear,Sport,Traditional,Sport Winter Outfit
+30.2,50,33.0,1,Spring,Stormy,Sport,Sporty,Rainy Light Outfit
+6.3,21,30.3,0,Winter,Clear,Business,Casual,Winter Outfit
+25.6,64,9.9,1,Summer,Rainy,Formal,Casual,Rainy Light Outfit
+-8.8,31,2.6,1,Spring,Stormy,Casual,Casual,Heavy Winter Outfit
+-5.5,36,16.9,0,Spring,Clear,Formal,Formal,Heavy Winter Outfit
+24.3,29,28.7,0,Summer,Snowy,Sport,Formal,Heavy Winter Outfit
+-1.6,29,12.5,0,Winter,Snowy,Business,Formal,Heavy Winter Outfit
+41.8,53,43.0,0,Summer,Cloudy,Business,Casual,Hot Weather Outfit
+38.3,70,8.0,0,Autumn,Clear,Formal,Traditional,Hot Weather Outfit
+1.4,33,41.1,1,Summer,Clear,Casual,Casual,Winter Outfit
+27.8,77,0.8,0,Autumn,Cloudy,Casual,Casual,Light Summer Outfit
+3.9,62,40.7,1,Winter,Stormy,Business,Business,Winter Outfit
+12.7,28,24.3,0,Winter,Snowy,Business,Casual,Heavy Winter Outfit
+19.5,65,15.0,0,Summer,Snowy,Casual,Casual,Heavy Winter Outfit
+9.0,63,3.6,1,Autumn,Rainy,Formal,Sporty,Rainy Cold Outfit
+18.8,69,29.7,0,Summer,Snowy,Casual,Formal,Heavy Winter Outfit
+15.3,76,33.1,0,Spring,Clear,Formal,Casual,Formal Mild Outfit
+20.8,82,17.5,0,Summer,Snowy,Traditional,Business,Heavy Winter Outfit
+40.3,22,1.7,1,Winter,Rainy,Casual,Business,Rainy Light Outfit
+-3.9,86,20.6,1,Spring,Stormy,Formal,Casual,Heavy Winter Outfit
+-8.1,38,22.0,0,Winter,Snowy,Traditional,Casual,Heavy Winter Outfit
+2.6,36,0.6,1,Winter,Rainy,Casual,Business,Winter Outfit
+21.8,95,2.9,0,Winter,Clear,Business,Traditional,Spring Autumn Outfit
+1.5,45,19.2,1,Autumn,Rainy,Casual,Traditional,Winter Outfit
+18.4,61,37.6,0,Spring,Clear,Traditional,Sporty,Spring Autumn Outfit
+-3.7,38,34.1,1,Spring,Rainy,Traditional,Sporty,Heavy Winter Outfit
+12.8,94,1.8,1,Winter,Stormy,Business,Sporty,Rainy Cold Outfit
+-9.2,82,3.6,0,Winter,Cloudy,Casual,Traditional,Heavy Winter Outfit
+11.6,80,31.2,0,Spring,Cloudy,Sport,Traditional,Sport Winter Outfit
+2.4,42,27.5,1,Winter,Stormy,Formal,Business,Formal Winter Outfit
+21.8,31,28.2,1,Summer,Rainy,Business,Casual,Rainy Light Outfit
+19.0,44,5.3,1,Winter,Stormy,Sport,Traditional,Rainy Light Outfit
+16.4,79,34.7,1,Spring,Rainy,Casual,Sporty,Rainy Light Outfit
+-4.1,39,30.8,0,Autumn,Snowy,Formal,Sporty,Heavy Winter Outfit
+24.8,25,2.4,1,Summer,Rainy,Formal,Business,Rainy Light Outfit
+3.1,78,1.9,1,Winter,Stormy,Formal,Sporty,Formal Winter Outfit
+30.8,82,23.2,0,Winter,Cloudy,Business,Traditional,Hot Weather Outfit
+11.8,61,10.4,1,Winter,Rainy,Formal,Casual,Rainy Cold Outfit
+2.3,72,39.1,0,Autumn,Cloudy,Casual,Business,Winter Outfit
+-7.2,75,6.5,0,Autumn,Cloudy,Business,Formal,Heavy Winter Outfit
+27.4,65,43.9,1,Spring,Rainy,Formal,Casual,Rainy Light Outfit
+26.0,27,12.6,0,Winter,Snowy,Business,Business,Heavy Winter Outfit
+-1.1,63,9.9,1,Summer,Stormy,Formal,Traditional,Heavy Winter Outfit
+37.1,93,43.7,0,Spring,Clear,Business,Traditional,Hot Weather Outfit
+41.8,95,21.3,1,Autumn,Rainy,Casual,Business,Rainy Light Outfit
+28.3,51,11.2,1,Autumn,Stormy,Formal,Traditional,Rainy Light Outfit
+39.2,93,40.4,0,Autumn,Clear,Casual,Business,Hot Weather Outfit
+16.2,74,23.9,0,Autumn,Clear,Business,Business,Spring Autumn Outfit
+19.0,21,31.2,0,Autumn,Cloudy,Formal,Formal,Formal Mild Outfit
+23.7,31,0.7,0,Summer,Cloudy,Business,Traditional,Light Summer Outfit
+-8.7,78,20.9,0,Spring,Snowy,Formal,Formal,Heavy Winter Outfit
+22.6,20,38.7,0,Winter,Snowy,Sport,Traditional,Heavy Winter Outfit
+-8.3,74,33.9,0,Spring,Clear,Traditional,Formal,Heavy Winter Outfit
+-7.1,66,40.0,0,Winter,Snowy,Sport,Business,Heavy Winter Outfit
+22.2,66,16.5,1,Winter,Stormy,Formal,Sporty,Rainy Light Outfit
+41.0,50,24.3,1,Autumn,Stormy,Formal,Sporty,Rainy Light Outfit
+6.7,54,22.7,1,Autumn,Rainy,Casual,Casual,Winter Outfit
+9.4,77,21.9,0,Winter,Snowy,Traditional,Traditional,Heavy Winter Outfit
+36.8,77,27.9,1,Winter,Cloudy,Business,Casual,Rainy Light Outfit
+36.7,56,43.1,1,Winter,Clear,Formal,Formal,Rainy Light Outfit
+-2.3,39,39.4,1,Winter,Rainy,Business,Traditional,Heavy Winter Outfit
+38.4,80,15.6,1,Autumn,Clear,Sport,Sporty,Rainy Light Outfit
+35.3,49,37.6,0,Summer,Snowy,Traditional,Formal,Heavy Winter Outfit
+24.1,61,21.9,0,Autumn,Snowy,Sport,Traditional,Heavy Winter Outfit
+-3.1,59,7.7,0,Summer,Cloudy,Business,Formal,Heavy Winter Outfit
+30.0,26,6.7,0,Summer,Snowy,Formal,Traditional,Heavy Winter Outfit
+38.1,88,12.8,1,Spring,Cloudy,Formal,Sporty,Rainy Light Outfit
+41.7,93,5.7,1,Summer,Rainy,Formal,Sporty,Rainy Light Outfit
+19.2,24,29.9,0,Summer,Cloudy,Sport,Business,Spring Autumn Outfit
+-1.5,58,5.5,0,Winter,Snowy,Business,Sporty,Heavy Winter Outfit
+39.3,60,7.0,1,Summer,Rainy,Business,Formal,Rainy Light Outfit
+40.4,93,30.0,1,Autumn,Rainy,Casual,Business,Rainy Light Outfit
+36.8,37,30.5,1,Winter,Rainy,Casual,Business,Rainy Light Outfit
+22.1,48,20.1,1,Winter,Rainy,Casual,Traditional,Rainy Light Outfit
+23.3,94,23.7,0,Summer,Cloudy,Casual,Casual,Light Summer Outfit
+13.2,31,43.9,0,Autumn,Cloudy,Business,Formal,Light Winter Outfit
+16.6,27,40.9,0,Summer,Snowy,Formal,Business,Heavy Winter Outfit
+9.2,67,0.5,1,Summer,Rainy,Sport,Business,Rainy Cold Outfit
+35.5,31,9.7,0,Autumn,Snowy,Business,Formal,Heavy Winter Outfit
+-1.5,74,32.8,1,Autumn,Cloudy,Traditional,Traditional,Heavy Winter Outfit
+0.8,80,44.5,1,Summer,Clear,Traditional,Business,Winter Outfit
+11.3,54,18.7,1,Autumn,Stormy,Formal,Sporty,Rainy Cold Outfit
+-0.3,68,13.0,0,Autumn,Clear,Sport,Traditional,Heavy Winter Outfit
+19.1,79,10.1,0,Winter,Cloudy,Sport,Formal,Spring Autumn Outfit
+33.4,80,5.6,0,Summer,Snowy,Formal,Business,Heavy Winter Outfit
+37.2,51,1.3,0,Summer,Snowy,Casual,Traditional,Heavy Winter Outfit
+28.8,94,21.6,1,Autumn,Rainy,Business,Casual,Rainy Light Outfit
+9.4,93,0.8,0,Summer,Cloudy,Traditional,Casual,Light Winter Outfit
+14.0,37,16.1,1,Winter,Rainy,Sport,Business,Rainy Cold Outfit
+23.1,65,2.2,1,Summer,Stormy,Casual,Traditional,Rainy Light Outfit
+0.1,43,34.4,1,Spring,Stormy,Sport,Formal,Winter Outfit
+33.0,58,12.2,0,Summer,Clear,Traditional,Traditional,Hot Weather Outfit
+-2.5,37,23.3,0,Summer,Snowy,Business,Formal,Heavy Winter Outfit
+37.9,40,4.6,1,Spring,Stormy,Formal,Sporty,Rainy Light Outfit
+31.3,91,27.6,0,Winter,Snowy,Business,Casual,Heavy Winter Outfit
+-3.9,36,41.6,1,Autumn,Rainy,Sport,Formal,Heavy Winter Outfit
+-2.8,76,40.0,0,Summer,Cloudy,Sport,Casual,Heavy Winter Outfit
+-3.8,36,38.6,0,Spring,Cloudy,Sport,Sporty,Heavy Winter Outfit
+41.0,74,31.1,0,Winter,Clear,Casual,Business,Hot Weather Outfit
+-7.8,33,1.5,0,Winter,Snowy,Casual,Formal,Heavy Winter Outfit
+-7.7,58,30.0,0,Winter,Clear,Traditional,Sporty,Heavy Winter Outfit
+0.4,64,1.3,1,Spring,Rainy,Traditional,Formal,Winter Outfit
+8.3,84,35.1,1,Spring,Stormy,Traditional,Casual,Rainy Cold Outfit
+-4.8,94,34.3,0,Spring,Cloudy,Sport,Sporty,Heavy Winter Outfit
+17.9,32,41.6,1,Autumn,Rainy,Traditional,Sporty,Rainy Light Outfit
+12.9,33,8.1,0,Summer,Snowy,Business,Sporty,Heavy Winter Outfit
+16.7,72,5.1,0,Summer,Clear,Business,Casual,Spring Autumn Outfit
+15.8,66,31.7,1,Winter,Clear,Sport,Business,Rainy Light Outfit
+4.7,59,30.9,0,Autumn,Cloudy,Traditional,Business,Winter Outfit
+34.5,44,38.6,1,Autumn,Rainy,Formal,Casual,Rainy Light Outfit
+41.9,82,30.2,0,Autumn,Snowy,Traditional,Casual,Heavy Winter Outfit
+-3.8,70,18.0,0,Winter,Cloudy,Casual,Formal,Heavy Winter Outfit
+7.6,71,5.5,0,Autumn,Snowy,Sport,Traditional,Heavy Winter Outfit
+20.9,71,16.0,0,Autumn,Snowy,Traditional,Formal,Heavy Winter Outfit
+-2.3,78,4.9,0,Summer,Snowy,Business,Sporty,Heavy Winter Outfit
+22.7,37,1.3,0,Winter,Clear,Business,Casual,Light Summer Outfit
+9.9,61,6.9,0,Winter,Clear,Traditional,Business,Light Winter Outfit
+0.5,83,22.1,1,Summer,Stormy,Sport,Traditional,Winter Outfit
+18.4,24,44.6,0,Winter,Snowy,Business,Formal,Heavy Winter Outfit
+34.3,76,20.7,0,Winter,Cloudy,Traditional,Formal,Hot Weather Outfit
+-1.5,75,6.1,0,Autumn,Snowy,Casual,Traditional,Heavy Winter Outfit
+25.1,90,30.8,0,Autumn,Snowy,Traditional,Sporty,Heavy Winter Outfit
+16.3,70,11.9,1,Autumn,Stormy,Sport,Formal,Rainy Light Outfit
+6.7,23,26.6,1,Spring,Rainy,Sport,Traditional,Winter Outfit
+-8.6,63,17.1,1,Autumn,Rainy,Sport,Business,Heavy Winter Outfit
+8.3,51,11.1,1,Summer,Stormy,Casual,Casual,Rainy Cold Outfit
+35.2,34,15.2,1,Winter,Stormy,Sport,Casual,Rainy Light Outfit
+14.0,74,25.6,1,Autumn,Rainy,Casual,Business,Rainy Cold Outfit
+20.6,60,17.0,1,Autumn,Rainy,Traditional,Casual,Rainy Light Outfit
+32.0,32,31.1,1,Spring,Rainy,Business,Traditional,Rainy Light Outfit
+32.2,63,7.5,1,Summer,Rainy,Business,Sporty,Rainy Light Outfit
+15.8,29,37.8,1,Spring,Rainy,Sport,Casual,Rainy Light Outfit
+5.5,93,18.1,1,Spring,Stormy,Casual,Traditional,Winter Outfit
+-5.1,63,12.3,0,Autumn,Snowy,Formal,Formal,Heavy Winter Outfit
+31.4,58,22.7,0,Summer,Snowy,Traditional,Formal,Heavy Winter Outfit
+0.4,71,11.3,1,Autumn,Stormy,Formal,Casual,Formal Winter Outfit
+22.6,86,38.8,0,Autumn,Cloudy,Business,Formal,Light Summer Outfit
+17.7,75,42.1,1,Winter,Stormy,Formal,Formal,Rainy Light Outfit
+14.0,50,6.8,0,Summer,Snowy,Business,Formal,Heavy Winter Outfit
+34.7,28,28.5,1,Autumn,Rainy,Sport,Sporty,Rainy Light Outfit
+3.3,50,18.3,0,Winter,Cloudy,Formal,Casual,Formal Winter Outfit
+33.0,79,21.8,0,Autumn,Snowy,Casual,Sporty,Heavy Winter Outfit
+-1.7,37,1.3,1,Summer,Stormy,Formal,Casual,Heavy Winter Outfit
+40.1,82,35.2,0,Winter,Clear,Sport,Traditional,Hot Weather Outfit
+-6.7,72,40.4,0,Winter,Snowy,Formal,Sporty,Heavy Winter Outfit
+-4.2,84,42.0,0,Summer,Snowy,Casual,Sporty,Heavy Winter Outfit
+21.2,60,14.8,0,Autumn,Cloudy,Business,Sporty,Spring Autumn Outfit
+-0.9,55,19.8,1,Summer,Stormy,Casual,Business,Heavy Winter Outfit
+17.7,34,14.2,0,Autumn,Snowy,Formal,Formal,Heavy Winter Outfit
+35.7,38,16.3,1,Summer,Rainy,Casual,Traditional,Rainy Light Outfit
+-8.2,26,31.1,1,Spring,Rainy,Traditional,Business,Heavy Winter Outfit
+6.1,66,40.6,1,Winter,Stormy,Formal,Business,Formal Winter Outfit
+10.2,70,41.7,1,Summer,Rainy,Casual,Sporty,Rainy Cold Outfit
+5.5,40,41.2,0,Summer,Snowy,Casual,Formal,Heavy Winter Outfit
+35.1,82,21.2,1,Autumn,Rainy,Business,Casual,Rainy Light Outfit
+32.9,53,22.8,0,Summer,Snowy,Traditional,Traditional,Heavy Winter Outfit
+28.4,78,31.3,1,Winter,Cloudy,Business,Sporty,Rainy Light Outfit
+0.4,59,14.1,0,Winter,Clear,Formal,Sporty,Formal Winter Outfit
+40.4,36,38.1,1,Autumn,Rainy,Business,Business,Rainy Light Outfit
+35.4,37,11.7,1,Summer,Rainy,Formal,Casual,Rainy Light Outfit
+11.6,43,17.7,1,Autumn,Stormy,Formal,Casual,Rainy Cold Outfit
+39.3,91,29.1,0,Spring,Clear,Business,Sporty,Hot Weather Outfit
+34.3,26,18.0,1,Autumn,Stormy,Sport,Sporty,Rainy Light Outfit
+-5.4,67,7.7,0,Winter,Clear,Traditional,Business,Heavy Winter Outfit
+38.3,83,5.3,0,Spring,Cloudy,Sport,Formal,Hot Weather Outfit
+9.9,75,38.5,1,Spring,Rainy,Formal,Business,Rainy Cold Outfit
+-0.6,38,1.3,0,Summer,Cloudy,Traditional,Business,Heavy Winter Outfit
+9.2,78,3.9,0,Autumn,Cloudy,Sport,Business,Sport Winter Outfit
+27.1,74,33.1,1,Summer,Clear,Casual,Traditional,Rainy Light Outfit
+7.3,50,21.2,1,Summer,Stormy,Traditional,Casual,Winter Outfit
+-9.7,84,27.9,0,Summer,Snowy,Sport,Sporty,Heavy Winter Outfit
+40.3,91,1.9,1,Spring,Rainy,Formal,Traditional,Rainy Light Outfit
+15.6,63,39.5,0,Spring,Clear,Sport,Traditional,Spring Autumn Outfit
+3.5,60,2.0,0,Spring,Snowy,Sport,Formal,Heavy Winter Outfit
+38.2,56,40.6,1,Summer,Stormy,Sport,Traditional,Rainy Light Outfit
+6.3,41,14.2,1,Autumn,Cloudy,Traditional,Business,Winter Outfit
+-2.3,49,8.2,1,Autumn,Rainy,Formal,Business,Heavy Winter Outfit
+12.7,83,1.8,1,Summer,Stormy,Business,Business,Rainy Cold Outfit
+15.6,38,5.6,0,Winter,Cloudy,Sport,Sporty,Spring Autumn Outfit
+29.0,54,25.3,1,Spring,Stormy,Casual,Traditional,Rainy Light Outfit
+29.9,43,18.7,0,Winter,Cloudy,Business,Casual,Light Summer Outfit
+-8.6,35,17.7,1,Winter,Rainy,Formal,Casual,Heavy Winter Outfit
+-5.8,81,20.4,1,Summer,Stormy,Casual,Formal,Heavy Winter Outfit
+40.4,77,14.6,0,Spring,Cloudy,Casual,Formal,Hot Weather Outfit
+-7.1,29,24.6,0,Autumn,Clear,Business,Formal,Heavy Winter Outfit
+40.2,71,4.0,0,Spring,Cloudy,Business,Business,Hot Weather Outfit
+29.1,39,5.4,0,Autumn,Snowy,Sport,Traditional,Heavy Winter Outfit
+-3.2,32,37.4,0,Spring,Snowy,Business,Business,Heavy Winter Outfit
+14.8,92,27.0,0,Winter,Snowy,Sport,Traditional,Heavy Winter Outfit
+-0.3,74,4.2,0,Summer,Snowy,Formal,Sporty,Heavy Winter Outfit
+38.4,87,28.3,1,Winter,Rainy,Business,Business,Rainy Light Outfit
+-5.9,81,13.5,1,Spring,Rainy,Formal,Traditional,Heavy Winter Outfit
+12.2,92,2.1,0,Winter,Clear,Traditional,Casual,Light Winter Outfit
+11.5,79,29.7,1,Summer,Rainy,Sport,Traditional,Rainy Cold Outfit
+-5.7,84,0.7,1,Autumn,Cloudy,Formal,Business,Heavy Winter Outfit
+11.6,58,14.1,0,Autumn,Snowy,Traditional,Formal,Heavy Winter Outfit
+7.7,43,9.5,1,Winter,Stormy,Sport,Casual,Winter Outfit
+12.6,22,0.3,0,Winter,Clear,Formal,Business,Light Winter Outfit
+11.1,82,13.6,0,Summer,Snowy,Sport,Casual,Heavy Winter Outfit
+-3.5,21,8.6,0,Winter,Cloudy,Casual,Sporty,Heavy Winter Outfit
+-2.5,50,19.6,0,Spring,Clear,Sport,Business,Heavy Winter Outfit
+11.9,34,7.5,0,Spring,Snowy,Business,Business,Heavy Winter Outfit
+-9.0,77,26.3,1,Spring,Rainy,Traditional,Business,Heavy Winter Outfit
+-7.4,21,4.6,0,Autumn,Snowy,Business,Traditional,Heavy Winter Outfit
+21.0,90,45.0,0,Winter,Snowy,Business,Business,Heavy Winter Outfit
+16.7,82,10.4,1,Winter,Stormy,Casual,Business,Rainy Light Outfit
+20.0,90,2.9,0,Autumn,Snowy,Casual,Business,Heavy Winter Outfit
+22.4,64,20.2,0,Autumn,Clear,Formal,Formal,Light Summer Outfit
+14.4,76,10.4,1,Spring,Stormy,Sport,Traditional,Rainy Cold Outfit
+34.4,79,5.9,0,Summer,Snowy,Business,Formal,Heavy Winter Outfit
+31.4,40,28.0,0,Summer,Clear,Business,Sporty,Hot Weather Outfit
+-1.9,82,4.5,0,Autumn,Snowy,Sport,Sporty,Heavy Winter Outfit
+0.9,26,45.0,1,Summer,Rainy,Sport,Sporty,Winter Outfit
+-0.9,84,1.4,1,Winter,Rainy,Business,Casual,Heavy Winter Outfit
+22.1,35,25.3,1,Autumn,Rainy,Sport,Formal,Rainy Light Outfit
+30.0,91,12.0,1,Spring,Stormy,Traditional,Casual,Rainy Light Outfit
+26.7,76,36.0,0,Winter,Clear,Traditional,Traditional,Light Summer Outfit
+39.3,91,1.9,0,Winter,Cloudy,Casual,Sporty,Hot Weather Outfit
+-1.8,57,31.9,0,Autumn,Clear,Formal,Formal,Heavy Winter Outfit
+-2.8,45,19.8,0,Autumn,Clear,Formal,Business,Heavy Winter Outfit
+16.3,30,12.0,1,Autumn,Rainy,Formal,Sporty,Rainy Light Outfit
+29.2,87,19.0,0,Spring,Cloudy,Business,Business,Light Summer Outfit
+36.7,86,35.8,0,Summer,Clear,Business,Sporty,Hot Weather Outfit
+27.3,86,42.5,1,Winter,Rainy,Sport,Business,Rainy Light Outfit
+41.1,41,19.5,1,Autumn,Clear,Formal,Traditional,Rainy Light Outfit
+22.8,86,43.8,0,Autumn,Snowy,Traditional,Formal,Heavy Winter Outfit
+27.5,60,40.9,1,Winter,Rainy,Traditional,Traditional,Rainy Light Outfit
+37.9,71,20.1,1,Spring,Stormy,Traditional,Traditional,Rainy Light Outfit
+23.9,64,39.9,1,Autumn,Cloudy,Sport,Casual,Rainy Light Outfit
+7.4,36,23.4,0,Summer,Cloudy,Casual,Traditional,Winter Outfit
+17.1,40,1.1,0,Summer,Cloudy,Sport,Business,Spring Autumn Outfit
+-4.3,27,37.9,1,Summer,Stormy,Sport,Casual,Heavy Winter Outfit
+-7.5,35,20.2,0,Winter,Snowy,Sport,Sporty,Heavy Winter Outfit
+31.9,94,25.5,1,Spring,Rainy,Sport,Formal,Rainy Light Outfit
+24.7,93,30.3,1,Autumn,Stormy,Formal,Casual,Rainy Light Outfit
+7.0,94,8.7,0,Summer,Snowy,Casual,Sporty,Heavy Winter Outfit
+27.0,72,3.7,0,Winter,Snowy,Formal,Business,Heavy Winter Outfit
+1.2,29,16.6,1,Autumn,Stormy,Traditional,Traditional,Winter Outfit
+30.5,53,26.3,0,Autumn,Snowy,Business,Business,Heavy Winter Outfit
+32.8,38,22.8,0,Autumn,Snowy,Formal,Traditional,Heavy Winter Outfit
+34.9,35,31.3,0,Autumn,Snowy,Casual,Sporty,Heavy Winter Outfit
+39.1,67,41.5,1,Winter,Stormy,Business,Casual,Rainy Light Outfit
+-3.7,93,13.0,0,Spring,Clear,Sport,Formal,Heavy Winter Outfit
+5.8,82,1.3,1,Spring,Cloudy,Traditional,Business,Winter Outfit
+36.5,56,9.7,0,Autumn,Clear,Casual,Traditional,Hot Weather Outfit
+35.3,73,21.7,1,Summer,Stormy,Business,Formal,Rainy Light Outfit
+30.6,80,37.6,0,Spring,Cloudy,Traditional,Business,Hot Weather Outfit
+24.7,39,39.0,0,Summer,Clear,Traditional,Traditional,Light Summer Outfit
+2.1,70,15.3,0,Winter,Snowy,Sport,Casual,Heavy Winter Outfit
+35.0,23,25.7,1,Summer,Stormy,Casual,Traditional,Rainy Light Outfit
+-5.6,89,26.0,1,Winter,Stormy,Traditional,Sporty,Heavy Winter Outfit
+29.0,84,40.4,1,Winter,Stormy,Formal,Casual,Rainy Light Outfit
+4.3,46,11.0,0,Autumn,Clear,Traditional,Traditional,Winter Outfit
+20.6,82,38.8,1,Winter,Rainy,Business,Sporty,Rainy Light Outfit
+11.6,87,14.3,0,Summer,Clear,Casual,Casual,Light Winter Outfit
+4.8,43,11.5,0,Winter,Cloudy,Sport,Business,Winter Outfit
+-6.9,61,8.2,1,Winter,Rainy,Business,Casual,Heavy Winter Outfit
+6.6,72,40.2,0,Summer,Snowy,Casual,Casual,Heavy Winter Outfit
+0.5,95,10.6,0,Autumn,Clear,Sport,Casual,Winter Outfit
+18.8,28,21.8,0,Autumn,Cloudy,Casual,Formal,Spring Autumn Outfit
+20.5,32,11.1,1,Spring,Rainy,Traditional,Business,Rainy Light Outfit
+13.2,84,9.2,1,Spring,Rainy,Traditional,Sporty,Rainy Cold Outfit
+30.7,88,42.9,0,Autumn,Clear,Casual,Business,Hot Weather Outfit
+22.3,41,0.0,1,Autumn,Rainy,Traditional,Formal,Rainy Light Outfit
+33.7,68,45.0,1,Spring,Stormy,Traditional,Formal,Rainy Light Outfit
+-7.6,88,25.3,0,Summer,Clear,Business,Casual,Heavy Winter Outfit
+27.7,55,39.5,1,Spring,Stormy,Traditional,Formal,Rainy Light Outfit
+36.0,63,28.6,1,Autumn,Rainy,Formal,Formal,Rainy Light Outfit
+7.8,78,43.2,0,Summer,Clear,Formal,Casual,Formal Winter Outfit
+-9.8,21,30.3,1,Autumn,Stormy,Business,Business,Heavy Winter Outfit
+18.0,29,24.2,0,Autumn,Clear,Sport,Business,Spring Autumn Outfit
+8.6,42,37.8,0,Winter,Clear,Business,Formal,Light Winter Outfit
+13.1,48,33.4,1,Summer,Rainy,Formal,Casual,Rainy Cold Outfit
+32.4,58,36.4,1,Spring,Cloudy,Business,Formal,Rainy Light Outfit
+15.6,46,0.3,0,Autumn,Clear,Sport,Traditional,Spring Autumn Outfit
+-1.1,44,29.7,0,Spring,Clear,Traditional,Sporty,Heavy Winter Outfit
+-3.4,92,38.5,0,Summer,Cloudy,Casual,Traditional,Heavy Winter Outfit
+25.4,78,0.1,0,Autumn,Clear,Sport,Business,Sport Summer Outfit
+11.2,35,30.6,0,Autumn,Snowy,Sport,Traditional,Heavy Winter Outfit
+29.5,48,2.1,1,Autumn,Stormy,Business,Formal,Rainy Light Outfit
+-9.7,44,15.1,0,Winter,Cloudy,Business,Casual,Heavy Winter Outfit
+0.2,62,14.0,0,Winter,Clear,Business,Business,Winter Outfit
+20.8,62,37.8,0,Spring,Clear,Business,Sporty,Spring Autumn Outfit
+33.3,62,23.4,0,Spring,Clear,Traditional,Traditional,Hot Weather Outfit
+-5.0,77,26.1,0,Winter,Clear,Casual,Business,Heavy Winter Outfit
+34.1,28,35.2,0,Winter,Snowy,Casual,Formal,Heavy Winter Outfit
+21.8,75,3.0,1,Winter,Stormy,Casual,Formal,Rainy Light Outfit
+34.2,71,4.3,1,Autumn,Cloudy,Traditional,Traditional,Rainy Light Outfit
+10.0,74,39.6,1,Winter,Rainy,Casual,Business,Rainy Cold Outfit
+16.9,95,8.7,0,Winter,Clear,Traditional,Casual,Spring Autumn Outfit
+33.7,93,5.7,1,Summer,Rainy,Business,Business,Rainy Light Outfit
+27.7,76,8.4,0,Spring,Clear,Casual,Sporty,Sport Summer Outfit
+12.7,65,14.0,0,Spring,Cloudy,Business,Formal,Light Winter Outfit
+5.1,21,23.3,0,Spring,Clear,Formal,Traditional,Formal Winter Outfit
+19.1,26,19.0,0,Spring,Cloudy,Formal,Casual,Formal Mild Outfit
+24.7,79,27.0,1,Summer,Stormy,Traditional,Formal,Rainy Light Outfit
+22.0,73,14.8,0,Winter,Snowy,Casual,Business,Heavy Winter Outfit
+1.4,20,28.7,0,Spring,Snowy,Traditional,Sporty,Heavy Winter Outfit
+2.4,62,36.3,0,Autumn,Cloudy,Business,Sporty,Winter Outfit
+-9.7,21,3.3,1,Winter,Stormy,Casual,Sporty,Heavy Winter Outfit
+5.1,44,28.4,0,Summer,Clear,Casual,Sporty,Winter Outfit
+-0.9,53,32.3,1,Summer,Stormy,Formal,Sporty,Heavy Winter Outfit
+0.2,42,37.9,0,Winter,Clear,Formal,Business,Formal Winter Outfit
+36.0,63,42.1,0,Summer,Snowy,Formal,Formal,Heavy Winter Outfit
+32.1,41,42.4,0,Autumn,Clear,Casual,Sporty,Hot Weather Outfit
+-3.2,44,8.6,1,Autumn,Rainy,Sport,Traditional,Heavy Winter Outfit
+12.3,51,41.4,1,Spring,Stormy,Sport,Sporty,Rainy Cold Outfit
+7.0,26,28.3,0,Summer,Cloudy,Traditional,Traditional,Winter Outfit
+0.9,30,35.3,0,Winter,Cloudy,Traditional,Business,Winter Outfit
+23.5,85,16.8,0,Autumn,Cloudy,Sport,Formal,Sport Summer Outfit
+15.1,83,21.3,1,Autumn,Stormy,Casual,Sporty,Rainy Light Outfit
+1.4,45,20.3,0,Spring,Snowy,Formal,Formal,Heavy Winter Outfit
+12.1,68,25.7,1,Summer,Rainy,Traditional,Casual,Rainy Cold Outfit
+-3.0,30,13.3,0,Summer,Cloudy,Traditional,Casual,Heavy Winter Outfit
+22.3,74,20.3,0,Autumn,Snowy,Sport,Business,Heavy Winter Outfit
+6.5,68,1.1,0,Autumn,Cloudy,Sport,Casual,Winter Outfit
+-5.7,84,23.1,1,Winter,Rainy,Formal,Casual,Heavy Winter Outfit
+-3.8,66,1.7,1,Spring,Rainy,Formal,Formal,Heavy Winter Outfit
+3.0,55,8.6,1,Spring,Stormy,Sport,Casual,Winter Outfit
+30.0,56,37.0,0,Autumn,Snowy,Traditional,Casual,Heavy Winter Outfit
+14.5,85,44.5,0,Spring,Snowy,Formal,Sporty,Heavy Winter Outfit
+27.6,46,21.3,0,Autumn,Snowy,Sport,Casual,Heavy Winter Outfit
+6.3,44,19.3,0,Autumn,Cloudy,Business,Business,Winter Outfit
+-8.4,37,26.0,1,Spring,Rainy,Casual,Business,Heavy Winter Outfit
+32.1,65,15.3,0,Autumn,Snowy,Business,Traditional,Heavy Winter Outfit
+5.6,95,1.0,0,Winter,Cloudy,Formal,Formal,Formal Winter Outfit
+31.6,93,39.0,0,Autumn,Cloudy,Business,Casual,Hot Weather Outfit
+-0.2,33,14.8,1,Autumn,Rainy,Casual,Sporty,Heavy Winter Outfit
+-4.6,90,8.0,1,Autumn,Clear,Formal,Sporty,Heavy Winter Outfit
+40.1,56,9.3,1,Summer,Stormy,Casual,Business,Rainy Light Outfit
+-7.0,86,0.5,0,Summer,Snowy,Business,Sporty,Heavy Winter Outfit
+41.5,36,24.1,0,Autumn,Clear,Business,Sporty,Hot Weather Outfit
+0.7,75,36.8,0,Autumn,Cloudy,Traditional,Traditional,Winter Outfit
+20.5,84,32.3,1,Autumn,Rainy,Formal,Casual,Rainy Light Outfit
+41.5,77,2.9,1,Autumn,Stormy,Formal,Traditional,Rainy Light Outfit
+7.1,92,39.6,0,Autumn,Snowy,Traditional,Casual,Heavy Winter Outfit
+28.3,56,29.1,1,Autumn,Rainy,Sport,Business,Rainy Light Outfit
+21.9,42,18.7,1,Spring,Stormy,Business,Business,Rainy Light Outfit
+10.0,43,31.4,0,Winter,Snowy,Casual,Sporty,Heavy Winter Outfit
+36.0,40,12.3,0,Summer,Clear,Formal,Business,Hot Weather Outfit
+29.6,35,44.8,0,Winter,Clear,Traditional,Formal,Light Summer Outfit
+-1.4,46,22.8,0,Autumn,Clear,Casual,Business,Heavy Winter Outfit
+28.8,44,17.9,1,Winter,Rainy,Casual,Sporty,Rainy Light Outfit
+7.0,79,21.8,0,Winter,Clear,Traditional,Sporty,Winter Outfit
+12.8,80,36.9,1,Spring,Cloudy,Casual,Traditional,Rainy Cold Outfit
+5.3,88,33.4,0,Spring,Clear,Casual,Formal,Winter Outfit
+8.6,47,32.1,0,Spring,Snowy,Casual,Traditional,Heavy Winter Outfit
+23.3,33,17.6,0,Summer,Snowy,Casual,Traditional,Heavy Winter Outfit
+-9.8,68,34.5,1,Spring,Rainy,Formal,Sporty,Heavy Winter Outfit
+-5.2,73,1.3,1,Winter,Rainy,Formal,Casual,Heavy Winter Outfit
+1.5,32,35.9,0,Spring,Cloudy,Casual,Business,Winter Outfit
+32.4,61,25.3,1,Spring,Stormy,Formal,Traditional,Rainy Light Outfit
+10.5,74,5.4,0,Spring,Clear,Sport,Formal,Sport Winter Outfit
+10.9,60,0.5,0,Spring,Snowy,Formal,Casual,Heavy Winter Outfit
+24.2,55,29.2,0,Summer,Clear,Casual,Sporty,Sport Summer Outfit
+29.9,83,44.2,1,Winter,Stormy,Traditional,Sporty,Rainy Light Outfit
+3.1,32,27.0,0,Autumn,Cloudy,Sport,Sporty,Winter Outfit
+36.0,60,44.0,0,Autumn,Clear,Sport,Casual,Hot Weather Outfit
+20.4,68,23.0,1,Spring,Stormy,Traditional,Casual,Rainy Light Outfit
+2.1,35,13.9,1,Autumn,Cloudy,Traditional,Casual,Winter Outfit
+9.5,57,9.1,0,Autumn,Cloudy,Casual,Sporty,Sport Winter Outfit
+21.1,76,33.3,0,Summer,Cloudy,Sport,Formal,Spring Autumn Outfit
+29.5,86,35.6,1,Autumn,Rainy,Casual,Sporty,Rainy Light Outfit
+34.0,62,15.4,1,Spring,Stormy,Casual,Sporty,Rainy Light Outfit
+31.7,48,27.4,1,Autumn,Stormy,Sport,Sporty,Rainy Light Outfit
+13.0,20,2.9,0,Autumn,Clear,Formal,Casual,Light Winter Outfit
+-2.6,46,5.7,1,Spring,Stormy,Traditional,Sporty,Heavy Winter Outfit
+2.3,30,19.2,1,Autumn,Rainy,Formal,Sporty,Formal Winter Outfit
+2.7,42,27.3,1,Summer,Rainy,Traditional,Business,Winter Outfit
+40.3,45,12.2,0,Autumn,Clear,Sport,Business,Hot Weather Outfit
+14.5,74,22.7,0,Autumn,Cloudy,Business,Casual,Light Winter Outfit
+12.2,30,34.1,1,Summer,Stormy,Traditional,Sporty,Rainy Cold Outfit
+18.7,42,11.6,1,Autumn,Rainy,Business,Formal,Rainy Light Outfit
+9.5,81,3.2,0,Spring,Snowy,Formal,Sporty,Heavy Winter Outfit
+37.6,20,0.6,0,Summer,Snowy,Business,Business,Heavy Winter Outfit
+38.9,67,17.3,1,Summer,Stormy,Casual,Business,Rainy Light Outfit
+36.0,35,17.3,0,Spring,Cloudy,Business,Formal,Hot Weather Outfit
+29.1,64,22.9,1,Autumn,Rainy,Casual,Business,Rainy Light Outfit
+38.2,51,10.9,1,Winter,Rainy,Casual,Sporty,Rainy Light Outfit
+3.6,78,42.5,1,Spring,Rainy,Formal,Traditional,Formal Winter Outfit
+20.1,40,0.6,0,Winter,Snowy,Business,Traditional,Heavy Winter Outfit
+40.7,30,23.3,0,Spring,Snowy,Formal,Business,Heavy Winter Outfit
+3.1,58,22.5,1,Autumn,Stormy,Sport,Business,Winter Outfit
+29.1,31,4.9,0,Summer,Cloudy,Sport,Sporty,Sport Summer Outfit
+10.7,59,0.3,0,Spring,Snowy,Casual,Casual,Heavy Winter Outfit
+-6.4,73,23.6,0,Summer,Snowy,Formal,Sporty,Heavy Winter Outfit
+9.5,37,8.9,1,Spring,Stormy,Casual,Business,Rainy Cold Outfit
+19.5,47,8.4,0,Winter,Cloudy,Formal,Formal,Formal Mild Outfit
+35.3,76,28.2,1,Winter,Cloudy,Casual,Formal,Rainy Light Outfit
+-3.5,28,15.4,0,Spring,Snowy,Business,Casual,Heavy Winter Outfit
+-9.5,54,33.8,1,Winter,Stormy,Casual,Casual,Heavy Winter Outfit
+1.0,20,16.9,0,Summer,Snowy,Business,Formal,Heavy Winter Outfit
+21.4,63,16.7,1,Summer,Rainy,Formal,Formal,Rainy Light Outfit
+24.6,68,27.5,1,Summer,Rainy,Casual,Casual,Rainy Light Outfit
+13.8,71,32.6,0,Spring,Clear,Traditional,Casual,Light Winter Outfit
+4.5,51,16.6,1,Autumn,Stormy,Business,Sporty,Winter Outfit
+-9.8,61,0.7,0,Summer,Clear,Sport,Business,Heavy Winter Outfit
+15.2,30,15.7,0,Autumn,Clear,Business,Formal,Spring Autumn Outfit
+27.0,86,39.4,0,Winter,Cloudy,Business,Casual,Light Summer Outfit
+25.0,90,44.4,0,Autumn,Cloudy,Business,Casual,Light Summer Outfit
+18.1,51,9.5,0,Winter,Clear,Business,Casual,Spring Autumn Outfit
+38.3,69,34.5,1,Spring,Rainy,Business,Casual,Rainy Light Outfit
+24.6,88,28.5,0,Autumn,Clear,Sport,Sporty,Sport Summer Outfit
+29.8,28,29.0,0,Autumn,Snowy,Traditional,Business,Heavy Winter Outfit
+32.0,48,11.7,0,Summer,Clear,Casual,Casual,Hot Weather Outfit
+20.8,44,33.5,1,Winter,Stormy,Sport,Sporty,Rainy Light Outfit
+34.4,68,26.0,1,Winter,Rainy,Casual,Traditional,Rainy Light Outfit
+17.9,69,44.1,1,Summer,Rainy,Formal,Traditional,Rainy Light Outfit
+24.5,95,10.0,0,Autumn,Clear,Traditional,Business,Light Summer Outfit
+32.4,57,37.7,0,Autumn,Snowy,Formal,Traditional,Heavy Winter Outfit
+4.7,24,26.9,1,Summer,Stormy,Casual,Formal,Winter Outfit
+41.8,93,21.5,0,Spring,Snowy,Sport,Business,Heavy Winter Outfit
+-6.9,62,6.9,0,Spring,Cloudy,Casual,Sporty,Heavy Winter Outfit
+27.8,58,44.3,0,Spring,Clear,Traditional,Business,Light Summer Outfit
+25.3,64,34.1,0,Autumn,Clear,Traditional,Formal,Light Summer Outfit
+38.0,90,17.7,1,Spring,Rainy,Traditional,Casual,Rainy Light Outfit
+34.2,58,20.6,1,Spring,Stormy,Formal,Business,Rainy Light Outfit
+26.2,57,40.4,0,Spring,Cloudy,Formal,Casual,Light Summer Outfit
+34.5,33,30.5,0,Spring,Snowy,Business,Sporty,Heavy Winter Outfit
+38.2,32,16.0,0,Autumn,Cloudy,Casual,Casual,Hot Weather Outfit
+23.8,95,19.5,0,Spring,Snowy,Formal,Casual,Heavy Winter Outfit
+-3.8,70,22.0,0,Spring,Snowy,Casual,Business,Heavy Winter Outfit
+35.0,68,12.4,1,Autumn,Rainy,Casual,Casual,Rainy Light Outfit
+-3.9,35,22.0,0,Spring,Clear,Traditional,Traditional,Heavy Winter Outfit
+14.9,32,35.7,0,Spring,Snowy,Business,Business,Heavy Winter Outfit
+5.5,36,4.5,1,Winter,Stormy,Formal,Business,Formal Winter Outfit
+32.3,22,17.7,0,Autumn,Clear,Traditional,Traditional,Hot Weather Outfit
+32.6,35,33.9,0,Spring,Clear,Formal,Traditional,Hot Weather Outfit
+-9.7,77,36.0,0,Winter,Clear,Formal,Traditional,Heavy Winter Outfit
+-1.6,91,11.6,0,Winter,Clear,Casual,Traditional,Heavy Winter Outfit
+40.2,41,19.0,0,Winter,Cloudy,Sport,Casual,Hot Weather Outfit
+17.0,57,29.7,0,Autumn,Cloudy,Traditional,Business,Spring Autumn Outfit
+17.2,65,27.3,1,Spring,Clear,Casual,Sporty,Rainy Light Outfit
+-2.6,47,43.1,1,Spring,Stormy,Sport,Formal,Heavy Winter Outfit
+-3.3,74,3.3,1,Summer,Rainy,Business,Sporty,Heavy Winter Outfit
+10.8,30,42.5,1,Autumn,Cloudy,Traditional,Sporty,Rainy Cold Outfit
+28.1,44,32.2,0,Spring,Snowy,Formal,Formal,Heavy Winter Outfit
+41.6,75,17.1,0,Spring,Clear,Sport,Casual,Hot Weather Outfit
+25.6,72,3.0,1,Winter,Rainy,Sport,Formal,Rainy Light Outfit
+-2.4,48,12.3,0,Winter,Snowy,Formal,Business,Heavy Winter Outfit
+39.5,35,7.9,1,Summer,Stormy,Business,Casual,Rainy Light Outfit
+17.5,93,38.9,1,Summer,Stormy,Casual,Casual,Rainy Light Outfit
+-1.1,69,8.1,0,Autumn,Snowy,Traditional,Sporty,Heavy Winter Outfit
+3.5,85,32.1,0,Spring,Cloudy,Business,Traditional,Winter Outfit
+-7.3,67,31.8,1,Spring,Stormy,Business,Business,Heavy Winter Outfit
+-0.5,65,35.9,1,Summer,Rainy,Business,Traditional,Heavy Winter Outfit
+39.0,49,13.7,1,Winter,Rainy,Business,Formal,Rainy Light Outfit
+34.0,30,3.5,1,Spring,Clear,Formal,Traditional,Rainy Light Outfit
+28.7,90,41.8,0,Winter,Snowy,Traditional,Sporty,Heavy Winter Outfit
+14.9,85,30.8,0,Winter,Snowy,Casual,Traditional,Heavy Winter Outfit
+-0.1,20,32.1,1,Summer,Cloudy,Traditional,Traditional,Heavy Winter Outfit
+13.3,41,30.4,0,Spring,Cloudy,Casual,Formal,Light Winter Outfit
+16.7,26,19.0,0,Autumn,Cloudy,Sport,Casual,Spring Autumn Outfit
+25.3,89,38.3,1,Winter,Rainy,Sport,Business,Rainy Light Outfit
+5.3,47,0.1,0,Autumn,Cloudy,Sport,Traditional,Winter Outfit
+-8.2,79,40.2,0,Autumn,Clear,Sport,Casual,Heavy Winter Outfit
+7.1,65,4.8,1,Summer,Cloudy,Business,Formal,Winter Outfit
+12.4,45,3.8,0,Spring,Snowy,Casual,Business,Heavy Winter Outfit
+-9.6,52,10.2,1,Autumn,Rainy,Sport,Formal,Heavy Winter Outfit
+12.3,43,24.1,0,Summer,Clear,Business,Business,Light Winter Outfit
+8.4,75,0.3,1,Spring,Clear,Formal,Formal,Rainy Cold Outfit
+10.5,62,40.5,1,Spring,Cloudy,Business,Formal,Rainy Cold Outfit
+15.4,83,36.0,1,Spring,Rainy,Business,Traditional,Rainy Light Outfit
+27.8,69,5.9,0,Winter,Clear,Formal,Sporty,Sport Summer Outfit
+-9.3,50,2.3,0,Summer,Snowy,Traditional,Casual,Heavy Winter Outfit
+12.6,57,12.7,0,Winter,Snowy,Formal,Traditional,Heavy Winter Outfit
+-2.1,85,8.4,0,Summer,Clear,Sport,Sporty,Heavy Winter Outfit
+12.3,80,31.8,1,Winter,Stormy,Traditional,Sporty,Rainy Cold Outfit
+-0.2,95,28.3,0,Spring,Cloudy,Casual,Sporty,Heavy Winter Outfit
+4.2,44,41.8,1,Autumn,Clear,Traditional,Sporty,Winter Outfit
+-7.4,72,23.6,0,Spring,Cloudy,Sport,Business,Heavy Winter Outfit
+16.5,26,13.7,1,Summer,Rainy,Sport,Formal,Rainy Light Outfit
+27.0,51,14.4,1,Winter,Cloudy,Casual,Casual,Rainy Light Outfit
+28.7,47,12.8,1,Summer,Stormy,Casual,Business,Rainy Light Outfit
+-0.4,82,16.4,0,Summer,Clear,Casual,Casual,Heavy Winter Outfit
+30.1,36,14.9,1,Summer,Stormy,Traditional,Traditional,Rainy Light Outfit
+9.3,55,9.5,0,Autumn,Clear,Casual,Sporty,Sport Winter Outfit
+21.3,25,26.4,1,Spring,Cloudy,Business,Casual,Rainy Light Outfit
+18.4,63,13.6,1,Autumn,Cloudy,Traditional,Sporty,Rainy Light Outfit
+-0.0,90,32.0,1,Summer,Rainy,Business,Casual,Heavy Winter Outfit
+37.4,28,21.7,0,Winter,Cloudy,Traditional,Formal,Hot Weather Outfit
+-3.3,25,43.0,0,Winter,Cloudy,Business,Business,Heavy Winter Outfit
+35.3,29,7.4,1,Autumn,Stormy,Business,Business,Rainy Light Outfit
+21.6,46,8.3,1,Spring,Stormy,Formal,Traditional,Rainy Light Outfit
+26.2,85,20.5,1,Summer,Rainy,Formal,Formal,Rainy Light Outfit
+26.8,90,5.4,0,Spring,Clear,Traditional,Sporty,Sport Summer Outfit
+23.3,55,41.7,0,Summer,Clear,Formal,Sporty,Sport Summer Outfit
+-9.9,64,28.5,1,Summer,Rainy,Casual,Traditional,Heavy Winter Outfit
+3.7,37,18.4,1,Summer,Rainy,Casual,Casual,Winter Outfit
+32.8,48,32.9,0,Summer,Cloudy,Sport,Casual,Hot Weather Outfit
+40.9,94,4.8,1,Autumn,Rainy,Traditional,Traditional,Rainy Light Outfit
+0.7,76,9.9,0,Summer,Cloudy,Traditional,Business,Winter Outfit
+2.0,75,16.6,0,Autumn,Clear,Business,Sporty,Winter Outfit
+32.4,42,8.5,0,Autumn,Cloudy,Sport,Casual,Hot Weather Outfit
+36.0,70,30.9,0,Spring,Clear,Formal,Casual,Hot Weather Outfit
+13.7,71,4.5,0,Spring,Clear,Traditional,Casual,Light Winter Outfit
+-8.9,21,34.4,0,Winter,Cloudy,Formal,Casual,Heavy Winter Outfit
+38.8,21,35.7,0,Winter,Clear,Traditional,Formal,Hot Weather Outfit
+-5.6,37,21.6,0,Autumn,Cloudy,Sport,Formal,Heavy Winter Outfit
+2.7,89,31.1,0,Winter,Clear,Casual,Casual,Winter Outfit
+-4.7,73,6.4,0,Spring,Clear,Formal,Business,Heavy Winter Outfit
+8.4,56,10.2,0,Autumn,Clear,Business,Sporty,Sport Winter Outfit
+1.7,56,16.1,0,Summer,Clear,Sport,Casual,Winter Outfit
+21.4,42,19.3,1,Summer,Stormy,Formal,Business,Rainy Light Outfit
+-2.2,58,28.1,1,Summer,Rainy,Casual,Formal,Heavy Winter Outfit
+37.6,67,42.0,0,Winter,Clear,Formal,Sporty,Hot Weather Outfit
+10.3,81,36.7,1,Winter,Stormy,Business,Formal,Rainy Cold Outfit
+-2.5,61,44.8,0,Spring,Snowy,Sport,Formal,Heavy Winter Outfit
+15.7,81,31.2,1,Autumn,Stormy,Sport,Sporty,Rainy Light Outfit
+31.7,51,17.2,1,Autumn,Stormy,Traditional,Business,Rainy Light Outfit
+17.7,49,17.3,1,Autumn,Stormy,Traditional,Sporty,Rainy Light Outfit
+26.6,50,16.3,0,Spring,Clear,Sport,Traditional,Sport Summer Outfit
+-3.1,34,2.7,1,Summer,Rainy,Formal,Formal,Heavy Winter Outfit
+13.9,90,43.7,1,Autumn,Cloudy,Formal,Sporty,Rainy Cold Outfit
+-2.8,38,17.0,0,Winter,Snowy,Sport,Casual,Heavy Winter Outfit
+26.5,94,3.3,0,Spring,Clear,Formal,Formal,Light Summer Outfit
+2.7,21,25.6,0,Autumn,Cloudy,Formal,Business,Formal Winter Outfit
+28.9,58,21.2,0,Summer,Snowy,Casual,Formal,Heavy Winter Outfit
+-4.2,27,39.7,1,Winter,Stormy,Formal,Traditional,Heavy Winter Outfit
+-1.7,70,37.5,1,Autumn,Stormy,Sport,Traditional,Heavy Winter Outfit
+16.1,49,19.1,1,Spring,Rainy,Casual,Traditional,Rainy Light Outfit
+9.6,36,33.4,1,Autumn,Stormy,Casual,Sporty,Rainy Cold Outfit
+10.4,91,27.2,0,Winter,Snowy,Business,Formal,Heavy Winter Outfit
+23.9,71,37.2,0,Spring,Clear,Sport,Business,Sport Summer Outfit
+-4.4,29,16.3,0,Summer,Clear,Formal,Formal,Heavy Winter Outfit
+-4.5,47,26.9,0,Summer,Cloudy,Traditional,Sporty,Heavy Winter Outfit
+-8.3,54,3.8,1,Winter,Stormy,Business,Casual,Heavy Winter Outfit
+-7.5,31,42.5,1,Winter,Rainy,Sport,Business,Heavy Winter Outfit
+16.0,60,33.8,0,Summer,Cloudy,Casual,Formal,Spring Autumn Outfit
+28.6,32,22.6,0,Spring,Clear,Traditional,Business,Light Summer Outfit
+35.2,24,13.1,0,Spring,Snowy,Casual,Casual,Heavy Winter Outfit
+39.5,49,39.8,0,Spring,Cloudy,Traditional,Traditional,Hot Weather Outfit
+21.7,86,41.9,0,Summer,Snowy,Formal,Formal,Heavy Winter Outfit
+5.1,75,1.8,0,Autumn,Cloudy,Formal,Traditional,Formal Winter Outfit
+39.8,92,28.3,0,Autumn,Clear,Casual,Sporty,Hot Weather Outfit
+6.1,31,22.5,1,Autumn,Rainy,Formal,Formal,Formal Winter Outfit
+-1.6,55,25.9,0,Summer,Clear,Casual,Sporty,Heavy Winter Outfit
+14.0,80,44.0,0,Autumn,Cloudy,Casual,Traditional,Light Winter Outfit
+8.9,56,18.0,0,Spring,Snowy,Sport,Traditional,Heavy Winter Outfit
+33.9,60,16.8,1,Autumn,Stormy,Business,Formal,Rainy Light Outfit
+35.6,25,27.9,0,Winter,Cloudy,Traditional,Casual,Hot Weather Outfit
+-4.5,68,7.1,0,Autumn,Clear,Formal,Business,Heavy Winter Outfit
+24.8,64,21.0,0,Autumn,Clear,Casual,Sporty,Sport Summer Outfit
+37.7,70,34.6,0,Spring,Snowy,Sport,Casual,Heavy Winter Outfit
+6.5,82,9.6,1,Autumn,Clear,Sport,Business,Winter Outfit
+-1.9,80,6.5,1,Spring,Rainy,Traditional,Casual,Heavy Winter Outfit
+41.4,68,2.8,0,Summer,Snowy,Business,Sporty,Heavy Winter Outfit
+-7.2,22,42.9,1,Autumn,Rainy,Sport,Sporty,Heavy Winter Outfit
+-5.7,28,12.3,1,Winter,Rainy,Business,Business,Heavy Winter Outfit
+17.3,53,8.3,0,Winter,Clear,Business,Formal,Spring Autumn Outfit
+5.4,45,15.7,0,Autumn,Snowy,Business,Traditional,Heavy Winter Outfit
+25.8,40,43.5,1,Autumn,Rainy,Traditional,Business,Rainy Light Outfit
+32.8,91,35.2,0,Spring,Clear,Traditional,Traditional,Hot Weather Outfit
+24.5,60,0.6,1,Autumn,Cloudy,Business,Formal,Rainy Light Outfit
+40.4,72,11.8,0,Winter,Snowy,Formal,Business,Heavy Winter Outfit
+23.2,94,4.4,0,Spring,Cloudy,Business,Traditional,Light Summer Outfit
+21.2,47,15.7,1,Spring,Stormy,Casual,Formal,Rainy Light Outfit
+32.3,22,13.6,1,Summer,Stormy,Casual,Business,Rainy Light Outfit
+23.7,78,18.6,1,Summer,Rainy,Traditional,Business,Rainy Light Outfit
+17.2,62,5.1,0,Spring,Snowy,Business,Formal,Heavy Winter Outfit
+-0.8,40,24.4,1,Autumn,Rainy,Business,Formal,Heavy Winter Outfit
+26.5,32,44.8,0,Winter,Clear,Casual,Traditional,Light Summer Outfit
+-4.6,89,4.5,1,Autumn,Stormy,Traditional,Casual,Heavy Winter Outfit
+24.7,73,9.5,1,Autumn,Stormy,Business,Casual,Rainy Light Outfit
+0.2,80,42.8,0,Summer,Snowy,Business,Business,Heavy Winter Outfit
+-9.6,67,35.2,1,Summer,Rainy,Sport,Formal,Heavy Winter Outfit
+33.6,73,30.3,0,Winter,Snowy,Casual,Casual,Heavy Winter Outfit
+-8.6,67,37.8,1,Summer,Rainy,Formal,Traditional,Heavy Winter Outfit
+41.6,50,25.0,0,Autumn,Cloudy,Traditional,Business,Hot Weather Outfit
+31.7,93,19.3,0,Autumn,Cloudy,Business,Formal,Hot Weather Outfit
+12.7,32,32.0,1,Spring,Stormy,Casual,Traditional,Rainy Cold Outfit
+30.8,53,37.7,1,Spring,Rainy,Formal,Casual,Rainy Light Outfit
+-5.2,75,0.5,0,Spring,Clear,Traditional,Traditional,Heavy Winter Outfit
+-5.9,68,1.1,0,Spring,Snowy,Sport,Sporty,Heavy Winter Outfit
+2.5,48,13.4,0,Spring,Snowy,Sport,Casual,Heavy Winter Outfit
+4.3,38,28.2,0,Winter,Clear,Business,Traditional,Winter Outfit
+-2.6,53,40.3,0,Winter,Clear,Business,Formal,Heavy Winter Outfit
+0.8,32,22.1,0,Winter,Snowy,Casual,Business,Heavy Winter Outfit
+39.9,29,9.5,0,Autumn,Snowy,Sport,Business,Heavy Winter Outfit
+32.0,43,13.4,1,Spring,Stormy,Traditional,Casual,Rainy Light Outfit
+-3.9,63,44.7,1,Autumn,Stormy,Traditional,Traditional,Heavy Winter Outfit
+-9.7,86,33.4,0,Winter,Cloudy,Traditional,Casual,Heavy Winter Outfit
+16.9,39,9.7,0,Summer,Clear,Formal,Casual,Formal Mild Outfit
+1.4,36,12.0,0,Autumn,Cloudy,Casual,Formal,Winter Outfit
+23.9,79,33.5,0,Autumn,Snowy,Traditional,Business,Heavy Winter Outfit
+38.0,52,7.8,0,Summer,Snowy,Casual,Traditional,Heavy Winter Outfit
+31.2,95,14.0,0,Spring,Snowy,Business,Business,Heavy Winter Outfit
+12.0,54,36.7,1,Winter,Stormy,Business,Business,Rainy Cold Outfit
+0.4,65,16.8,0,Winter,Snowy,Formal,Casual,Heavy Winter Outfit
+39.8,52,26.4,1,Summer,Stormy,Traditional,Formal,Rainy Light Outfit
+10.7,34,8.1,0,Summer,Snowy,Formal,Formal,Heavy Winter Outfit
+2.8,47,29.6,1,Summer,Cloudy,Sport,Casual,Winter Outfit
+25.8,62,9.6,0,Summer,Cloudy,Traditional,Casual,Light Summer Outfit
+21.3,87,9.8,1,Summer,Stormy,Casual,Traditional,Rainy Light Outfit
+36.4,73,30.7,1,Autumn,Rainy,Sport,Sporty,Rainy Light Outfit
+0.3,83,22.4,0,Summer,Snowy,Casual,Casual,Heavy Winter Outfit
+13.5,61,26.6,1,Spring,Stormy,Casual,Formal,Rainy Cold Outfit
+-9.1,93,44.5,1,Autumn,Rainy,Formal,Business,Heavy Winter Outfit
+-8.1,88,41.3,1,Winter,Rainy,Casual,Casual,Heavy Winter Outfit
+14.4,73,32.5,1,Summer,Rainy,Sport,Business,Rainy Cold Outfit
+-5.9,60,22.2,0,Winter,Snowy,Sport,Business,Heavy Winter Outfit
+15.7,35,37.9,0,Winter,Clear,Formal,Casual,Formal Mild Outfit
+-2.8,61,38.8,0,Autumn,Cloudy,Formal,Casual,Heavy Winter Outfit
+36.9,67,36.7,1,Winter,Clear,Sport,Casual,Rainy Light Outfit
+39.3,29,11.9,1,Autumn,Rainy,Formal,Sporty,Rainy Light Outfit
+20.3,35,5.7,1,Spring,Stormy,Business,Business,Rainy Light Outfit
+24.7,86,23.7,0,Autumn,Snowy,Sport,Formal,Heavy Winter Outfit
+30.2,81,10.2,1,Summer,Rainy,Casual,Formal,Rainy Light Outfit
+19.0,51,29.7,1,Spring,Clear,Casual,Business,Rainy Light Outfit
+-9.3,47,21.1,0,Autumn,Cloudy,Business,Casual,Heavy Winter Outfit
+32.3,87,23.1,1,Summer,Rainy,Business,Sporty,Rainy Light Outfit
+34.1,33,41.1,1,Spring,Rainy,Business,Business,Rainy Light Outfit
+35.1,85,9.1,0,Autumn,Cloudy,Casual,Formal,Hot Weather Outfit
+25.7,93,29.2,0,Spring,Snowy,Casual,Casual,Heavy Winter Outfit
+2.5,78,8.4,0,Winter,Snowy,Traditional,Business,Heavy Winter Outfit
+8.3,35,41.7,1,Winter,Rainy,Business,Sporty,Rainy Cold Outfit
+-2.2,84,19.4,0,Summer,Clear,Business,Formal,Heavy Winter Outfit
+-7.4,68,32.9,0,Autumn,Cloudy,Sport,Sporty,Heavy Winter Outfit
+20.9,87,27.3,0,Autumn,Clear,Casual,Sporty,Spring Autumn Outfit
+1.4,26,40.3,1,Summer,Cloudy,Casual,Traditional,Winter Outfit
+1.8,71,17.6,0,Winter,Cloudy,Sport,Business,Winter Outfit
+30.9,64,28.7,0,Summer,Clear,Casual,Sporty,Hot Weather Outfit
+26.4,81,33.3,0,Spring,Cloudy,Sport,Casual,Sport Summer Outfit
+7.3,78,6.4,0,Winter,Snowy,Business,Formal,Heavy Winter Outfit
+-8.9,53,39.7,0,Spring,Clear,Traditional,Formal,Heavy Winter Outfit
+20.3,82,39.3,0,Autumn,Clear,Casual,Casual,Spring Autumn Outfit
+41.5,49,23.6,0,Spring,Cloudy,Casual,Casual,Hot Weather Outfit
+28.3,77,22.1,1,Summer,Stormy,Sport,Business,Rainy Light Outfit
+3.2,78,0.6,1,Summer,Rainy,Sport,Traditional,Winter Outfit
+30.3,81,5.1,0,Winter,Cloudy,Business,Sporty,Hot Weather Outfit
+-2.6,83,1.4,1,Autumn,Rainy,Formal,Casual,Heavy Winter Outfit
+0.1,68,28.7,1,Summer,Stormy,Business,Traditional,Winter Outfit
+-0.9,64,40.0,1,Autumn,Stormy,Business,Formal,Heavy Winter Outfit
+6.1,25,26.1,1,Summer,Stormy,Casual,Business,Winter Outfit
+31.4,92,43.6,1,Summer,Rainy,Casual,Casual,Rainy Light Outfit
+15.9,38,21.0,1,Spring,Stormy,Sport,Traditional,Rainy Light Outfit
+19.0,40,13.7,0,Summer,Clear,Sport,Casual,Spring Autumn Outfit
+1.3,95,5.6,1,Autumn,Rainy,Casual,Business,Winter Outfit
+8.3,20,2.2,1,Spring,Rainy,Sport,Traditional,Rainy Cold Outfit
+24.6,91,7.0,1,Winter,Rainy,Formal,Sporty,Rainy Light Outfit
+12.5,30,13.1,0,Winter,Snowy,Sport,Sporty,Heavy Winter Outfit
+32.2,69,19.0,1,Winter,Rainy,Sport,Traditional,Rainy Light Outfit
+6.2,92,19.6,1,Summer,Stormy,Formal,Sporty,Formal Winter Outfit
+3.0,73,24.9,1,Summer,Rainy,Casual,Formal,Winter Outfit
+19.5,79,24.6,0,Autumn,Snowy,Casual,Sporty,Heavy Winter Outfit
+17.4,60,22.7,0,Summer,Snowy,Sport,Business,Heavy Winter Outfit
+14.3,72,20.8,0,Winter,Snowy,Casual,Sporty,Heavy Winter Outfit
+22.0,58,35.4,0,Summer,Cloudy,Traditional,Traditional,Spring Autumn Outfit
+35.6,26,34.0,0,Autumn,Cloudy,Business,Casual,Hot Weather Outfit
+29.7,86,20.7,0,Winter,Clear,Casual,Formal,Light Summer Outfit
+23.8,62,26.7,1,Summer,Stormy,Business,Formal,Rainy Light Outfit
+34.9,35,33.3,0,Winter,Cloudy,Traditional,Sporty,Hot Weather Outfit
+40.3,37,10.1,1,Spring,Rainy,Sport,Casual,Rainy Light Outfit
+31.9,45,5.2,0,Winter,Cloudy,Traditional,Casual,Hot Weather Outfit
+2.9,33,21.3,0,Autumn,Snowy,Casual,Casual,Heavy Winter Outfit
+5.6,81,44.2,1,Spring,Stormy,Sport,Traditional,Winter Outfit
+25.4,35,19.5,0,Winter,Cloudy,Formal,Sporty,Sport Summer Outfit
+28.6,89,9.0,1,Autumn,Rainy,Sport,Casual,Rainy Light Outfit
+39.9,83,16.5,0,Summer,Snowy,Business,Casual,Heavy Winter Outfit
+14.1,74,6.7,0,Summer,Snowy,Casual,Traditional,Heavy Winter Outfit
+10.3,94,13.6,0,Autumn,Clear,Sport,Sporty,Sport Winter Outfit
+27.6,55,0.4,1,Spring,Rainy,Traditional,Traditional,Rainy Light Outfit
+1.0,87,17.6,0,Winter,Cloudy,Formal,Formal,Formal Winter Outfit
+19.3,78,32.2,1,Spring,Rainy,Sport,Business,Rainy Light Outfit
+-6.5,81,16.9,1,Autumn,Stormy,Formal,Traditional,Heavy Winter Outfit
+26.8,84,34.9,0,Summer,Cloudy,Sport,Traditional,Sport Summer Outfit
+8.1,71,3.0,0,Winter,Cloudy,Formal,Casual,Light Winter Outfit
+16.0,80,14.6,0,Spring,Cloudy,Casual,Sporty,Spring Autumn Outfit
+10.0,73,41.5,1,Winter,Stormy,Sport,Casual,Rainy Cold Outfit
+-8.1,29,19.9,1,Summer,Stormy,Casual,Sporty,Heavy Winter Outfit
+6.7,77,17.0,0,Spring,Cloudy,Sport,Business,Winter Outfit
+4.9,45,33.4,1,Autumn,Stormy,Formal,Casual,Formal Winter Outfit
+20.3,32,9.2,0,Spring,Clear,Sport,Business,Spring Autumn Outfit
+35.0,63,8.3,0,Autumn,Cloudy,Formal,Traditional,Hot Weather Outfit
+16.0,65,27.8,0,Spring,Clear,Business,Business,Spring Autumn Outfit
+35.4,92,3.5,0,Summer,Clear,Casual,Business,Hot Weather Outfit
+21.3,62,1.0,1,Summer,Rainy,Business,Formal,Rainy Light Outfit
+-6.5,40,43.6,1,Winter,Stormy,Traditional,Sporty,Heavy Winter Outfit
+34.4,84,14.1,1,Winter,Stormy,Casual,Traditional,Rainy Light Outfit
+14.5,53,29.4,1,Winter,Rainy,Business,Formal,Rainy Cold Outfit
+0.4,27,6.3,1,Summer,Clear,Formal,Business,Formal Winter Outfit
+39.3,24,15.6,0,Winter,Snowy,Traditional,Traditional,Heavy Winter Outfit
+38.3,90,21.5,1,Spring,Rainy,Casual,Casual,Rainy Light Outfit
+-8.1,84,10.1,0,Summer,Snowy,Business,Formal,Heavy Winter Outfit
+30.6,49,1.0,0,Winter,Clear,Formal,Traditional,Hot Weather Outfit
+9.7,22,24.9,0,Winter,Snowy,Business,Sporty,Heavy Winter Outfit
+12.3,74,24.7,0,Winter,Snowy,Casual,Traditional,Heavy Winter Outfit
+41.1,67,15.8,0,Summer,Snowy,Casual,Sporty,Heavy Winter Outfit
+2.1,95,0.5,1,Autumn,Stormy,Traditional,Casual,Winter Outfit
+41.5,21,39.3,0,Spring,Clear,Casual,Casual,Hot Weather Outfit
+-0.6,25,14.1,1,Spring,Rainy,Formal,Traditional,Heavy Winter Outfit
+10.7,35,29.5,1,Winter,Rainy,Traditional,Sporty,Rainy Cold Outfit

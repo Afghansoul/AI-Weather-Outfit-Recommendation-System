@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#26374b"/><stop offset="1" stop-color="#526d83"/></linearGradient></defs>
+<rect width="800" height="620" rx="36" fill="url(#bg)"/>
+<g stroke="#b9ddf5" stroke-width="7" opacity=".8"><path d="M80 135l-20 55"/><path d="M150 115l-20 55"/><path d="M650 130l-20 55"/><path d="M720 110l-20 55"/></g>
+<text x="50" y="75" fill="white" font-size="28" font-family="Arial" font-weight="700">RAINY OUTFIT</text>
+<path d="M245 220 L335 175 L465 175 L555 220 L510 405 L290 405 Z" fill="#183a52"/>
+<path d="M290 405 L390 405 L375 550 L265 550 Z" fill="#253142"/><path d="M390 405 L510 405 L535 550 L425 550 Z" fill="#253142"/>
+<path d="M250 545 L375 545 L360 585 L225 585 Z" fill="#111b24"/><path d="M425 545 L545 545 L570 585 L430 585 Z" fill="#111b24"/>
+<path d="M335 175 L400 230 L465 175" fill="none" stroke="#7ab6d8" stroke-width="8"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#20242e"/><stop offset="1" stop-color="#4a4f5d"/></linearGradient></defs>
+<rect width="800" height="620" rx="36" fill="url(#bg)"/>
+<text x="50" y="75" fill="white" font-size="28" font-family="Arial" font-weight="700">FORMAL OUTFIT</text>
+<path d="M245 215 L335 165 L465 165 L555 215 L500 405 L300 405 Z" fill="#151a24"/>
+<path d="M335 165 L400 235 L465 165 L430 145 L370 145 Z" fill="#f5f5f2"/>
+<path d="M300 405 L395 405 L375 550 L260 550 Z" fill="#11151d"/><path d="M395 405 L500 405 L535 550 L420 550 Z" fill="#11151d"/>
+<path d="M250 545 L375 545 L365 580 L225 580 Z" fill="#090c11"/><path d="M420 545 L540 545 L565 580 L425 580 Z" fill="#090c11"/>
+<path d="M400 235 L375 330 L400 350 L425 330 Z" fill="#8e2632"/>
+</svg>
