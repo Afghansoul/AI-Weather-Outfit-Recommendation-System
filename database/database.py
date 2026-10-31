@@ -90,6 +90,43 @@ def initialize_database():
         )
     """)
 
+
+    # User trip/outfit plans
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS outfit_plans (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            destination TEXT NOT NULL,
+            plan_date TEXT NOT NULL,
+            departure_time TEXT NOT NULL,
+            occasion TEXT NOT NULL,
+            style TEXT NOT NULL,
+            temperature REAL,
+            humidity REAL,
+            wind_speed REAL,
+            precipitation REAL,
+            weather_code INTEGER,
+            season TEXT,
+            weather_condition TEXT,
+            outfit_category TEXT,
+            recommendation TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        )
+    """)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS notifications (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            title TEXT NOT NULL,
+            message TEXT NOT NULL,
+            severity TEXT NOT NULL DEFAULT 'info',
+            is_read INTEGER NOT NULL DEFAULT 0,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        )
+    """)
+
     connection.commit()
         # Add security-question columns to older databases
     try:
@@ -611,3 +648,87 @@ def reset_password(username, new_password):
     connection.close()
 
     return updated
+
+
+def create_outfit_plan(user_id, destination, plan_date, departure_time,
+                       occasion, style, weather, season, condition,
+                       outfit_category, recommendation):
+    connection = get_connection()
+    cursor = connection.cursor()
+    cursor.execute("""
+        INSERT INTO outfit_plans (
+            user_id, destination, plan_date, departure_time, occasion, style,
+            temperature, humidity, wind_speed, precipitation, weather_code,
+            season, weather_condition, outfit_category, recommendation
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (user_id, destination, plan_date, departure_time, occasion, style,
+          weather.get("temperature"), weather.get("humidity"),
+          weather.get("wind_speed"), weather.get("precipitation"),
+          weather.get("weather_code"), season, condition,
+          outfit_category, recommendation))
+    plan_id = cursor.lastrowid
+    connection.commit()
+    connection.close()
+    return plan_id
+
+
+def get_user_plans(user_id, limit=50):
+    connection = get_connection()
+    rows = connection.execute("""
+        SELECT * FROM outfit_plans
+        WHERE user_id=?
+        ORDER BY plan_date ASC, departure_time ASC
+        LIMIT ?
+    """, (user_id, limit)).fetchall()
+    connection.close()
+    return [dict(row) for row in rows]
+
+
+def delete_user_plan(user_id, plan_id):
+    connection = get_connection()
+    cursor = connection.cursor()
+    cursor.execute("DELETE FROM outfit_plans WHERE id=? AND user_id=?",
+                   (plan_id, user_id))
+    connection.commit()
+    deleted = cursor.rowcount > 0
+    connection.close()
+    return deleted
+
+
+def create_notification(user_id, title, message, severity="info"):
+    connection = get_connection()
+    cursor = connection.cursor()
+    cursor.execute("""
+        INSERT INTO notifications (user_id, title, message, severity)
+        VALUES (?, ?, ?, ?)
+    """, (user_id, title, message, severity))
+    notification_id = cursor.lastrowid
+    connection.commit()
+    connection.close()
+    return notification_id
+
+
+def get_user_notifications(user_id, unread_only=False, limit=100):
+    connection = get_connection()
+    query = "SELECT * FROM notifications WHERE user_id=?"
+    params = [user_id]
+    if unread_only:
+        query += " AND is_read=0"
+    query += " ORDER BY created_at DESC LIMIT ?"
+    params.append(limit)
+    rows = connection.execute(query, params).fetchall()
+    connection.close()
+    return [dict(row) for row in rows]
+
+
+def mark_notification_read(user_id, notification_id=None):
+    connection = get_connection()
+    if notification_id is None:
+        connection.execute("UPDATE notifications SET is_read=1 WHERE user_id=?",
+                           (user_id,))
+    else:
+        connection.execute(
+            "UPDATE notifications SET is_read=1 WHERE user_id=? AND id=?",
+            (user_id, notification_id))
+    connection.commit()
+    connection.close()
