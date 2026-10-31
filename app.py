@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 from pathlib import Path
+from datetime import date, datetime, timedelta
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -20,6 +21,12 @@ from database.database import (
     get_security_question,
     verify_security_answer,
     reset_password,
+    create_outfit_plan,
+    get_user_plans,
+    delete_user_plan,
+    create_notification,
+    get_user_notifications,
+    mark_notification_read,
 )
 from ml.predict import get_prediction_confidence
 from translations import translate
@@ -1067,14 +1074,15 @@ def register_page():
 
     auth_footer_close()
 
+
 def sidebar():
 
     user = get_user(st.session_state.username)
 
-    # Keep one canonical language value everywhere in the app.
+    # Supported languages
     languages = ["English", "دری", "پښتو"]
 
-    if st.session_state.language not in languages:
+    if st.session_state.get("language") not in languages:
         st.session_state.language = "English"
 
     language = st.sidebar.selectbox(
@@ -1092,6 +1100,7 @@ def sidebar():
     st.sidebar.write(f"👤 **{st.session_state.username}**")
     st.sidebar.markdown("---")
 
+    # Navigation uses stable internal page names
     nav = {
         "dashboard": translate("dashboard", language),
         "weather": translate("weather_recommendation", language),
@@ -1099,18 +1108,42 @@ def sidebar():
         "favorites": translate("favorites", language),
         "statistics": translate("statistics", language),
         "profile": translate("profile", language),
+        "planner": {
+            "English": "🗓️ Outfit Planner",
+            "دری": "🗓️ برنامه‌ریز لباس",
+            "پښتو": "🗓️ د جامو پلان"
+        }[language],
+        "notifications": {
+            "English": "🔔 Notifications",
+            "دری": "🔔 اطلاعیه‌ها",
+            "پښتو": "🔔 خبرتیاوې"
+        }[language],
     }
 
     if user and user.get("role") == "admin":
         nav["admin"] = translate("admin_dashboard", language)
 
-    page_label = st.sidebar.radio(
-        translate("dashboard", language).split(" ")[-1] if False else "Navigation",
-        list(nav.values()),
+    unread_count = 0
+    if user:
+        unread_count = len(
+            get_user_notifications(user["id"], unread_only=True)
+        )
+
+    if unread_count:
+        st.sidebar.caption(
+            f"🔔 {unread_count} unread notification(s)"
+        )
+
+    # Reset old translated values from previous navigation
+    if st.session_state.get("main_navigation") not in nav:
+        st.session_state["main_navigation"] = "dashboard"
+
+    selected_page = st.sidebar.radio(
+        "Navigation",
+        options=list(nav.keys()),
+        format_func=lambda page: nav[page],
         key="main_navigation"
     )
-
-    reverse_nav = {label: key for key, label in nav.items()}
 
     st.sidebar.markdown("---")
 
@@ -1123,7 +1156,7 @@ def sidebar():
         st.session_state.auth_mode = "login"
         st.rerun()
 
-    return reverse_nav[page_label]
+    return selected_page
 
 def dashboard():
 
@@ -1161,7 +1194,10 @@ def dashboard():
         if total_recommendations else 0
     )
 
-    col1, col2, col3, col4 = st.columns(4)
+    plans = get_user_plans(user["id"])
+    unread_notifications = get_user_notifications(user["id"], unread_only=True)
+
+    col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
         st.metric(
@@ -1183,8 +1219,14 @@ def dashboard():
 
     with col4:
         st.metric(
-            ui_text("test_accuracy", lang),
-            "91%"
+            {"English": "Saved plans", "دری": "برنامه‌های ذخیره‌شده", "پښتو": "خوندي پلانونه"}[lang],
+            len(plans)
+        )
+
+    with col5:
+        st.metric(
+            {"English": "Unread alerts", "دری": "هشدارهای خوانده‌نشده", "پښتو": "نه لوستل شوې خبرتیاوې"}[lang],
+            len(unread_notifications)
         )
 
     # --------------------------------------------------
@@ -1200,16 +1242,19 @@ def dashboard():
         st.success(
             f"{ui_text('active', lang)} — Random Forest"
         )
+        dataset_file = Path(__file__).parent / "ml" / "dataset.csv"
+        model_file = Path(__file__).parent / "ml" / "outfit_model.pkl"
+        dataset_rows = len(pd.read_csv(dataset_file)) if dataset_file.exists() else 0
         st.write(
             f"{ui_text('algorithm', lang)}: Random Forest | "
-            f"{ui_text('trees', lang)}: 200 | "
-            f"{ui_text('dataset', lang)}: 1500"
+            f"{ui_text('dataset', lang)}: {dataset_rows} records"
         )
+        st.caption("Model file: available" if model_file.exists() else "Model file: missing")
 
     with col2:
         st.metric(
-            ui_text("test_accuracy", lang),
-            "91%"
+            {"English": "Saved plans", "دری": "برنامه‌ها", "پښتو": "پلانونه"}[lang],
+            len(plans)
         )
 
     # --------------------------------------------------
@@ -1354,38 +1399,141 @@ def dashboard():
         f"{ui_text('view_favorites', lang)}"
     )
 
+
+# Offline gazetteer for major Afghan provincial capitals and commonly used cities.
+# Coordinates are approximate city-centre coordinates; online geocoding is still
+# used for more precise matching and for locations not listed here.
+AFGHAN_LOCATIONS = {
+    "kabul": ("Kabul", "Kabul", 34.5553, 69.2075),
+    "کابل": ("Kabul", "Kabul", 34.5553, 69.2075),
+    "kandahar": ("Kandahar", "Kandahar", 31.6289, 65.7372),
+    "قندهار": ("Kandahar", "Kandahar", 31.6289, 65.7372),
+    "herat": ("Herat", "Herat", 34.3529, 62.2040),
+    "هرات": ("Herat", "Herat", 34.3529, 62.2040),
+    "mazar-i-sharif": ("Mazar-i-Sharif", "Balkh", 36.7069, 67.1109),
+    "mazar": ("Mazar-i-Sharif", "Balkh", 36.7069, 67.1109),
+    "مزار شریف": ("Mazar-i-Sharif", "Balkh", 36.7069, 67.1109),
+    "balkh": ("Balkh", "Balkh", 36.7580, 66.8972),
+    "jalalabad": ("Jalalabad", "Nangarhar", 34.4342, 70.4478),
+    "جلال آباد": ("Jalalabad", "Nangarhar", 34.4342, 70.4478),
+    "kunduz": ("Kunduz", "Kunduz", 36.7286, 68.8681),
+    "کندز": ("Kunduz", "Kunduz", 36.7286, 68.8681),
+    "pul-e-khumri": ("Pul-e-Khumri", "Baghlan", 35.9446, 68.7151),
+    "baghlan": ("Pul-e-Khumri", "Baghlan", 35.9446, 68.7151),
+    "بغلان": ("Pul-e-Khumri", "Baghlan", 35.9446, 68.7151),
+    "ghazni": ("Ghazni", "Ghazni", 33.5539, 68.4200),
+    "غزنی": ("Ghazni", "Ghazni", 33.5539, 68.4200),
+    "gardez": ("Gardez", "Paktia", 33.5974, 69.2259),
+    "گردیز": ("Gardez", "Paktia", 33.5974, 69.2259),
+    "khost": ("Khost", "Khost", 33.3331, 69.9378),
+    "خوست": ("Khost", "Khost", 33.3331, 69.9378),
+    "pul-e-alam": ("Pul-e-Alam", "Logar", 33.9953, 69.0277),
+    "pul e alam": ("Pul-e-Alam", "Logar", 33.9953, 69.0277),
+    "logar": ("Pul-e-Alam", "Logar", 33.9953, 69.0277),
+    "لوگر": ("Pul-e-Alam", "Logar", 33.9953, 69.0277),
+    "پُل علم": ("Pul-e-Alam", "Logar", 33.9953, 69.0277),
+    "farah": ("Farah", "Farah", 32.3745, 62.1164),
+    "فراه": ("Farah", "Farah", 32.3745, 62.1164),
+    "nimroz": ("Zaranj", "Nimroz", 30.9596, 61.8600),
+    "zaranj": ("Zaranj", "Nimroz", 30.9596, 61.8600),
+    "زرنج": ("Zaranj", "Nimroz", 30.9596, 61.8600),
+    "lashkar gah": ("Lashkar Gah", "Helmand", 31.5938, 64.3716),
+    "lashkargah": ("Lashkar Gah", "Helmand", 31.5938, 64.3716),
+    "لشکرگاه": ("Lashkar Gah", "Helmand", 31.5938, 64.3716),
+    "taloqan": ("Taloqan", "Takhar", 36.7361, 69.5345),
+    "تالقان": ("Taloqan", "Takhar", 36.7361, 69.5345),
+    "samangan": ("Aybak", "Samangan", 36.2647, 68.0155),
+    "aybak": ("Aybak", "Samangan", 36.2647, 68.0155),
+    "بامیان": ("Bamyan", "Bamyan", 34.8216, 67.8273),
+    "bamyan": ("Bamyan", "Bamyan", 34.8216, 67.8273),
+    "fayzabad": ("Fayzabad", "Badakhshan", 37.1211, 70.5792),
+    "faizabad": ("Fayzabad", "Badakhshan", 37.1211, 70.5792),
+    "فیض آباد": ("Fayzabad", "Badakhshan", 37.1211, 70.5792),
+    "maymana": ("Maymana", "Faryab", 35.9214, 64.7742),
+    "میمنه": ("Maymana", "Faryab", 35.9214, 64.7742),
+    "sheberghan": ("Sheberghan", "Jowzjan", 36.6676, 65.7529),
+    "شبرغان": ("Sheberghan", "Jowzjan", 36.6676, 65.7529),
+    "sar-e-pul": ("Sar-e-Pul", "Sar-e-Pul", 36.2154, 65.9325),
+    "سرپل": ("Sar-e-Pul", "Sar-e-Pul", 36.2154, 65.9325),
+    "charikar": ("Charikar", "Parwan", 35.0136, 69.1714),
+    "چاریکار": ("Charikar", "Parwan", 35.0136, 69.1714),
+    "mahmud-i-raqi": ("Mahmud-i-Raqi", "Kapisa", 35.0167, 69.3333),
+    "parun": ("Parun", "Nuristan", 35.4206, 70.9221),
+    "asadabad": ("Asadabad", "Kunar", 34.8731, 71.1469),
+    "اسعدآباد": ("Asadabad", "Kunar", 34.8731, 71.1469),
+    "mehtarlam": ("Mehtarlam", "Laghman", 34.6714, 70.2094),
+    "مهترلام": ("Mehtarlam", "Laghman", 34.6714, 70.2094),
+    "sharan": ("Sharan", "Paktika", 33.1258, 68.7800),
+    "sharana": ("Sharan", "Paktika", 33.1258, 68.7800),
+    "shibirghan": ("Sheberghan", "Jowzjan", 36.6676, 65.7529),
+    "qalat": ("Qalat", "Zabul", 32.1058, 66.9083),
+    "قلات": ("Qalat", "Zabul", 32.1058, 66.9083),
+    "turghundi": ("Torghundi", "Herat", 34.5000, 62.2500),
+    "spin boldak": ("Spin Boldak", "Kandahar", 30.9900, 66.4000),
+}
+AFGHAN_LOCATIONS.update({'tarinkot': ('Tarin Kowt', 'Uruzgan', 32.6294, 65.8781), 'ترینکوت': ('Tarin Kowt', 'Uruzgan', 32.6294, 65.8781), 'nili': ('Nili', 'Daykundi', 33.7218, 66.1302), 'نیلی': ('Nili', 'Daykundi', 33.7218, 66.1302), 'maidan shahr': ('Maidan Shahr', 'Maidan Wardak', 34.3956, 68.8662), 'میدان شهر': ('Maidan Shahr', 'Maidan Wardak', 34.3956, 68.8662), 'qala-e-naw': ('Qala-e-Naw', 'Badghis', 34.9874, 63.1289), 'qala i naw': ('Qala-e-Naw', 'Badghis', 34.9874, 63.1289), 'قلعه نو': ('Qala-e-Naw', 'Badghis', 34.9874, 63.1289), 'chaghcharan': ('Chaghcharan', 'Ghor', 34.5244, 65.2509), 'firozkoh': ('Firozkoh', 'Ghor', 34.5244, 65.2509), 'فیروزکوه': ('Firozkoh', 'Ghor', 34.5244, 65.2509), 'zabul': ('Qalat', 'Zabul', 32.1058, 66.9083), 'بادغیس': ('Qala-e-Naw', 'Badghis', 34.9874, 63.1289), 'دایکندی': ('Nili', 'Daykundi', 33.7218, 66.1302), 'ارزگان': ('Tarin Kowt', 'Uruzgan', 32.6294, 65.8781), 'وردک': ('Maidan Shahr', 'Maidan Wardak', 34.3956, 68.8662), 'غور': ('Firozkoh', 'Ghor', 34.5244, 65.2509)})
+
+def local_afghan_places(query):
+    q = query.strip().casefold()
+    if not q:
+        return []
+    exact = AFGHAN_LOCATIONS.get(q)
+    matches = []
+    if exact:
+        name, province, lat, lon = exact
+        matches.append({
+            "name": name, "admin1": province, "country": "Afghanistan",
+            "country_code": "AF", "latitude": lat, "longitude": lon,
+            "feature_code": "PPLA"
+        })
+    for key, value in AFGHAN_LOCATIONS.items():
+        if q in key or key in q:
+            name, province, lat, lon = value
+            item = {
+                "name": name, "admin1": province, "country": "Afghanistan",
+                "country_code": "AF", "latitude": lat, "longitude": lon,
+                "feature_code": "PPLA"
+            }
+            if not any(p["name"] == name and p["admin1"] == province for p in matches):
+                matches.append(item)
+    return matches
+
+
 def search_cities(city):
-    """Return geocoding candidates so the user can explicitly choose the city."""
+    """Search the local Afghan gazetteer first, then Open-Meteo geocoding."""
     city = city.strip()
     if not city:
         return []
-
+    local = local_afghan_places(city)
     try:
         response = requests.get(
             "https://geocoding-api.open-meteo.com/v1/search",
-            params={
-                "name": city,
-                "count": 10,
-                "language": "en",
-                "format": "json"
-            },
-            timeout=10
+            params={"name": city, "count": 100, "language": "en", "format": "json"},
+            timeout=12
         )
         response.raise_for_status()
         results = response.json().get("results", [])
-
-        # Put exact name matches first. The user still chooses the final
-        # location, which prevents ambiguous names such as Beijing.
-        results.sort(
-            key=lambda r: (
-                str(r.get("name", "")).lower() != city.lower(),
-                str(r.get("feature_code", "")) != "PPLC",
-                str(r.get("country", ""))
-            )
-        )
-        return results
     except (requests.RequestException, ValueError, TypeError):
-        return []
+        results = []
+    # Keep Afghan local matches first, then online matches; remove duplicates.
+    combined = local + results
+    unique, seen = [], set()
+    for place in combined:
+        key = (
+            str(place.get("name", "")).casefold(),
+            str(place.get("admin1", "")).casefold(),
+            round(float(place.get("latitude", 0)), 3),
+            round(float(place.get("longitude", 0)), 3)
+        )
+        if key not in seen:
+            seen.add(key)
+            unique.append(place)
+    unique.sort(key=lambda r: (
+        str(r.get("country_code", "")).upper() != "AF",
+        str(r.get("name", "")).casefold() != city.casefold(),
+        str(r.get("feature_code", "")) != "PPLC"
+    ))
+    return unique[:100]
 
 
 def get_weather_for_place(place):
@@ -1407,7 +1555,12 @@ def get_weather_for_place(place):
                     "temperature_2m,relative_humidity_2m,"
                     "precipitation,wind_speed_10m,weather_code"
                 ),
-                "forecast_days": 2,
+                "daily": (
+                    "weather_code,temperature_2m_max,temperature_2m_min,"
+                    "precipitation_probability_max,precipitation_sum,"
+                    "wind_speed_10m_max"
+                ),
+                "forecast_days": 7,
                 "timezone": "auto"
             },
             timeout=10
@@ -1421,6 +1574,16 @@ def get_weather_for_place(place):
             return None, "no_data"
 
         times = hourly.get("time", [])[:24]
+        daily_data = weather_data.get("daily", {})
+        daily_forecast = {
+            "time": daily_data.get("time", []),
+            "weather_code": daily_data.get("weather_code", []),
+            "temperature_max": daily_data.get("temperature_2m_max", []),
+            "temperature_min": daily_data.get("temperature_2m_min", []),
+            "precipitation_probability": daily_data.get("precipitation_probability_max", []),
+            "precipitation_sum": daily_data.get("precipitation_sum", []),
+            "wind_speed_max": daily_data.get("wind_speed_10m_max", []),
+        }
         forecast = {
             "time": times,
             "temperature": hourly.get("temperature_2m", [])[:24],
@@ -1445,10 +1608,68 @@ def get_weather_for_place(place):
             "precipitation": float(current.get("precipitation", 0)),
             "weather_code": int(current.get("weather_code", 0)),
             "forecast": forecast,
+            "daily": daily_forecast,
         }, None
 
     except (requests.RequestException, ValueError, KeyError, TypeError):
         return None, "request_error"
+
+
+def get_forecast_for_date(place, selected_date, departure_time=None):
+    """Return daily forecast for a date within Open-Meteo's available horizon."""
+    try:
+        params = {
+            "latitude": float(place["latitude"]),
+            "longitude": float(place["longitude"]),
+            "daily": (
+                "weather_code,temperature_2m_max,temperature_2m_min,"
+                "precipitation_probability_max,precipitation_sum,"
+                "wind_speed_10m_max"
+            ),
+            "hourly": "relative_humidity_2m",
+            "start_date": selected_date.isoformat(),
+            "end_date": selected_date.isoformat(),
+            "timezone": "auto"
+        }
+        response = requests.get(
+            "https://api.open-meteo.com/v1/forecast",
+            params=params, timeout=12
+        )
+        response.raise_for_status()
+        payload = response.json()
+        data = payload.get("daily", {})
+        if not data.get("time"):
+            return None, "no_forecast"
+        humidity = 50.0
+        hourly = payload.get("hourly", {})
+        if departure_time and hourly.get("time"):
+            target = f"{selected_date.isoformat()}T{departure_time.strftime('%H:00')}"
+            try:
+                hidx = hourly["time"].index(target)
+                humidity = float(hourly["relative_humidity_2m"][hidx])
+            except (ValueError, IndexError, TypeError):
+                pass
+        return {
+            "humidity": humidity,
+            "date": data["time"][0],
+            "temperature_max": float(data["temperature_2m_max"][0]),
+            "temperature_min": float(data["temperature_2m_min"][0]),
+            "precipitation_probability": float(data["precipitation_probability_max"][0] or 0),
+            "precipitation_sum": float(data["precipitation_sum"][0] or 0),
+            "wind_speed_max": float(data["wind_speed_10m_max"][0] or 0),
+            "weather_code": int(data["weather_code"][0]),
+        }, None
+    except requests.HTTPError as exc:
+        detail = ""
+        try:
+            detail = exc.response.text[:500] if exc.response is not None else str(exc)
+        except Exception:
+            detail = str(exc)
+        return None, f"HTTP error: {detail}"
+    except requests.RequestException as exc:
+        return None, f"Network error: {exc}"
+    except (ValueError, KeyError, IndexError, TypeError) as exc:
+        return None, f"Forecast data error: {exc}"
 
 
 def season_from_month(month):
@@ -1828,7 +2049,7 @@ def render_weather_visualizations(live_weather, lang):
         "latitude": live_weather["latitude"],
         "longitude": live_weather["longitude"],
     }])
-    st.map(location_df, latitude="latitude", longitude="longitude", zoom=7, use_container_width=True)
+    st.map(location_df, latitude="latitude", longitude="longitude", zoom=7, width="stretch")
 
     map_info_col1, map_info_col2, map_info_col3 = st.columns(3)
     map_info_col1.metric(ui_text("location", lang), f"{live_weather['city']}, {live_weather['country']}")
@@ -1860,21 +2081,21 @@ def render_weather_visualizations(live_weather, lang):
     with c1:
         fig_temp = px.line(chart_df, x="time", y="temperature", markers=True, title=ui_text("temperature_forecast", lang))
         fig_temp.update_layout(height=330, margin=dict(l=10, r=10, t=55, b=10), yaxis_title="°C", xaxis_title="")
-        st.plotly_chart(fig_temp, use_container_width=True)
+        st.plotly_chart(fig_temp, width="stretch")
     with c2:
         fig_humidity = px.line(chart_df, x="time", y="humidity", markers=True, title=ui_text("humidity_forecast", lang))
         fig_humidity.update_layout(height=330, margin=dict(l=10, r=10, t=55, b=10), yaxis_title="%", xaxis_title="")
-        st.plotly_chart(fig_humidity, use_container_width=True)
+        st.plotly_chart(fig_humidity, width="stretch")
 
     c3, c4 = st.columns(2)
     with c3:
         fig_wind = px.line(chart_df, x="time", y="wind", markers=True, title=ui_text("wind_forecast", lang))
         fig_wind.update_layout(height=330, margin=dict(l=10, r=10, t=55, b=10), yaxis_title="km/h", xaxis_title="")
-        st.plotly_chart(fig_wind, use_container_width=True)
+        st.plotly_chart(fig_wind, width="stretch")
     with c4:
         fig_rain = px.bar(chart_df, x="time", y="precipitation", title=ui_text("precipitation_forecast", lang))
         fig_rain.update_layout(height=330, margin=dict(l=10, r=10, t=55, b=10), yaxis_title="mm", xaxis_title="")
-        st.plotly_chart(fig_rain, use_container_width=True)
+        st.plotly_chart(fig_rain, width="stretch")
 
     st.markdown(f"### 🧊 {ui_text('weather_3d', lang)}")
     fig_3d = go.Figure(data=[go.Scatter3d(
@@ -1894,7 +2115,7 @@ def render_weather_visualizations(live_weather, lang):
             zaxis_title="Wind (km/h)",
         ),
     )
-    st.plotly_chart(fig_3d, use_container_width=True)
+    st.plotly_chart(fig_3d, width="stretch")
 
 def outfit_image_path(prediction):
     """Return a local recommendation image for the predicted category."""
@@ -1957,6 +2178,9 @@ def weather_page():
         st.session_state.city_candidates = candidates
         st.session_state.city_query = city
         st.session_state.selected_city_index = 0
+        st.session_state.live_weather = None
+        st.session_state.pop("selected_city_result", None)
+        st.session_state.pop("planner_result", None)
         if candidates:
             st.success(f"{ui_text('city_found', lang)}: {len(candidates)}")
             st.rerun()
@@ -1965,6 +2189,38 @@ def weather_page():
 
     candidates = st.session_state.get("city_candidates", [])
     live_weather = st.session_state.get("live_weather")
+
+    # Synchronize widget state from the newly selected live weather record.
+    # This prevents old values from another city or previous manual input remaining visible.
+    if live_weather:
+        st.session_state["weather_temperature"] = float(live_weather["temperature"])
+        st.session_state["weather_humidity"] = int(live_weather["humidity"])
+        st.session_state["weather_wind_speed"] = float(live_weather["wind_speed"])
+        st.session_state["weather_rain"] = (
+            translate("yes", lang) if live_weather["rain"] > 0
+            else translate("no", lang)
+        )
+        auto_season = season_from_month(datetime.now().month)
+        auto_condition = weather_condition_from_code(live_weather["weather_code"])
+        season_label = next(
+            label for label, value in {
+                translate("spring", lang): "Spring",
+                translate("summer", lang): "Summer",
+                translate("autumn", lang): "Autumn",
+                translate("winter", lang): "Winter"
+            }.items() if value == auto_season
+        )
+        condition_label = next(
+            label for label, value in {
+                translate("clear", lang): "Clear",
+                translate("cloudy", lang): "Cloudy",
+                translate("rainy", lang): "Rainy",
+                translate("snowy", lang): "Snowy",
+                translate("stormy", lang): "Stormy"
+            }.items() if value == auto_condition
+        )
+        st.session_state["weather_season"] = season_label
+        st.session_state["weather_condition"] = condition_label
 
     if candidates:
         labels = []
@@ -2009,6 +2265,21 @@ def weather_page():
                     if weather["rain"] > 0
                     else translate("no", lang)
                 )
+                # Persist actionable weather alerts in the in-app notification centre.
+                current_condition = weather_condition_from_code(weather["weather_code"])
+                if current_condition in ("Rainy", "Stormy") or weather["wind_speed"] >= 40:
+                    current_user = get_user(st.session_state.username)
+                    if current_user:
+                        alert_text = (
+                            f'{weather["city"]}: {current_condition} conditions. '
+                            f'Temperature {weather["temperature"]:.1f} °C; '
+                            f'wind {weather["wind_speed"]:.1f} km/h. '
+                            'Choose weather-appropriate clothing and check the forecast.'
+                        )
+                        create_notification(
+                            current_user["id"], "Current weather alert",
+                            alert_text, "warning"
+                        )
                 st.success(ui_text("weather_loaded", lang))
                 st.rerun()
             else:
@@ -2026,39 +2297,36 @@ def weather_page():
 
     with col1:
 
+        # Widget values are managed only through Session State. Do not also
+        # pass `value=` when a widget has a key; that causes Streamlit warnings.
+        st.session_state.setdefault("weather_temperature", 20.0)
+        st.session_state.setdefault("weather_humidity", 50)
+        st.session_state.setdefault("weather_wind_speed", 10.0)
+
         temperature = st.number_input(
             translate("temperature", lang),
             min_value=-30.0,
             max_value=50.0,
-            value=(
-                float(live_weather["temperature"])
-                if live_weather else 20.0
-            ),
             step=1.0,
-            key="weather_temperature"
+            key="weather_temperature",
+            disabled=bool(live_weather)
         )
 
         humidity = st.slider(
             translate("humidity", lang),
             min_value=0,
             max_value=100,
-            value=(
-                int(live_weather["humidity"])
-                if live_weather else 50
-            ),
-            key="weather_humidity"
+            key="weather_humidity",
+            disabled=bool(live_weather)
         )
 
         wind_speed = st.number_input(
             translate("wind_speed", lang),
             min_value=0.0,
             max_value=150.0,
-            value=(
-                float(live_weather["wind_speed"])
-                if live_weather else 10.0
-            ),
             step=1.0,
-            key="weather_wind_speed"
+            key="weather_wind_speed",
+            disabled=bool(live_weather)
         )
 
         rain_options = [
@@ -2072,11 +2340,14 @@ def weather_page():
             else translate("no", lang)
         )
 
+        if st.session_state.get("weather_rain") not in rain_options:
+            st.session_state["weather_rain"] = default_rain
+
         rain_text = st.selectbox(
             translate("rain", lang),
             rain_options,
-            index=rain_options.index(default_rain),
-            key="weather_rain"
+            key="weather_rain",
+            disabled=bool(live_weather)
         )
 
     with col2:
@@ -2113,8 +2384,6 @@ def weather_page():
         }
 
         if live_weather:
-            from datetime import datetime
-
             detected_season = season_from_month(
                 datetime.now().month
             )
@@ -2122,34 +2391,39 @@ def weather_page():
                 live_weather["weather_code"]
             )
         else:
-            detected_season = "Summer"
+            detected_season = season_from_month(datetime.now().month)
             detected_condition = "Clear"
 
         season_labels = list(season_map.keys())
         condition_labels = list(condition_map.keys())
 
+        default_season_label = next(
+            label for label, value in season_map.items()
+            if value == detected_season
+        )
+        default_condition_label = next(
+            label for label, value in condition_map.items()
+            if value == detected_condition
+        )
+
+        # Reconcile translated widget values after a language change.
+        if st.session_state.get("weather_season") not in season_labels:
+            st.session_state["weather_season"] = default_season_label
+        if st.session_state.get("weather_condition") not in condition_labels:
+            st.session_state["weather_condition"] = default_condition_label
+
         selected_season = st.selectbox(
             translate("season", lang),
             season_labels,
-            index=season_labels.index(
-                next(
-                    label for label, value in season_map.items()
-                    if value == detected_season
-                )
-            ),
-            key="weather_season"
+            key="weather_season",
+            disabled=bool(live_weather)
         )
 
         selected_condition = st.selectbox(
             translate("weather_condition", lang),
             condition_labels,
-            index=condition_labels.index(
-                next(
-                    label for label, value in condition_map.items()
-                    if value == detected_condition
-                )
-            ),
-            key="weather_condition"
+            key="weather_condition",
+            disabled=bool(live_weather)
         )
 
         selected_occasion = st.selectbox(
@@ -2393,6 +2667,222 @@ def weather_page():
             translate("rain", lang),
             rain_text
         )
+
+
+# --------------------------------------------------
+# OUTFIT PLANNER
+# --------------------------------------------------
+
+def planner_page():
+    lang = st.session_state.get("language", "English")
+    user = get_user(st.session_state.username)
+    if not user:
+        st.error(translate("user_not_found", lang))
+        return
+
+    st.title("🗓️ " + {"English": "Outfit & Travel Planner", "دری": "برنامه‌ریز سفر و لباس", "پښتو": "د سفر او جامو پلان"}[lang])
+    st.caption({
+        "English": "Choose a destination and date. The system analyzes the forecast and predicts a suitable outfit.",
+        "دری": "مقصد و تاریخ را انتخاب کنید؛ سیستم پیش‌بینی آب‌وهوا را تحلیل کرده و لباس مناسب پیشنهاد می‌کند.",
+        "پښتو": "خپل منزل او نېټه وټاکئ؛ سیستم د هوا وړاندوینه تحلیلوي او مناسبې جامې وړاندیز کوي."
+    }[lang])
+
+    city = st.text_input(
+        {"English": "Destination city", "دری": "شهر مقصد", "پښتو": "د منزل ښار"}[lang],
+        key="planner_city_input", value="Kabul"
+    )
+    selected_date = st.date_input(
+        {"English": "Plan date", "دری": "تاریخ برنامه", "پښتو": "د پلان نېټه"}[lang],
+        value=date.today() + timedelta(days=1),
+        min_value=date.today(),
+        max_value=date.today() + timedelta(days=6),
+        key="planner_date"
+    )
+    departure = st.time_input(
+        {"English": "Departure time", "دری": "ساعت حرکت", "پښتو": "د تګ وخت"}[lang],
+        value=datetime.strptime("08:00", "%H:%M").time(),
+        key="planner_departure"
+    )
+    occasion_labels = {
+        "English": {"Casual": "Casual", "Formal": "Formal", "Sport": "Sport", "Business": "Business", "Traditional": "Traditional"},
+        "دری": {"روزمره": "Casual", "رسمی": "Formal", "ورزشی": "Sport", "کاری": "Business", "سنتی": "Traditional"},
+        "پښتو": {"عادي": "Casual", "رسمي": "Formal", "ورزشي": "Sport", "د کار": "Business", "دودیز": "Traditional"}
+    }[lang]
+    style_labels = {
+        "English": {"Casual": "Casual", "Sporty": "Sporty", "Formal": "Formal", "Business": "Business", "Traditional": "Traditional"},
+        "دری": {"روزمره": "Casual", "ورزشی": "Sporty", "رسمی": "Formal", "کاری": "Business", "سنتی": "Traditional"},
+        "پښتو": {"عادي": "Casual", "ورزشي": "Sporty", "رسمي": "Formal", "د کار": "Business", "دودیز": "Traditional"}
+    }[lang]
+    c1, c2 = st.columns(2)
+    with c1:
+        occasion_label = st.selectbox({"English":"Occasion","دری":"مناسبت","پښتو":"مناسبت"}[lang], list(occasion_labels))
+    with c2:
+        style_label = st.selectbox({"English":"Clothing style","دری":"سبک لباس","پښتو":"د جامو ډول"}[lang], list(style_labels))
+
+    if st.button({"English":"Analyze destination weather","دری":"تحلیل آب‌وهوای مقصد","پښتو":"د منزل د هوا تحلیل"}[lang], type="primary", width="stretch"):
+        candidates = search_cities(city)
+        if not candidates:
+            st.error({"English":"Location was not found. Try the English or local city name.","دری":"مکان پیدا نشد؛ نام انگلیسی یا محلی شهر را امتحان کنید.","پښتو":"ځای ونه موندل شو؛ د ښار انګلیسي یا محلي نوم وازمویئ."}[lang])
+        else:
+            st.session_state.planner_candidates = candidates
+            st.session_state.planner_search_date = selected_date.isoformat()
+            st.rerun()
+
+    candidates = st.session_state.get("planner_candidates", [])
+    if candidates:
+        candidate_labels = [
+            ", ".join([x for x in [p.get("name"), p.get("admin1"), p.get("country")] if x])
+            for p in candidates
+        ]
+        idx = st.selectbox(
+            {"English":"Confirm destination","دری":"تأیید مقصد","پښتو":"منزل تاییدول"}[lang],
+            range(len(candidates)),
+            format_func=lambda i: candidate_labels[i],
+            key="planner_place_choice"
+        )
+        place = candidates[idx]
+        # Forecasts are available only within the provider's forecast horizon.
+        if selected_date > date.today() + timedelta(days=6):
+            st.warning("The selected date is outside the available forecast period.")
+        if st.button({"English":"Get forecast and outfit","دری":"دریافت پیش‌بینی و پیشنهاد لباس","پښتو":"وړاندوینه او د جامو وړاندیز"}[lang], type="primary", key="planner_get_forecast"):
+            forecast, error = get_forecast_for_date(place, selected_date, departure)
+            if not forecast:
+                st.error({"English":"Forecast could not be retrieved for this date and location.","دری":"پیش‌بینی برای این تاریخ و مکان دریافت نشد.","پښتو":"د دې نېټې او ځای لپاره وړاندوینه ترلاسه نه شوه."}[lang])
+                if error:
+                    st.code(str(error), language="text")
+            else:
+                avg_temp = (forecast["temperature_max"] + forecast["temperature_min"]) / 2
+                rain_value = 1 if forecast["precipitation_sum"] > 0.1 else 0
+                condition = weather_condition_from_code(forecast["weather_code"])
+                season = season_from_month(selected_date.month)
+                # Humidity is taken from the hourly forecast for the planned departure time.
+                humidity = forecast["humidity"]
+                prediction, confidence = get_prediction_confidence(
+                    avg_temp, humidity, forecast["wind_speed_max"], rain_value,
+                    season, condition, occasion_labels[occasion_label],
+                    style_labels[style_label]
+                )
+                details_map = {
+                    "Heavy Winter Outfit":"Wear thermal layers, a warm coat, long trousers and insulated shoes.",
+                    "Formal Winter Outfit":"Wear a formal warm coat, sweater, formal trousers and closed shoes.",
+                    "Winter Outfit":"Wear a warm jacket, sweater, long trousers and warm shoes.",
+                    "Hot Weather Outfit":"Wear light, breathable clothing and comfortable shoes.",
+                    "Light Summer Outfit":"Choose lightweight, breathable summer clothing.",
+                    "Light Winter Outfit":"Wear a light jacket or sweater with long trousers.",
+                    "Rainy Cold Outfit":"Wear a waterproof jacket, warm layers and waterproof shoes; carry an umbrella.",
+                    "Rainy Light Outfit":"Wear a light waterproof jacket and suitable shoes; carry an umbrella.",
+                    "Sport Summer Outfit":"Wear breathable sportswear and comfortable athletic shoes.",
+                    "Sport Winter Outfit":"Wear warm sportswear, a jacket and athletic shoes.",
+                    "Spring Autumn Outfit":"Wear a light jacket or sweater with comfortable trousers."
+                }
+                recommendation = details_map.get(prediction, "Choose clothing suitable for the forecast.")
+                st.session_state.planner_result = {
+                    "place": place, "forecast": forecast, "season": season,
+                    "condition": condition, "prediction": prediction,
+                    "confidence": confidence, "recommendation": recommendation,
+                    "humidity": humidity, "avg_temp": avg_temp,
+                    "occasion": occasion_labels[occasion_label],
+                    "style": style_labels[style_label],
+                    "selected_date": selected_date.isoformat(),
+                    "departure": departure.strftime("%H:%M")
+                }
+
+    result = st.session_state.get("planner_result")
+    if result:
+        f = result["forecast"]
+        st.markdown("---")
+        st.subheader({"English":"Forecast analysis","دری":"تحلیل پیش‌بینی","پښتو":"د وړاندوینې تحلیل"}[lang])
+        a,b,c,d = st.columns(4)
+        a.metric("Temperature", f'{f["temperature_min"]:.1f}–{f["temperature_max"]:.1f} °C')
+        b.metric("Rain probability", f'{f["precipitation_probability"]:.0f}%')
+        c.metric("Precipitation", f'{f["precipitation_sum"]:.1f} mm')
+        d.metric("Maximum wind", f'{f["wind_speed_max"]:.1f} km/h')
+        st.write(f'**{result["place"].get("name")}, {result["place"].get("country")}** — {result["selected_date"]} at {result["departure"]}')
+        st.success(f'**{result["prediction"]}** — {result["confidence"]:.1f}% model confidence')
+        st.write(result["recommendation"])
+        alerts = []
+        if f["precipitation_probability"] >= 50 or f["precipitation_sum"] >= 1:
+            alerts.append("Rain is possible; take an umbrella and waterproof footwear.")
+        if f["wind_speed_max"] >= 35:
+            alerts.append("Strong wind is expected; choose a wind-resistant outer layer.")
+        if f["temperature_min"] <= 5:
+            alerts.append("Cold conditions are expected; add warm layers.")
+        if f["temperature_max"] >= 32:
+            alerts.append("Hot conditions are expected; choose breathable, light clothing.")
+        if alerts:
+            st.warning("Weather alerts: " + " ".join(alerts))
+        else:
+            st.info("No major weather alert was detected for this forecast.")
+        if st.button({"English":"Save this plan and create alerts","دری":"ذخیره برنامه و ایجاد هشدارها","پښتو":"دا پلان او خبرتیاوې خوندي کړئ"}[lang], type="primary", key="planner_save_plan"):
+            plan_id = create_outfit_plan(
+                user["id"],
+                f'{result["place"].get("name")}, {result["place"].get("country")}',
+                result["selected_date"], result["departure"],
+                result["occasion"], result["style"],
+                {
+                    "temperature": result["avg_temp"], "humidity": result["humidity"],
+                    "wind_speed": f["wind_speed_max"], "precipitation": f["precipitation_sum"],
+                    "weather_code": f["weather_code"]
+                },
+                result["season"], result["condition"], result["prediction"],
+                result["recommendation"]
+            )
+            alert_title = "Weather and outfit plan saved"
+            alert_message = f'{result["selected_date"]} in {result["place"].get("name")}: {result["prediction"]}. {result["recommendation"]}'
+            create_notification(user["id"], alert_title, alert_message, "warning" if alerts else "info")
+            for alert in alerts:
+                create_notification(user["id"], "Weather alert", alert, "warning")
+            st.success(f"Plan #{plan_id} saved. In-app notifications were created.")
+            st.rerun()
+
+    st.markdown("---")
+    st.subheader({"English":"Your saved plans","دری":"برنامه‌های ذخیره‌شده شما","پښتو":"ستاسو خوندي شوي پلانونه"}[lang])
+    plans = get_user_plans(user["id"])
+    if not plans:
+        st.info("No saved plans yet.")
+    for plan in plans:
+        with st.container(border=True):
+            st.markdown(f'**{plan["destination"]} — {plan["plan_date"]} at {plan["departure_time"]}**')
+            st.write(f'{plan["outfit_category"]}: {plan["recommendation"]}')
+            if st.button("Delete plan", key=f'delete_plan_{plan["id"]}'):
+                delete_user_plan(user["id"], plan["id"])
+                st.rerun()
+
+
+# --------------------------------------------------
+# NOTIFICATION CENTER
+# --------------------------------------------------
+
+def notifications_page():
+    lang = st.session_state.get("language", "English")
+    user = get_user(st.session_state.username)
+    if not user:
+        st.error(translate("user_not_found", lang))
+        return
+    labels = {
+        "English": ("Notifications", "No notifications yet.", "Mark all as read", "Mark as read"),
+        "دری": ("اطلاعیه‌ها و هشدارها", "هنوز اطلاعیه‌ای وجود ندارد.", "همه را خوانده‌شده علامت بزن", "خوانده شد"),
+        "پښتو": ("خبرتیاوې", "تر اوسه خبرتیا نشته.", "ټولې لوستل شوې وښیه", "لوستل شوې")
+    }
+    title, empty, mark_all, mark_one = labels[lang]
+    st.title("🔔 " + title)
+    items = get_user_notifications(user["id"])
+    unread = sum(1 for x in items if not x["is_read"])
+    st.caption(f"{unread} unread / {len(items)} total")
+    if unread and st.button(mark_all):
+        mark_notification_read(user["id"])
+        st.rerun()
+    if not items:
+        st.info(empty)
+    for item in items:
+        with st.container(border=True):
+            st.markdown(f'**{item["title"]}**')
+            st.write(item["message"])
+            st.caption(f'{item["created_at"]} · {item["severity"]} · {"Read" if item["is_read"] else "Unread"}')
+            if not item["is_read"] and st.button(mark_one, key=f'read_notification_{item["id"]}'):
+                mark_notification_read(user["id"], item["id"])
+                st.rerun()
+
 
 # --------------------------------------------------
 # HISTORY
@@ -2918,7 +3408,8 @@ def profile_page():
 
     st.subheader(translate("machine_learning", lang))
     st.write(translate("ml_description", lang))
-    st.write("Random Forest — 200 trees — test accuracy: 91%.")
+    st.write("Random Forest classifier trained on the project's controlled dataset.")
+    st.caption("The previously measured test result was approximately 91% on the held-out project dataset; this is not a guarantee of real-world accuracy.")
 
 def admin_page():
 
@@ -2948,14 +3439,17 @@ def admin_page():
     st.markdown("---")
     st.subheader(translate("machine_learning", lang))
 
-    col1, col2, col3, col4 = st.columns(4)
+    dataset_file = Path(__file__).parent / "ml" / "dataset.csv"
+    dataset_rows = len(pd.read_csv(dataset_file)) if dataset_file.exists() else 0
+    model_file = Path(__file__).parent / "ml" / "outfit_model.pkl"
 
+    col1, col2, col3 = st.columns(3)
     col1.metric(ui_text("algorithm", lang), "Random Forest")
-    col2.metric(ui_text("trees", lang), "200")
-    col3.metric(ui_text("dataset", lang), "1500")
-    col4.metric("Test Accuracy", "91%")
+    col2.metric(ui_text("dataset", lang), dataset_rows)
+    col3.metric("Model file", "Available" if model_file.exists() else "Missing")
 
-    st.success(ui_text("model_active", lang))
+    st.success(ui_text("model_active", lang) if model_file.exists() else "Trained model file was not found.")
+    st.caption("The model's approximately 91% result is the previously recorded test score on the controlled project dataset, not a real-world accuracy guarantee.")
 
     st.markdown("---")
     st.subheader(ui_text("user_management", lang))
@@ -3061,6 +3555,14 @@ elif page == "statistics":
 elif page == "profile":
 
     profile_page()
+
+elif page == "planner":
+
+    planner_page()
+
+elif page == "notifications":
+
+    notifications_page()
 
 elif page == "admin":
 

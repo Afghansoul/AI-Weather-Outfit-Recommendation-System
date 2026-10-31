@@ -1,7 +1,7 @@
-streamlit
+streamlit>=1.40
 pandas
 numpy
-scikit-learn
+scikit-learn==1.9.1
 joblib
 plotly
 requests
